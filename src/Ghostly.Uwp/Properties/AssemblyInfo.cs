@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Ghostly")]
-[assembly: AssemblyCopyright("Copyright © Spectre Systems AB 2018")]
+[assembly: AssemblyCopyright("Copyright © Patrik Svensson")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

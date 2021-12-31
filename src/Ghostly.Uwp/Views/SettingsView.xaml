@@ -169,11 +169,11 @@
                             </TextBlock>
                             <!-- Links -->
                             <HyperlinkButton Content="{strings:Localize Key=Settings_PrivacyStatement}" Margin="0,20,0,0" Padding="0"
-                                             NavigateUri="https://spectresystems.se/ghostly/docs/privacy" />
+                                             NavigateUri="https://ghostlyapp.net/privacy" />
                             <HyperlinkButton Content="{strings:Localize Key=Settings_ReportIssue}" Margin="0,5,0,0" Padding="0"
-                                             NavigateUri="https://github.com/spectresystems/ghostly/issues" />
+                                             NavigateUri="https://github.com/patriksvensson/ghostly/issues/new" />
                             <HyperlinkButton Content="{strings:Localize Key=Settings_VisitWebsite}" Margin="0,5,0,0" Padding="0"
-                                             NavigateUri="https://spectresystems.se/ghostly" />
+                                             NavigateUri="https://ghostlyapp.net" />
                             <HyperlinkButton Content="{strings:Localize Key=Settings_FollowOnTwitter}" Margin="0,5,0,0" Padding="0"
                                              NavigateUri="https://twitter.com/theghostlyapp" />
                         </StackPanel>
