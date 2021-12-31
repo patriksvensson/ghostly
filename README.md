@@ -19,15 +19,20 @@ Ghostly requires Windows 10, version 1809 to run.
 
 ## Building Ghostly
 
-### 1) Install Cake
+### 1) Restore submodules
 
-First make sure that you have Cake installed.
+```
+> git submodule init
+> git submodule update
+```
+
+### 2) Install Cake
 
 ```
 > dotnet tool restore
 ```
 
-### 2) Create a GitHub OAUTH application
+### 3) Create a GitHub OAUTH application
 
 Go to your GitHub account settings and create a new OAUTH application
 at https://github.com/settings/applications/new.
@@ -45,7 +50,7 @@ button `Generate a new client secret`.
 After this is done, write down the Client ID and the generated Client secret.
 You're going to need them later to configure Ghostly.
 
-### 3) Generate the code containing the client ID and client secret
+### 4) Generate the code containing the client ID and client secret
 
 From the root of the repository, run the following command.
 Don't forget to insert the client ID and client secret from the previous step
@@ -61,7 +66,7 @@ behalf of the user who created it, so even though it's not the end of the world 
 someone would disassemble our application, this file has been added to the .gitignore 
 and should not be checked in.
 
-### 4) Build Ghostly
+### 5) Build Ghostly
 
 To build a full release for all available platforms, run the following from the command line:
 
@@ -71,7 +76,7 @@ To build a full release for all available platforms, run the following from the 
 
 Please note that this will take a while.
 
-### 5) Run Ghostly
+### 6) Run Ghostly
 
 If everything went fine, there should artifacts available at
 `./.artifacts/packages`.
