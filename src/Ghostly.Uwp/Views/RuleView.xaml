@@ -1,0 +1,117 @@
+<Page
+    x:Class="Ghostly.Uwp.Views.RuleView"
+    x:Name="Page"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:domain="using:Ghostly.Domain"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:strings="using:Ghostly.Uwp.Strings"
+    xmlns:iconPacks="using:MahApps.Metro.IconPacks"
+    mc:Ignorable="d"
+    NavigationCacheMode="Enabled">
+
+    <Grid Margin="{x:Bind Titlebar.Top, Mode=OneWay}">
+        <Grid Margin="{StaticResource PageMargin}">
+            <Grid Margin="12,0,12,20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <!-- HEADER -->
+                <TextBlock Grid.Row="0" Style="{StaticResource TitleTextBlockStyle}"
+                           Text="{strings:Localize Key=Rules_Title}" Margin="{StaticResource PageTitleMargin}" />
+
+                <!-- RULE LIST -->
+                <ListView Grid.Row="1" ItemsSource="{Binding Rules}"
+                          IsEnabled="{Binding Enabled}"
+                          DragItemsCompleted="ListView_DragItemsCompleted"
+                          CanDragItems="True" CanReorderItems="True" AllowDrop="True">
+                    <ListView.Header>
+                        <TextBlock Visibility="{Binding Rules.Count, Converter={StaticResource VisibleWhenZero}}"
+                                   Text="{strings:Localize Key=Rules_NoRules}" />
+                    </ListView.Header>
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="ListViewItem">
+                            <Setter Property="Control.Margin" Value="0"/>
+                            <Setter Property="Control.Padding" Value="20,10,20,10"/>
+                            <Setter Property="Control.HorizontalContentAlignment" Value="Stretch"/>
+                            <Setter Property="Control.BorderBrush" Value="{ThemeResource RegionBorderBrush}" />
+                            <Setter Property="Control.BorderThickness" Value="0,0,0,1" />
+                        </Style>
+                    </ListView.ItemContainerStyle>
+                    <ListView.ItemTemplate>
+                        <DataTemplate x:DataType="domain:Rule">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+
+                                <!-- Sort order -->
+                                <FontIcon Grid.Column="0" Glyph="&#xE700;"
+                                          Foreground="Gray" Margin="0,0,15,0" />
+
+                                <!-- Information -->
+                                <Grid Grid.Column="1" Margin="0,0,15,0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+                                    <TextBlock Grid.Row="0" Text="{Binding Name}" VerticalAlignment="Center" />
+                                    <TextBlock Grid.Row="1" Text="{Binding Description}" Foreground="Gray" TextWrapping="Wrap" />
+                                </Grid>
+
+                                <!-- Buttons -->
+                                <StackPanel Grid.Column="3" Orientation="Horizontal" HorizontalAlignment="Right">
+                                    <Button CommandParameter="{Binding Path=DataContext, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                            Command="{Binding ViewModel.RunCommand, ElementName=Page}">
+                                        <FontIcon Glyph="&#xE768;" FontSize="16" HorizontalAlignment="Center" />
+                                    </Button>
+                                    <Button CommandParameter="{Binding Path=DataContext, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                            Command="{Binding ViewModel.EditCommand, ElementName=Page}"
+                                            Margin="3,0,0,0">
+                                        <FontIcon Glyph="&#xE70F;" FontSize="16" />
+                                    </Button>
+                                    <Button CommandParameter="{Binding Path=DataContext, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                            Command="{Binding ViewModel.DeleteCommand, ElementName=Page}"
+                                            Margin="3,0,0,0">
+                                        <FontIcon Glyph="&#xE74D;" FontSize="16" HorizontalAlignment="Center" />
+                                    </Button>
+                                </StackPanel>
+                            </Grid>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <!-- BUTTONS -->
+                <controls:WrapPanel Grid.Row="3" HorizontalSpacing="10" VerticalSpacing="10">
+
+                    <!-- Add rule -->
+                    <Button MinWidth="150" Command="{Binding CreateCommand}">
+                        <StackPanel Orientation="Horizontal">
+                            <FontIcon Glyph="&#xE710;" Margin="0,0,10,0" />
+                            <TextBlock Text="{strings:Localize Key=Rules_AddRule}" />
+                        </StackPanel>
+                    </Button>
+
+                    <!-- Run rules -->
+                    <Button MinWidth="150" Command="{Binding RunAllCommand}">
+                        <StackPanel Orientation="Horizontal">
+                            <FontIcon Glyph="&#xE768;" Margin="0,0,10,0" />
+                            <TextBlock Text="{strings:Localize Key=Rules_RunRules}" />
+                        </StackPanel>
+                    </Button>
+                    
+                </controls:WrapPanel>
+
+            </Grid>
+        </Grid>
+    </Grid>
+
+</Page>

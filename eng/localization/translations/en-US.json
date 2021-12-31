@@ -1,0 +1,1355 @@
+{
+  "Culture": "en-US",
+  "Entries": [
+    {
+      "Key": "Accounts_Account",
+      "Translation": "Account",
+      "Comment": "Account"
+    },
+    {
+      "Key": "Accounts_AuthorizationProblem",
+      "Translation": "There was a problem authorizing this account.",
+      "Comment": "There was a problem authorizing this account."
+    },
+    {
+      "Key": "Accounts_ExportProfile",
+      "Translation": "Export profile",
+      "Comment": "Export profile"
+    },
+    {
+      "Key": "Accounts_ImportProfile",
+      "Translation": "Import profile",
+      "Comment": "Import profile"
+    },
+    {
+      "Key": "Accounts_NoAccounts",
+      "Translation": "There are no accounts.",
+      "Comment": "There are no accounts."
+    },
+    {
+      "Key": "Accounts_NoInternetConnection",
+      "Translation": "No Internet connection.",
+      "Comment": "No Internet connection."
+    },
+    {
+      "Key": "Accounts_PleaseSignInAgain",
+      "Translation": "Please sign out and sign in again.",
+      "Comment": "Please sign out and sign in again."
+    },
+    {
+      "Key": "Accounts_ProfileManagementProhibited",
+      "Translation": "Profile management prohibited",
+      "Comment": "Profile management prohibited"
+    },
+    {
+      "Key": "Accounts_Profiles",
+      "Translation": "Profiles",
+      "Comment": "Profiles"
+    },
+    {
+      "Key": "Accounts_PublicAndPrivateRepositories",
+      "Translation": "Public and private repositories",
+      "Comment": "Public and private repositories"
+    },
+    {
+      "Key": "Accounts_PublicAndPrivateRepositoriesMorePermissions",
+      "Translation": "Public and private repositories (requires more permissions)",
+      "Comment": "Public and private repositories (requires more permissions)"
+    },
+    {
+      "Key": "Accounts_PublicRepositories",
+      "Translation": "Public repositories",
+      "Comment": "Public repositories"
+    },
+    {
+      "Key": "Accounts_PublicRepositoriesOnly",
+      "Translation": "Public repositories only",
+      "Comment": "Public repositories only"
+    },
+    {
+      "Key": "Accounts_Review",
+      "Translation": "Review account permissions",
+      "Comment": "Review account permissions"
+    },
+    {
+      "Key": "Accounts_SignInToGitHub",
+      "Translation": "Sign in to GitHub...",
+      "Comment": "Sign in to GitHub..."
+    },
+    {
+      "Key": "Accounts_SignOut",
+      "Translation": "Sign out",
+      "Comment": "Sign out"
+    },
+    {
+      "Key": "Accounts_Title",
+      "Translation": "Accounts",
+      "Comment": "Accounts"
+    },
+    {
+      "Key": "Archive_Progress_Archiving",
+      "Translation": "Archiving notifications...",
+      "Comment": "Archiving notifications..."
+    },
+    {
+      "Key": "Archive_Progress_MarkingAsRead",
+      "Translation": "Marking notifications as read...",
+      "Comment": "Marking notifications as read..."
+    },
+    {
+      "Key": "ArchiveAll_Confirmation",
+      "Translation": "Are you sure that you want to archive all notifications in '{0}'?\\n\\nThis action cannot be undone.",
+      "Comment": "Are you sure that you want to archive all notifications in '{0}'?\\n\\nThis action cannot be undone."
+    },
+    {
+      "Key": "ArchiveAll_Ok",
+      "Translation": "Archive",
+      "Comment": "Archive"
+    },
+    {
+      "Key": "ArchiveAll_Progress",
+      "Translation": "Archiving notifications in {0}...",
+      "Comment": "Archiving notifications in {0}..."
+    },
+    {
+      "Key": "ArchiveAll_Title",
+      "Translation": "Archive all?",
+      "Comment": "Archive all?"
+    },
+    {
+      "Key": "CreateCategory_CategoryImported",
+      "Translation": "The category was previously imported from '{0}'.",
+      "Comment": "The category was previously imported from '{0}'."
+    },
+    {
+      "Key": "CreateCategory_CategoryImported_Warning",
+      "Translation": "Changes to this category will be lost if re-importing again.",
+      "Comment": "Changes to this category will be lost if re-importing again."
+    },
+    {
+      "Key": "CreateCategory_Expression",
+      "Translation": "Expression",
+      "Comment": "Expression"
+    },
+    {
+      "Key": "CreateCategory_IncludeMuted",
+      "Translation": "Include muted",
+      "Comment": "Include muted"
+    },
+    {
+      "Key": "CreateCategory_Muted",
+      "Translation": "Mute",
+      "Comment": "Mute"
+    },
+    {
+      "Key": "CreateCategory_Name",
+      "Translation": "Name",
+      "Comment": "Name"
+    },
+    {
+      "Key": "CreateCategory_ShowTotal",
+      "Translation": "Show total count",
+      "Comment": "Show total count"
+    },
+    {
+      "Key": "CreateCategory_ThisIsAFilter",
+      "Translation": "This is a filter",
+      "Comment": "This is a filter"
+    },
+    {
+      "Key": "CreateCategory_Title_EditCategory",
+      "Translation": "Edit category",
+      "Comment": "Edit category"
+    },
+    {
+      "Key": "CreateCategory_Title_EditFilter",
+      "Translation": "Edit filter",
+      "Comment": "Edit filter"
+    },
+    {
+      "Key": "CreateCategory_Title_NewCategory",
+      "Translation": "Create category",
+      "Comment": "Create category"
+    },
+    {
+      "Key": "CreateCategory_Title_NewFilter",
+      "Translation": "Create filter",
+      "Comment": "Create filter"
+    },
+    {
+      "Key": "CreateCategory_Upgrade",
+      "Translation": "To create more, upgrade to Ghostly Pro.",
+      "Comment": "To create more, upgrade to Ghostly Pro."
+    },
+    {
+      "Key": "CreateCategory_WhatIsThis",
+      "Translation": "What is this?",
+      "Comment": "What is this?"
+    },
+    {
+      "Key": "CreateRule_Condition",
+      "Translation": "Condition",
+      "Comment": "Condition"
+    },
+    {
+      "Key": "CreateRule_Condition_Placeholder",
+      "Translation": "Expression",
+      "Comment": "Expression"
+    },
+    {
+      "Key": "CreateRule_EditRule",
+      "Translation": "Edit rule",
+      "Comment": "Edit rule"
+    },
+    {
+      "Key": "CreateRule_MarkAsRead",
+      "Translation": "Mark as read",
+      "Comment": "Mark as read"
+    },
+    {
+      "Key": "CreateRule_MoveToCategory",
+      "Translation": "Move to category",
+      "Comment": "Move to category"
+    },
+    {
+      "Key": "CreateRule_Mute",
+      "Translation": "Mute",
+      "Comment": "Mute"
+    },
+    {
+      "Key": "CreateRule_Name",
+      "Translation": "Name",
+      "Comment": "Name"
+    },
+    {
+      "Key": "CreateRule_Name_Placeholder",
+      "Translation": "Name of the rule",
+      "Comment": "Name of the rule"
+    },
+    {
+      "Key": "CreateRule_NewRule",
+      "Translation": "New rule",
+      "Comment": "New rule"
+    },
+    {
+      "Key": "CreateRule_RuleImported",
+      "Translation": "The rule was previously imported from '{0}'.",
+      "Comment": "The rule was previously imported from '{0}'."
+    },
+    {
+      "Key": "CreateRule_RuleImported_Warning",
+      "Translation": "Changes to this rule will be lost if re-importing again.",
+      "Comment": "Changes to this rule will be lost if re-importing again."
+    },
+    {
+      "Key": "CreateRule_Star",
+      "Translation": "Star",
+      "Comment": "Star"
+    },
+    {
+      "Key": "CreateRule_StopProcessingOtherRules",
+      "Translation": "Stop processing other rules",
+      "Comment": "Stop processing other rules"
+    },
+    {
+      "Key": "CreateRule_WhatIsThis",
+      "Translation": "What is this?",
+      "Comment": "What is this?"
+    },
+    {
+      "Key": "DeleteCategory_CannotDelete_ChangeOrDeleteRule",
+      "Translation": "Change or delete the affected rules to delete this category.",
+      "Comment": "Change or delete the affected rules to delete this category."
+    },
+    {
+      "Key": "DeleteCategory_CannotDelete_Title",
+      "Translation": "Cannot delete category",
+      "Comment": "Cannot delete category"
+    },
+    {
+      "Key": "DeleteCategory_CannotDelete_UsedInFollowingRules",
+      "Translation": "The category '{0}' is used in the following rules:",
+      "Comment": "The category '{0}' is used in the following rules:"
+    },
+    {
+      "Key": "DeleteCategory_Category_Confirmation",
+      "Translation": "Are you sure that you want to delete the category '{0}'?\\n\\nThis action cannot be undone.",
+      "Comment": "Are you sure that you want to delete the category '{0}'?\\n\\nThis action cannot be undone."
+    },
+    {
+      "Key": "DeleteCategory_Category_Title",
+      "Translation": "Delete category?",
+      "Comment": "Delete category?"
+    },
+    {
+      "Key": "DeleteCategory_Filter_Confirmation",
+      "Translation": "Are you sure that you want to delete the filter '{0}'?\\n\\nThis action cannot be undone.",
+      "Comment": "Are you sure that you want to delete the filter '{0}'?\\n\\nThis action cannot be undone."
+    },
+    {
+      "Key": "DeleteCategory_Filter_Title",
+      "Translation": "Delete filter?",
+      "Comment": "Delete filter?"
+    },
+    {
+      "Key": "DeleteRule_Confirmation",
+      "Translation": "Are you sure that you want to delete the rule '{0}'?\\n\\nThis action cannot be undone.",
+      "Comment": "Are you sure that you want to delete the rule '{0}'?\\n\\nThis action cannot be undone."
+    },
+    {
+      "Key": "DeleteRule_Ok",
+      "Translation": "Delete",
+      "Comment": "Delete"
+    },
+    {
+      "Key": "DeleteRule_Title",
+      "Translation": "Delete rule?",
+      "Comment": "Delete rule?"
+    },
+    {
+      "Key": "EmojiPicker_Clear",
+      "Translation": "Clear",
+      "Comment": "Clear"
+    },
+    {
+      "Key": "ExportProfile_Error",
+      "Translation": "An error occured while exporting profile.\\nSee the log for more information.",
+      "Comment": "An error occured while exporting profile.\\nSee the log for more information."
+    },
+    {
+      "Key": "ExportProfile_Progress",
+      "Translation": "Exporting profile {0}…",
+      "Comment": "Exporting profile {0}…"
+    },
+    {
+      "Key": "General_Cancel",
+      "Translation": "Cancel",
+      "Comment": "Cancel"
+    },
+    {
+      "Key": "General_Close",
+      "Translation": "Close",
+      "Comment": "Close"
+    },
+    {
+      "Key": "General_Create",
+      "Translation": "Create",
+      "Comment": "Create"
+    },
+    {
+      "Key": "General_Delete",
+      "Translation": "Delete",
+      "Comment": "Delete"
+    },
+    {
+      "Key": "General_ErrorOccured",
+      "Translation": "An error occurred",
+      "Comment": "An error occurred"
+    },
+    {
+      "Key": "General_Export",
+      "Translation": "Export",
+      "Comment": "Export"
+    },
+    {
+      "Key": "General_Import",
+      "Translation": "Import",
+      "Comment": "Import"
+    },
+    {
+      "Key": "General_Menu",
+      "Translation": "Menu",
+      "Comment": "Menu"
+    },
+    {
+      "Key": "General_Ok",
+      "Translation": "Ok",
+      "Comment": "Ok"
+    },
+    {
+      "Key": "General_Save",
+      "Translation": "Save",
+      "Comment": "Save"
+    },
+    {
+      "Key": "GitHub_Broker_SignInUsingExternalBrowser",
+      "Translation": "Sign in using external browser",
+      "Comment": "Sign in using external browser"
+    },
+    {
+      "Key": "GitHub_FirstSynchronization",
+      "Translation": "Ghostly is synchronizing for the first time. This might take a little while. 😅",
+      "Comment": "Ghostly is synchronizing for the first time. This might take a little while. 😅"
+    },
+    {
+      "Key": "GitHub_Progress",
+      "Translation": "Synchronizing {0} of {1} GitHub notifications...",
+      "Comment": "Synchronizing {0} of {1} GitHub notifications..."
+    },
+    {
+      "Key": "GitHub_Progress_Unread",
+      "Translation": "Synchronizing unread items...",
+      "Comment": "Synchronizing unread items..."
+    },
+    {
+      "Key": "GitHub_RateLimitExceeded",
+      "Translation": "We've exceeded the GitHub API rate limit 😢.\\nWe won't be able to synchronize until {0}.",
+      "Comment": "We've exceeded the GitHub API rate limit 😢.\\nWe won't be able to synchronize until {0}."
+    },
+    {
+      "Key": "GitHub_Toast_NewNotification_Title",
+      "Translation": "New GitHub notification",
+      "Comment": "New GitHub notification"
+    },
+    {
+      "Key": "GitHub_Toast_NewNotifications_Body",
+      "Translation": "{0} new notifications available.",
+      "Comment": "{0} new notifications available."
+    },
+    {
+      "Key": "GitHub_Toast_NewNotifications_Title",
+      "Translation": "New GitHub notifications",
+      "Comment": "New GitHub notifications"
+    },
+    {
+      "Key": "ImportProfile_Progress",
+      "Translation": "Importing profile {0}…",
+      "Comment": "Importing profile {0}…"
+    },
+    {
+      "Key": "Main_Archive",
+      "Translation": "Archive",
+      "Comment": "Archive"
+    },
+    {
+      "Key": "Main_Command_Archive",
+      "Translation": "Archive",
+      "Comment": "Archive"
+    },
+    {
+      "Key": "Main_Command_MarkAsRead",
+      "Translation": "Mark as read",
+      "Comment": "Mark as read"
+    },
+    {
+      "Key": "Main_Command_Move",
+      "Translation": "Move",
+      "Comment": "Move"
+    },
+    {
+      "Key": "Main_MarkAsRead",
+      "Translation": "Mark as read",
+      "Comment": "Mark as read"
+    },
+    {
+      "Key": "Main_Move",
+      "Translation": "Move",
+      "Comment": "Move"
+    },
+    {
+      "Key": "Main_Mute",
+      "Translation": "Mute",
+      "Comment": "Mute"
+    },
+    {
+      "Key": "Main_NoNotificationSelected",
+      "Translation": "No notification selected",
+      "Comment": "No notification selected"
+    },
+    {
+      "Key": "Main_OpenInBrowser",
+      "Translation": "Open in browser",
+      "Comment": "Open in browser"
+    },
+    {
+      "Key": "Main_SearchEverywhere",
+      "Translation": "Search everywhere",
+      "Comment": "Search everywhere"
+    },
+    {
+      "Key": "Main_SearchInCategory",
+      "Translation": "Search in {0}",
+      "Comment": "Search in {0}"
+    },
+    {
+      "Key": "Main_Share",
+      "Translation": "Share...",
+      "Comment": "Share..."
+    },
+    {
+      "Key": "Main_ShareGitHubLink",
+      "Translation": "Share link to GitHub item",
+      "Comment": "Share link to GitHub item"
+    },
+    {
+      "Key": "Main_Star",
+      "Translation": "Star",
+      "Comment": "Star"
+    },
+    {
+      "Key": "Main_Synchronize",
+      "Translation": "Synchronize",
+      "Comment": "Synchronize"
+    },
+    {
+      "Key": "Main_Unmute",
+      "Translation": "Unmute",
+      "Comment": "Unmute"
+    },
+    {
+      "Key": "Main_Unstar",
+      "Translation": "Unstar",
+      "Comment": "Unstar"
+    },
+    {
+      "Key": "Main_UpdateItem",
+      "Translation": "Update item",
+      "Comment": "Update item"
+    },
+    {
+      "Key": "MarkAllAsRead_Confirmation",
+      "Translation": "Are you sure that you want to mark all notifications in '{0}' as read?\\n\\nThis action cannot be undone.",
+      "Comment": "Are you sure that you want to mark all notifications in '{0}' as read?\\n\\nThis action cannot be undone."
+    },
+    {
+      "Key": "MarkAllAsRead_Ok",
+      "Translation": "Mark all as read",
+      "Comment": "Mark all as read"
+    },
+    {
+      "Key": "MarkAllAsRead_Progress",
+      "Translation": "Marking all notifications in {0} as read...",
+      "Comment": "Marking all notifications in {0} as read..."
+    },
+    {
+      "Key": "MarkAllAsRead_Title",
+      "Translation": "Mark all as read?",
+      "Comment": "Mark all as read?"
+    },
+    {
+      "Key": "MarkAsRead_Progress",
+      "Translation": "Marking {0} notifications as read...",
+      "Comment": "Marking {0} notifications as read..."
+    },
+    {
+      "Key": "Move_Ok",
+      "Translation": "Move",
+      "Comment": "Move"
+    },
+    {
+      "Key": "Move_Progress",
+      "Translation": "Moving {0} notifications to {1}...",
+      "Comment": "Moving {0} notifications to {1}..."
+    },
+    {
+      "Key": "Move_Title_Plural",
+      "Translation": "Move notifications",
+      "Comment": "Move notifications"
+    },
+    {
+      "Key": "Move_Title_Singular",
+      "Translation": "Move notification",
+      "Comment": "Move notification"
+    },
+    {
+      "Key": "NewProfile_Placeholder",
+      "Translation": "Profile name",
+      "Comment": "Profile name"
+    },
+    {
+      "Key": "NewProfile_Title",
+      "Translation": "Create new profile",
+      "Comment": "Create new profile"
+    },
+    {
+      "Key": "Query_Constant",
+      "Translation": "Constant",
+      "Comment": "Constant"
+    },
+    {
+      "Key": "Query_Error_NeedHelp",
+      "Translation": "Need help?",
+      "Comment": "Need help?"
+    },
+    {
+      "Key": "Query_Error_Subtitle",
+      "Translation": "Something is wrong with the query...",
+      "Comment": "Something is wrong with the query..."
+    },
+    {
+      "Key": "Query_Error_Title",
+      "Translation": "Oh no!",
+      "Comment": "Oh no!"
+    },
+    {
+      "Key": "Query_Keyword",
+      "Translation": "Keyword",
+      "Comment": "Keyword"
+    },
+    {
+      "Key": "Query_Operator",
+      "Translation": "Operator",
+      "Comment": "Operator"
+    },
+    {
+      "Key": "Query_Property",
+      "Translation": "Property",
+      "Comment": "Property"
+    },
+    {
+      "Key": "Query_Results_None",
+      "Translation": "No results found",
+      "Comment": "No results found"
+    },
+    {
+      "Key": "Query_Results_Plural",
+      "Translation": "{0} results",
+      "Comment": "{0} results"
+    },
+    {
+      "Key": "Query_Results_Singular",
+      "Translation": "{0} result",
+      "Comment": "{0} result"
+    },
+    {
+      "Key": "Query_Type_Boolean",
+      "Translation": "Boolean",
+      "Comment": "Boolean"
+    },
+    {
+      "Key": "Query_Type_Integer",
+      "Translation": "Integer",
+      "Comment": "Integer"
+    },
+    {
+      "Key": "Query_Type_String",
+      "Translation": "String",
+      "Comment": "String"
+    },
+    {
+      "Key": "Query_Type_Unknown",
+      "Translation": "Unknown type",
+      "Comment": "Unknown type"
+    },
+    {
+      "Key": "Query_Type_Username",
+      "Translation": "Username",
+      "Comment": "Username"
+    },
+    {
+      "Key": "RuleProcessor_Progress",
+      "Translation": "Running rules for category '{0}'...",
+      "Comment": "Running rules for category '{0}'..."
+    },
+    {
+      "Key": "RuleProcessor_Progress_Single",
+      "Translation": "Running rule '{0}' for category '{1}'...",
+      "Comment": "Running rule '{0}' for category '{1}'..."
+    },
+    {
+      "Key": "Rules_AddRule",
+      "Translation": "Add new rule...",
+      "Comment": "Add new rule..."
+    },
+    {
+      "Key": "Rules_Description_And",
+      "Translation": "And",
+      "Comment": "And"
+    },
+    {
+      "Key": "Rules_Description_Contains",
+      "Translation": "Contains",
+      "Comment": "Contains"
+    },
+    {
+      "Key": "Rules_Description_DoNothing",
+      "Translation": "Do nothing",
+      "Comment": "Do nothing"
+    },
+    {
+      "Key": "Rules_Description_False",
+      "Translation": "False",
+      "Comment": "False"
+    },
+    {
+      "Key": "Rules_Description_If",
+      "Translation": "If",
+      "Comment": "If"
+    },
+    {
+      "Key": "Rules_Description_Is",
+      "Translation": "Is",
+      "Comment": "Is"
+    },
+    {
+      "Key": "Rules_Description_IsGreaterThan",
+      "Translation": "Is greater than",
+      "Comment": "Is greater than"
+    },
+    {
+      "Key": "Rules_Description_IsGreaterThanOrEqualTo",
+      "Translation": "Is greater than or equal to",
+      "Comment": "Is greater than or equal to"
+    },
+    {
+      "Key": "Rules_Description_IsLessThan",
+      "Translation": "Is less than",
+      "Comment": "Is less than"
+    },
+    {
+      "Key": "Rules_Description_IsLessThanOrEqualTo",
+      "Translation": "Is less than or equal to",
+      "Comment": "Is less than or equal to"
+    },
+    {
+      "Key": "Rules_Description_IsNot",
+      "Translation": "Is not",
+      "Comment": "Is not"
+    },
+    {
+      "Key": "Rules_Description_MarkItAsRead",
+      "Translation": "Mark it as read",
+      "Comment": "Mark it as read"
+    },
+    {
+      "Key": "Rules_Description_MoveItTo",
+      "Translation": "Move it to '{0}'",
+      "Comment": "Move it to '{0}'"
+    },
+    {
+      "Key": "Rules_Description_MuteIt",
+      "Translation": "Mute it",
+      "Comment": "Mute it"
+    },
+    {
+      "Key": "Rules_Description_Null",
+      "Translation": "Null",
+      "Comment": "Null"
+    },
+    {
+      "Key": "Rules_Description_Or",
+      "Translation": "Or",
+      "Comment": "Or"
+    },
+    {
+      "Key": "Rules_Description_StarIt",
+      "Translation": "Star it",
+      "Comment": "Star it"
+    },
+    {
+      "Key": "Rules_Description_StopsProcessing",
+      "Translation": "This also stops processing of other rules.",
+      "Comment": "This also stops processing of other rules."
+    },
+    {
+      "Key": "Rules_Description_Then",
+      "Translation": "Then",
+      "Comment": "Then"
+    },
+    {
+      "Key": "Rules_Description_True",
+      "Translation": "True",
+      "Comment": "True"
+    },
+    {
+      "Key": "Rules_MaximumReached",
+      "Translation": "Maximum number of rules reached. To create more rules, upgrade to Ghostly Pro.",
+      "Comment": "Maximum number of rules reached. To create more rules, upgrade to Ghostly Pro."
+    },
+    {
+      "Key": "Rules_NoRules",
+      "Translation": "There are no rules.",
+      "Comment": "There are no rules."
+    },
+    {
+      "Key": "Rules_RunRule_Title",
+      "Translation": "Run '{0}'",
+      "Comment": "Run '{0}'"
+    },
+    {
+      "Key": "Rules_RunRules",
+      "Translation": "Run rules...",
+      "Comment": "Run rules..."
+    },
+    {
+      "Key": "Rules_RunRules_Ok",
+      "Translation": "Run",
+      "Comment": "Run"
+    },
+    {
+      "Key": "Rules_RunRules_Title",
+      "Translation": "Run all rules",
+      "Comment": "Run all rules"
+    },
+    {
+      "Key": "Rules_Title",
+      "Translation": "Rules",
+      "Comment": "Rules"
+    },
+    {
+      "Key": "SelectProfile_CreateNewProfile",
+      "Translation": "Create new profile",
+      "Comment": "Create new profile"
+    },
+    {
+      "Key": "SelectProfile_ErrorLoading",
+      "Translation": "There was a problem loading account profiles",
+      "Comment": "There was a problem loading account profiles"
+    },
+    {
+      "Key": "SelectProfile_Loading",
+      "Translation": "Loading profiles…",
+      "Comment": "Loading profiles…"
+    },
+    {
+      "Key": "SelectProfile_Title_Export",
+      "Translation": "Export Ghostly profile",
+      "Comment": "Export Ghostly profile"
+    },
+    {
+      "Key": "SelectProfile_Title_Import",
+      "Translation": "Import Ghostly profile",
+      "Comment": "Import Ghostly profile"
+    },
+    {
+      "Key": "Settings_About",
+      "Translation": "About",
+      "Comment": "About"
+    },
+    {
+      "Key": "Settings_AggregateToasts",
+      "Translation": "Aggregate notifications into a single toast",
+      "Comment": "Aggregate notifications into a single toast"
+    },
+    {
+      "Key": "Settings_AllowSynchronizationOnMeteredConnections",
+      "Translation": "Allow synchronization on metered connections",
+      "Comment": "Allow synchronization on metered connections"
+    },
+    {
+      "Key": "Settings_AllowTelemetry",
+      "Translation": "Allow Ghostly to send telemetry about errors and general usage.",
+      "Comment": "Allow Ghostly to send telemetry about errors and general usage."
+    },
+    {
+      "Key": "Settings_AllowTelemetry_Anonymous",
+      "Translation": "All information is anonymous and does not contain any personal data.",
+      "Comment": "All information is anonymous and does not contain any personal data."
+    },
+    {
+      "Key": "Settings_AutomaticallyMarkAsRead",
+      "Translation": "Automatically mark read notifications as read",
+      "Comment": "Automatically mark read notifications as read"
+    },
+    {
+      "Key": "Settings_Avatars",
+      "Translation": "Avatars",
+      "Comment": "Avatars"
+    },
+    {
+      "Key": "Settings_BackgroundSynchronization",
+      "Translation": "Background Synchronization",
+      "Comment": "Background Synchronization"
+    },
+    {
+      "Key": "Settings_BackgroundTasksNotAllowed",
+      "Translation": "Background tasks are not allowed.",
+      "Comment": "Background tasks are not allowed."
+    },
+    {
+      "Key": "Settings_Badge",
+      "Translation": "Badge",
+      "Comment": "Badge"
+    },
+    {
+      "Key": "Settings_ClickLibrary",
+      "Translation": "Click on a library below to see its license agreement.",
+      "Comment": "Click on a library below to see its license agreement."
+    },
+    {
+      "Key": "Settings_Comments",
+      "Translation": "Comments",
+      "Comment": "Comments"
+    },
+    {
+      "Key": "Settings_CreatedBy",
+      "Translation": "Created by",
+      "Comment": "Created by"
+    },
+    {
+      "Key": "Settings_CurrentLanguage",
+      "Translation": "Current language",
+      "Comment": "Current language"
+    },
+    {
+      "Key": "Settings_CurrentTheme",
+      "Translation": "Current theme",
+      "Comment": "Current theme"
+    },
+    {
+      "Key": "Settings_DisableAutomaticStartup",
+      "Translation": "Disable automatic startup",
+      "Comment": "Disable automatic startup"
+    },
+    {
+      "Key": "Settings_EnableAutomaticStartup",
+      "Translation": "Enable automatic startup",
+      "Comment": "Enable automatic startup"
+    },
+    {
+      "Key": "Settings_EnableBackgroundSynchronization",
+      "Translation": "Enable background synchronization",
+      "Comment": "Enable background synchronization"
+    },
+    {
+      "Key": "Settings_FollowOnTwitter",
+      "Translation": "Follow Ghostly on Twitter",
+      "Comment": "Follow Ghostly on Twitter"
+    },
+    {
+      "Key": "Settings_General",
+      "Translation": "General",
+      "Comment": "General"
+    },
+    {
+      "Key": "Settings_Images",
+      "Translation": "Images",
+      "Comment": "Images"
+    },
+    {
+      "Key": "Settings_Language",
+      "Translation": "Language",
+      "Comment": "Language"
+    },
+    {
+      "Key": "Settings_Logging",
+      "Translation": "Logging",
+      "Comment": "Logging"
+    },
+    {
+      "Key": "Settings_LogLevel",
+      "Translation": "Log level",
+      "Comment": "Log level"
+    },
+    {
+      "Key": "Settings_MarkMutedAsRead",
+      "Translation": "Mark muted as read",
+      "Comment": "Mark muted as read"
+    },
+    {
+      "Key": "Settings_Metered",
+      "Translation": "Metered Connections",
+      "Comment": "Metered Connections"
+    },
+    {
+      "Key": "Settings_Notifications",
+      "Translation": "Notifications",
+      "Comment": "Notifications"
+    },
+    {
+      "Key": "Settings_NotSure",
+      "Translation": "Not sure?",
+      "Comment": "Not sure?"
+    },
+    {
+      "Key": "Settings_Open_Source",
+      "Translation": "Open Source",
+      "Comment": "Open Source"
+    },
+    {
+      "Key": "Settings_OpenLogFolder",
+      "Translation": "Open log folder...",
+      "Comment": "Open log folder..."
+    },
+    {
+      "Key": "Settings_Personalize",
+      "Translation": "Personalize",
+      "Comment": "Personalize"
+    },
+    {
+      "Key": "Settings_PreferCachedAvatars",
+      "Translation": "Prefer non-cached avatars with higher quality when online",
+      "Comment": "Prefer non-cached avatars with higher quality when online"
+    },
+    {
+      "Key": "Settings_PreferCachedAvatars_Explanation",
+      "Translation": "(This respects metered connection settings)",
+      "Comment": "(This respects metered connection settings)"
+    },
+    {
+      "Key": "Settings_Privacy",
+      "Translation": "Privacy",
+      "Comment": "Privacy"
+    },
+    {
+      "Key": "Settings_PrivacyStatement",
+      "Translation": "Privacy statement",
+      "Comment": "Privacy statement"
+    },
+    {
+      "Key": "Settings_Reading",
+      "Translation": "Reading",
+      "Comment": "Reading"
+    },
+    {
+      "Key": "Settings_ReadThePrivacyStatement",
+      "Translation": "Read the privacy statement",
+      "Comment": "Read the privacy statement"
+    },
+    {
+      "Key": "Settings_ReportIssue",
+      "Translation": "Report a bug or suggest a feature",
+      "Comment": "Report a bug or suggest a feature"
+    },
+    {
+      "Key": "Settings_RestartRequired",
+      "Translation": "You need to restart Ghostly for the change to take effect.",
+      "Comment": "You need to restart Ghostly for the change to take effect."
+    },
+    {
+      "Key": "Settings_ScrollToLastComment",
+      "Translation": "Scroll to last comment",
+      "Comment": "Scroll to last comment"
+    },
+    {
+      "Key": "Settings_ShowAvatars",
+      "Translation": "Show avatar for users",
+      "Comment": "Show avatar for users"
+    },
+    {
+      "Key": "Settings_ShowNumberOfUnreadNotifications",
+      "Translation": "Show number of unread notifications",
+      "Comment": "Show number of unread notifications"
+    },
+    {
+      "Key": "Settings_ShowToast",
+      "Translation": "Show toast for new notifications",
+      "Comment": "Show toast for new notifications"
+    },
+    {
+      "Key": "Settings_Startup",
+      "Translation": "Start with Windows",
+      "Comment": "Start with Windows"
+    },
+    {
+      "Key": "Settings_StartupStateDisabled",
+      "Translation": "Automatic startup is disabled.",
+      "Comment": "Automatic startup is disabled."
+    },
+    {
+      "Key": "Settings_StartupStateDisabledByPolicy",
+      "Translation": "Automatic startup is disabled by group policy.",
+      "Comment": "Automatic startup is disabled by group policy."
+    },
+    {
+      "Key": "Settings_StartupStateDisabledByUser",
+      "Translation": "Automatic startup is disabled by user. You can enable this in the Startup tab in Task Manager.",
+      "Comment": "Automatic startup is disabled by user. You can enable this in the Startup tab in Task Manager."
+    },
+    {
+      "Key": "Settings_StartupStateEnabled",
+      "Translation": "Automatic startup is enabled.",
+      "Comment": "Automatic startup is enabled."
+    },
+    {
+      "Key": "Settings_StartupStateEnabledByPolicy",
+      "Translation": "Automatic startup is enabled by group policy.",
+      "Comment": "Automatic startup is enabled by group policy."
+    },
+    {
+      "Key": "Settings_StartupStateError",
+      "Translation": "An error occured while retrieving startup state.",
+      "Comment": "An error occured while retrieving startup state."
+    },
+    {
+      "Key": "Settings_Synchronization",
+      "Translation": "Synchronization",
+      "Comment": "Synchronization"
+    },
+    {
+      "Key": "Settings_Synchronization_General",
+      "Translation": "General",
+      "Comment": "General"
+    },
+    {
+      "Key": "Settings_SynchronizeAvatarsForOfflineUse",
+      "Translation": "Synchronize avatars for offline use",
+      "Comment": "Synchronize avatars for offline use"
+    },
+    {
+      "Key": "Settings_SynchronizeUnreadState",
+      "Translation": "Synchronize unread state",
+      "Comment": "Synchronize unread state"
+    },
+    {
+      "Key": "Settings_Telemetry",
+      "Translation": "Telemetry",
+      "Comment": "Telemetry"
+    },
+    {
+      "Key": "Settings_Thanks",
+      "Translation": "Special Thanks",
+      "Comment": "Special Thanks"
+    },
+    {
+      "Key": "Settings_Theme",
+      "Translation": "Theme",
+      "Comment": "Theme"
+    },
+    {
+      "Key": "Settings_Toasts",
+      "Translation": "Toasts",
+      "Comment": "Toasts"
+    },
+    {
+      "Key": "Settings_VisitWebsite",
+      "Translation": "Visit the website",
+      "Comment": "Visit the website"
+    },
+    {
+      "Key": "Shell_Accounts",
+      "Translation": "Accounts",
+      "Comment": "Accounts"
+    },
+    {
+      "Key": "Shell_Archive",
+      "Translation": "Archive",
+      "Comment": "Archive"
+    },
+    {
+      "Key": "Shell_ArchiveAll",
+      "Translation": "Archive all...",
+      "Comment": "Archive all..."
+    },
+    {
+      "Key": "Shell_DeleteCategory",
+      "Translation": "Delete category...",
+      "Comment": "Delete category..."
+    },
+    {
+      "Key": "Shell_DeleteFilter",
+      "Translation": "Delete filter...",
+      "Comment": "Delete filter..."
+    },
+    {
+      "Key": "Shell_EditCategory",
+      "Translation": "Edit category...",
+      "Comment": "Edit category..."
+    },
+    {
+      "Key": "Shell_EditFilter",
+      "Translation": "Edit filter...",
+      "Comment": "Edit filter..."
+    },
+    {
+      "Key": "Shell_Inbox",
+      "Translation": "Inbox",
+      "Comment": "Inbox"
+    },
+    {
+      "Key": "Shell_MarkAllAsRead",
+      "Translation": "Mark all as read...",
+      "Comment": "Mark all as read..."
+    },
+    {
+      "Key": "Shell_Muted",
+      "Translation": "Muted",
+      "Comment": "Muted"
+    },
+    {
+      "Key": "Shell_NewCategory",
+      "Translation": "New category...",
+      "Comment": "New category..."
+    },
+    {
+      "Key": "Shell_Rules",
+      "Translation": "Rules",
+      "Comment": "Rules"
+    },
+    {
+      "Key": "Shell_Search",
+      "Translation": "Search",
+      "Comment": "Search"
+    },
+    {
+      "Key": "Shell_Settings",
+      "Translation": "Settings",
+      "Comment": "Settings"
+    },
+    {
+      "Key": "Shell_Starred",
+      "Translation": "Starred",
+      "Comment": "Starred"
+    },
+    {
+      "Key": "Synchronization_DisabledBecauseOfMeteredConnection",
+      "Translation": "⚠ Synchronization is disabled since you're on a metered connection.\\nYou can enable synchronization on a metered connection in Ghostly's settings.",
+      "Comment": "⚠ Synchronization is disabled since you're on a metered connection.\\nYou can enable synchronization on a metered connection in Ghostly's settings."
+    },
+    {
+      "Key": "Synchronization_Local_Status",
+      "Translation": "Synchronizing local state...",
+      "Comment": "Synchronizing local state..."
+    },
+    {
+      "Key": "Synchronization_Started",
+      "Translation": "Synchronization started...",
+      "Comment": "Synchronization started..."
+    },
+    {
+      "Key": "Template_Action_Approved",
+      "Translation": "Approved",
+      "Comment": "Approved"
+    },
+    {
+      "Key": "Template_Action_Commented",
+      "Translation": "Commented",
+      "Comment": "Commented"
+    },
+    {
+      "Key": "Template_Action_Dismissed",
+      "Translation": "Dismissed",
+      "Comment": "Dismissed"
+    },
+    {
+      "Key": "Template_Action_MergedThis",
+      "Translation": "Merged this",
+      "Comment": "Merged this"
+    },
+    {
+      "Key": "Template_Action_Pending",
+      "Translation": "Is reviewing (not submitted)",
+      "Comment": "Is reviewing (not submitted)"
+    },
+    {
+      "Key": "Template_Action_RequestedChanges",
+      "Translation": "Requested changes",
+      "Comment": "Requested changes"
+    },
+    {
+      "Key": "Template_Action_Reviewed",
+      "Translation": "Reviewed",
+      "Comment": "Reviewed"
+    },
+    {
+      "Key": "Template_Action_Unknown",
+      "Translation": "?",
+      "Comment": "?"
+    },
+    {
+      "Key": "Template_Authored",
+      "Translation": "Authored",
+      "Comment": "Authored"
+    },
+    {
+      "Key": "Template_DiscussionOpenInBrowser",
+      "Translation": "Open discussions for repository in browser",
+      "Comment": "Open discussions for repository in browser"
+    },
+    {
+      "Key": "Template_DiscussionUpdated",
+      "Translation": "Updated",
+      "Comment": "Updated"
+    },
+    {
+      "Key": "Template_NoDescriptionProvided",
+      "Translation": "No description provided.",
+      "Comment": "No description provided."
+    },
+    {
+      "Key": "Template_ReviewedAnd",
+      "Translation": "Reviewed and",
+      "Comment": "Reviewed and"
+    },
+    {
+      "Key": "Template_SecurityVulnerabilityReported",
+      "Translation": "Security vulnerability reported",
+      "Comment": "Security vulnerability reported"
+    },
+    {
+      "Key": "Template_Wrote",
+      "Translation": "Wrote",
+      "Comment": "Wrote"
+    },
+    {
+      "Key": "Time_DaysAgo",
+      "Translation": "{0} days ago",
+      "Comment": "{0} days ago"
+    },
+    {
+      "Key": "Time_HoursAgo",
+      "Translation": "{0} hours ago",
+      "Comment": "{0} hours ago"
+    },
+    {
+      "Key": "Time_MinutesAgo",
+      "Translation": "{0} minutes ago",
+      "Comment": "{0} minutes ago"
+    },
+    {
+      "Key": "Time_MonthsAgo",
+      "Translation": "{0} months ago",
+      "Comment": "{0} months ago"
+    },
+    {
+      "Key": "Time_OneDayAgo",
+      "Translation": "A day ago",
+      "Comment": "A day ago"
+    },
+    {
+      "Key": "Time_OneHourAgo",
+      "Translation": "An hour ago",
+      "Comment": "An hour ago"
+    },
+    {
+      "Key": "Time_OneMinuteAgo",
+      "Translation": "A minute ago",
+      "Comment": "A minute ago"
+    },
+    {
+      "Key": "Time_OneMonthAgo",
+      "Translation": "A month ago",
+      "Comment": "A month ago"
+    },
+    {
+      "Key": "Time_OneSecondAgo",
+      "Translation": "A second ago",
+      "Comment": "A second ago"
+    },
+    {
+      "Key": "Time_OneYearAgo",
+      "Translation": "A year ago",
+      "Comment": "A year ago"
+    },
+    {
+      "Key": "Time_SecondsAgo",
+      "Translation": "{0} seconds ago",
+      "Comment": "{0} seconds ago"
+    },
+    {
+      "Key": "Time_YearsAgo",
+      "Translation": "{0} years ago",
+      "Comment": "{0} years ago"
+    },
+    {
+      "Key": "Time_Yesterday",
+      "Translation": "Yesterday",
+      "Comment": "Yesterday"
+    },
+    {
+      "Key": "WhatsNew_GhostlyWasUpdated",
+      "Translation": "Ghostly was updated to version {0}.",
+      "Comment": "Ghostly was updated to version {0}."
+    },
+    {
+      "Key": "WhatsNew_Title",
+      "Translation": "New version installed!",
+      "Comment": "New version installed!"
+    },
+    {
+      "Key": "WhatsNew_ViewReleaseNotes",
+      "Translation": "View release notes",
+      "Comment": "View release notes"
+    }
+  ]
+}

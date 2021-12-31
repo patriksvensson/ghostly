@@ -1,0 +1,161 @@
+<Page
+    x:Class="Ghostly.Uwp.Views.AccountView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:converters="using:Microsoft.Toolkit.Uwp.UI.Converters"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+    xmlns:iconPacks="using:MahApps.Metro.IconPacks"
+    xmlns:strings="using:Ghostly.Uwp.Strings"
+    mc:Ignorable="d"
+    NavigationCacheMode="Enabled">
+
+    <Grid Margin="{x:Bind Titlebar.Top, Mode=OneWay}">
+
+        <Grid Margin="{StaticResource PageMargin}">
+            <!-- ACCOUNTS -->
+            <Grid Margin="12,0,12,20">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <!-- HEADER -->
+                <TextBlock Grid.Row="0" Style="{StaticResource TitleTextBlockStyle}"
+                       Text="{strings:Localize Key=Accounts_Title}" Margin="{StaticResource PageTitleMargin}" />
+
+                <!-- ACCOUNTS -->
+                <ListView x:Name="AccountList" Grid.Row="1" ItemsSource="{Binding Accounts}">
+                    <ListView.Header>
+                        <TextBlock Visibility="{Binding Accounts.Count, Converter={StaticResource VisibleWhenZero}}"
+                                   Text="{strings:Localize Key=Accounts_NoAccounts}" />
+                    </ListView.Header>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Padding="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                                <iconPacks:PackIconOcticons
+                                        Grid.Column="0"
+                                        Grid.Row="0"
+                                        Margin="0,5,20,0"
+                                        Width="32" Height="32"
+                                        HorizontalAlignment="Left"
+                                        Kind="{Binding Converter={StaticResource AccountIcon}, ConverterParameter=Icon}" />
+                                <StackPanel Grid.Column="1" Grid.Row="0" Orientation="Vertical" Margin="0,0,20,0" VerticalAlignment="Center">
+                                    <!-- Username -->
+                                    <TextBlock Text="{Binding DisplayName}" FontWeight="SemiBold" />
+                                    <!-- Description -->
+                                    <TextBlock Text="{Binding Description}" FontStyle="Italic" />
+                                    <!-- Profile management -->
+                                    <TextBlock Text="{strings:Localize Key=Accounts_ProfileManagementProhibited}" Foreground="{ThemeResource DimmedText}" Visibility="{Binding ImportOrExportEnabled, Converter={StaticResource InverseBoolToVisibility}}"/>
+                                </StackPanel>
+
+                                <!-- Review account permissions -->
+                                <HyperlinkButton
+                                    Grid.Column="1" Grid.Row="1"
+                                    Margin="0" Padding="0"
+                                    VerticalAlignment="Bottom"
+                                    Command="{Binding ElementName=AccountList, Path=DataContext.OpenInBrowserCommand}"
+                                    CommandParameter="{Binding}" Content="{strings:Localize Key=Accounts_Review}" />
+
+                                <!-- Authorization error -->
+                                <Grid Grid.Column="1" Grid.Row="3" Margin="0,10,0,0"
+                                      Visibility="{Binding HasAuthorizationError, Converter={StaticResource BoolToVisibility}}">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <FontIcon Glyph="&#xE7BA;" FontSize="16" Margin="0,0,5,0" Foreground="{ThemeResource WarningText}" />
+                                    <StackPanel Grid.Column="1" VerticalAlignment="Top" Margin="10,0,0,0">
+                                        <TextBlock Text="{strings:Localize Key=Accounts_AuthorizationProblem}" Foreground="{ThemeResource WarningText}" />
+                                        <TextBlock Text="{strings:Localize Key=Accounts_PleaseSignInAgain}" Foreground="{ThemeResource WarningText}" />
+                                    </StackPanel>
+                                </Grid>
+
+                                <!-- Account button -->
+                                <muxc:DropDownButton Content="{strings:Localize Key=Accounts_Account}" Grid.Column="2" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Top">
+                                    <muxc:DropDownButton.Flyout>
+                                        <MenuFlyout Placement="BottomEdgeAlignedLeft">
+                                            <MenuFlyoutSubItem Text="{strings:Localize Key=Accounts_Profiles}" IsEnabled="{Binding ImportOrExportEnabled}">
+                                                <MenuFlyoutSubItem.Icon>
+                                                    <FontIcon Glyph="&#xE748;" />
+                                                </MenuFlyoutSubItem.Icon>
+                                                <MenuFlyoutItem Text="{strings:Localize Key=Accounts_ImportProfile}"
+                                                            Command="{Binding ElementName=AccountList, Path=DataContext.ImportSettingsCommand}"
+                                                            CommandParameter="{Binding}">
+                                                    <MenuFlyoutItem.Icon>
+                                                        <FontIcon Glyph="&#xEDE2;" />
+                                                    </MenuFlyoutItem.Icon>
+                                                </MenuFlyoutItem>
+                                                <MenuFlyoutItem Text="{strings:Localize Key=Accounts_ExportProfile}"
+                                                            Command="{Binding ElementName=AccountList, Path=DataContext.ExportSettingsCommand}"
+                                                            CommandParameter="{Binding}">
+                                                    <MenuFlyoutItem.Icon>
+                                                        <FontIcon Glyph="&#xEDE1;" />
+                                                    </MenuFlyoutItem.Icon>
+                                                </MenuFlyoutItem>
+                                            </MenuFlyoutSubItem>
+
+                                            <MenuFlyoutSeparator />
+                                            <MenuFlyoutItem Text="{strings:Localize Key=Accounts_SignOut}"
+                                                            Command="{Binding ElementName=AccountList, Path=DataContext.SignOutCommand}"
+                                                            CommandParameter="{Binding}">
+                                                <MenuFlyoutItem.Icon>
+                                                    <FontIcon Glyph="&#xF3B1;" />
+                                                </MenuFlyoutItem.Icon>
+                                            </MenuFlyoutItem>
+                                        </MenuFlyout>
+                                    </muxc:DropDownButton.Flyout>
+                                </muxc:DropDownButton>
+
+                            </Grid>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <!-- Disconnected message -->
+                <StackPanel Grid.Row="2"
+                            Margin="0,5,0,0"
+                            Orientation="Horizontal"
+                            Visibility="{Binding Disconnected, Converter={StaticResource BoolToVisibility}}">
+                    <FontIcon Glyph="&#xE7BA;" FontSize="16" Margin="0,0,5,0" Foreground="{ThemeResource WarningText}" />
+                    <TextBlock Text="{strings:Localize Key=Accounts_NoInternetConnection}" Foreground="{ThemeResource WarningText}" />
+                </StackPanel>
+
+                <!-- VENDORS -->
+                <controls:WrapPanel Grid.Row="3" Orientation="Horizontal"
+                                VerticalSpacing="10" HorizontalSpacing="10">
+                    <Button MinWidth="230" IsEnabled="{Binding Disconnected, Converter={StaticResource InverseBool}}"
+                            Command="{Binding LoginToGitHubCommand}" >
+                        <StackPanel Orientation="Horizontal">
+                            <iconPacks:PackIconOcticons
+                                     Grid.Column="0"
+                                        Margin="0,0,10,0"
+                                        Width="20" Height="20"
+                                        VerticalAlignment="Center"
+                                        Kind="MarkGithub" />
+                            <TextBlock Text="{strings:Localize Key=Accounts_SignInToGitHub}" />
+                        </StackPanel>
+                    </Button>
+                </controls:WrapPanel>
+
+            </Grid>
+        </Grid>
+
+    </Grid>
+
+</Page>

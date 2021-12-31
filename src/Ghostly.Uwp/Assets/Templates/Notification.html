@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="ms-appx-web:///Assets/Templates/Notification{{theme}}.css">
+</head>
+<body>
+
+    <!-- Work item -->
+    <div class="comment">
+        <div class="header">
+            {{ if show_avatars }}
+            <img class="avatar" src="{{ work_item.author | avatar_url }}" />
+            {{ end }}
+            <span class="username">{{work_item.author.username}}</span>
+            {{ "Template_Authored" | localize | lowercase }} <a title="{{ work_item.timestamp | full_date }}" href="{{ work_item.url }}">{{ work_item.timestamp | humanize }}</a>
+        </div>
+        <div class="text">{{work_item.body | to_html}}</div>
+    </div>
+
+    {{ current_comment = 1 }}
+    {{ total_comments = items | get_count }}
+    {{ if total_comments > 0 }}
+        <!-- Comments -->
+        {{ for comment in items | sort_by_timestamp }}
+        <div class="comment" id="comment_{{current_comment}}">
+            <div class="header">
+                {{ if show_avatars }}
+                <img class="avatar" src="{{ comment.author | avatar_url }}" />
+                {{ end }}
+                <span class="username">{{comment.author.username}}</span>
+                {{ if comment.is_review }} {{ "Template_ReviewedAnd" | localize  | lowercase }} {{ end }}
+                {{ comment.action | lowercase }} <a title="{{ comment.timestamp | full_date }}" href="{{ comment.url }}">{{ comment.timestamp | humanize }}</a>
+            </div>
+
+            <!-- Body -->
+            {{ if comment.show_body }}
+                <div class="text">{{comment.body | to_html}}</div>
+            {{ end }}
+
+            {{ if comment.is_review }}
+                {{ for review in comment.items}}
+                <!-- PR review -->
+                <div class="review">
+                    <div class="path">
+                        <pre>{{ review.path }}</pre>
+                    </div>
+                    {{ for reviewcomment in review.comments | sort_by_timestamp }}
+                    <div class="reviewcomment">
+                        <div class="header">
+                            {{ if show_avatars }}
+                            <img class="avatar" src="{{ reviewcomment.author | avatar_url }}" />
+                            {{ end }}
+                            <span class="username">{{reviewcomment.author.username}}</span>
+                            {{ "Template_Wrote" | localize | lowercase }} <a title="{{ reviewcomment.timestamp | full_date }}" href="{{ comment.url }}">{{ reviewcomment.timestamp | humanize }}</a>
+                        </div>
+                        <div class="text">{{reviewcomment.body | to_html}}</div>
+                    </div>
+                    {{ end }}
+                </div>
+                {{ end }}
+            {{ end }}
+
+
+            {{ current_comment = current_comment + 1 }}
+        </div>
+        {{ end }}
+    {{ end }}
+
+    {{ if scroll_to_last_comment }}
+    <script>
+        function scroll_to_latest_comment() {
+            const comment = {{total_comments}};
+            if (comment > 0) {
+                const element = document.getElementById('comment_' + comment);
+                element.scrollIntoView(false);
+            }
+        };
+
+        document.addEventListener('DOMContentLoaded', scroll_to_latest_comment, false);
+    </script>
+    {{ end }}
+
+</body>
+</html>

@@ -1,0 +1,1141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Accounts_Account" xml:space="preserve">
+    <value>Konto</value>
+    <comment>Account</comment>
+  </data>
+  <data name="Accounts_AuthorizationProblem" xml:space="preserve">
+    <value>Det inträffade ett problem när detta kontot skulle auktoriseras.</value>
+    <comment>There was a problem authorizing this account.</comment>
+  </data>
+  <data name="Accounts_ExportProfile" xml:space="preserve">
+    <value>Exportera profil</value>
+    <comment>Export profile</comment>
+  </data>
+  <data name="Accounts_ImportProfile" xml:space="preserve">
+    <value>Importera profil</value>
+    <comment>Import profile</comment>
+  </data>
+  <data name="Accounts_NoAccounts" xml:space="preserve">
+    <value>Det finns inga konton.</value>
+    <comment>There are no accounts.</comment>
+  </data>
+  <data name="Accounts_NoInternetConnection" xml:space="preserve">
+    <value>Ingen Internetuppkoppling tillgänglig.</value>
+    <comment>No Internet connection.</comment>
+  </data>
+  <data name="Accounts_PleaseSignInAgain" xml:space="preserve">
+    <value>Vänligen logga ut och logga in igen.</value>
+    <comment>Please sign out and sign in again.</comment>
+  </data>
+  <data name="Accounts_ProfileManagementProhibited" xml:space="preserve">
+    <value>Profilhantering inte tillåten</value>
+    <comment>Profile management prohibited</comment>
+  </data>
+  <data name="Accounts_Profiles" xml:space="preserve">
+    <value>Profiler</value>
+    <comment>Profiles</comment>
+  </data>
+  <data name="Accounts_PublicAndPrivateRepositories" xml:space="preserve">
+    <value>Publika och privata repon</value>
+    <comment>Public and private repositories</comment>
+  </data>
+  <data name="Accounts_PublicAndPrivateRepositoriesMorePermissions" xml:space="preserve">
+    <value>Publika och privata repon (kräver mer rättigheter)</value>
+    <comment>Public and private repositories (requires more permissions)</comment>
+  </data>
+  <data name="Accounts_PublicRepositories" xml:space="preserve">
+    <value>Enbart publika repon</value>
+    <comment>Public repositories</comment>
+  </data>
+  <data name="Accounts_PublicRepositoriesOnly" xml:space="preserve">
+    <value>Publika repon</value>
+    <comment>Public repositories only</comment>
+  </data>
+  <data name="Accounts_Review" xml:space="preserve">
+    <value>Granska rättigheter</value>
+    <comment>Review account permissions</comment>
+  </data>
+  <data name="Accounts_SignInToGitHub" xml:space="preserve">
+    <value>Logga in till GitHub...</value>
+    <comment>Sign in to GitHub...</comment>
+  </data>
+  <data name="Accounts_SignOut" xml:space="preserve">
+    <value>Logga ut</value>
+    <comment>Sign out</comment>
+  </data>
+  <data name="Accounts_Title" xml:space="preserve">
+    <value>Konton</value>
+    <comment>Accounts</comment>
+  </data>
+  <data name="Archive_Progress_Archiving" xml:space="preserve">
+    <value>Arkiverar meddelanden...</value>
+    <comment>Archiving notifications...</comment>
+  </data>
+  <data name="Archive_Progress_MarkingAsRead" xml:space="preserve">
+    <value>Markerar meddelanen som lästa...</value>
+    <comment>Marking notifications as read...</comment>
+  </data>
+  <data name="ArchiveAll_Confirmation" xml:space="preserve">
+    <value>Är du säker på att du vill arkivera alla meddelanden i '{0}'?\n\nDenna åtgärd kan inte ångras.</value>
+    <comment>Are you sure that you want to archive all notifications in '{0}'?\n\nThis action cannot be undone.</comment>
+  </data>
+  <data name="ArchiveAll_Ok" xml:space="preserve">
+    <value>Arkivera</value>
+    <comment>Archive</comment>
+  </data>
+  <data name="ArchiveAll_Progress" xml:space="preserve">
+    <value>Arkiverar meddelanden i '{0}'...</value>
+    <comment>Archiving notifications in {0}...</comment>
+  </data>
+  <data name="ArchiveAll_Title" xml:space="preserve">
+    <value>Arkivera allt?</value>
+    <comment>Archive all?</comment>
+  </data>
+  <data name="CreateCategory_CategoryImported" xml:space="preserve">
+    <value>Kategorin har tidigare importerats från '{0}'.</value>
+    <comment>The category was previously imported from '{0}'.</comment>
+  </data>
+  <data name="CreateCategory_CategoryImported_Warning" xml:space="preserve">
+    <value>Ändringar gjorda till denna kategori förloras om en ny import görs.</value>
+    <comment>Changes to this category will be lost if re-importing again.</comment>
+  </data>
+  <data name="CreateCategory_Expression" xml:space="preserve">
+    <value>Uttryck</value>
+    <comment>Expression</comment>
+  </data>
+  <data name="CreateCategory_IncludeMuted" xml:space="preserve">
+    <value>Visa tystade</value>
+    <comment>Include muted</comment>
+  </data>
+  <data name="CreateCategory_Muted" xml:space="preserve">
+    <value>Tysta</value>
+    <comment>Mute</comment>
+  </data>
+  <data name="CreateCategory_Name" xml:space="preserve">
+    <value>Namn</value>
+    <comment>Name</comment>
+  </data>
+  <data name="CreateCategory_ShowTotal" xml:space="preserve">
+    <value>Visa antal meddelanden</value>
+    <comment>Show total count</comment>
+  </data>
+  <data name="CreateCategory_ThisIsAFilter" xml:space="preserve">
+    <value>Detta är ett filter</value>
+    <comment>This is a filter</comment>
+  </data>
+  <data name="CreateCategory_Title_EditCategory" xml:space="preserve">
+    <value>Redigera kategori</value>
+    <comment>Edit category</comment>
+  </data>
+  <data name="CreateCategory_Title_EditFilter" xml:space="preserve">
+    <value>Redigera filter</value>
+    <comment>Edit filter</comment>
+  </data>
+  <data name="CreateCategory_Title_NewCategory" xml:space="preserve">
+    <value>Skapa kategori</value>
+    <comment>Create category</comment>
+  </data>
+  <data name="CreateCategory_Title_NewFilter" xml:space="preserve">
+    <value>Skapa filter</value>
+    <comment>Create filter</comment>
+  </data>
+  <data name="CreateCategory_Upgrade" xml:space="preserve">
+    <value>För att skapa fler, uppgradera till Ghostly Pro.</value>
+    <comment>To create more, upgrade to Ghostly Pro.</comment>
+  </data>
+  <data name="CreateCategory_WhatIsThis" xml:space="preserve">
+    <value>Vad är detta?</value>
+    <comment>What is this?</comment>
+  </data>
+  <data name="CreateRule_Condition" xml:space="preserve">
+    <value>Villkor</value>
+    <comment>Condition</comment>
+  </data>
+  <data name="CreateRule_Condition_Placeholder" xml:space="preserve">
+    <value>Uttryck</value>
+    <comment>Expression</comment>
+  </data>
+  <data name="CreateRule_EditRule" xml:space="preserve">
+    <value>Redigera regel</value>
+    <comment>Edit rule</comment>
+  </data>
+  <data name="CreateRule_MarkAsRead" xml:space="preserve">
+    <value>Markera som läst</value>
+    <comment>Mark as read</comment>
+  </data>
+  <data name="CreateRule_MoveToCategory" xml:space="preserve">
+    <value>Flytta till kategori</value>
+    <comment>Move to category</comment>
+  </data>
+  <data name="CreateRule_Mute" xml:space="preserve">
+    <value>Tysta</value>
+    <comment>Mute</comment>
+  </data>
+  <data name="CreateRule_Name" xml:space="preserve">
+    <value>Namn</value>
+    <comment>Name</comment>
+  </data>
+  <data name="CreateRule_Name_Placeholder" xml:space="preserve">
+    <value>Regelns namn</value>
+    <comment>Name of the rule</comment>
+  </data>
+  <data name="CreateRule_NewRule" xml:space="preserve">
+    <value>Ny regel</value>
+    <comment>New rule</comment>
+  </data>
+  <data name="CreateRule_RuleImported" xml:space="preserve">
+    <value>Regeln har tidigare importerats från '{0}'.</value>
+    <comment>The rule was previously imported from '{0}'.</comment>
+  </data>
+  <data name="CreateRule_RuleImported_Warning" xml:space="preserve">
+    <value>Ändringar gjorda till denna regel förloras om en ny import görs</value>
+    <comment>Changes to this rule will be lost if re-importing again.</comment>
+  </data>
+  <data name="CreateRule_Star" xml:space="preserve">
+    <value>Favoritmarkera</value>
+    <comment>Star</comment>
+  </data>
+  <data name="CreateRule_StopProcessingOtherRules" xml:space="preserve">
+    <value>Sluta behandla andra regler</value>
+    <comment>Stop processing other rules</comment>
+  </data>
+  <data name="CreateRule_WhatIsThis" xml:space="preserve">
+    <value>Vad är detta?</value>
+    <comment>What is this?</comment>
+  </data>
+  <data name="DeleteCategory_CannotDelete_ChangeOrDeleteRule" xml:space="preserve">
+    <value>Ändra eller radera den påverkade regeln för att radera denna kategorin.</value>
+    <comment>Change or delete the affected rules to delete this category.</comment>
+  </data>
+  <data name="DeleteCategory_CannotDelete_Title" xml:space="preserve">
+    <value>Kan inte radera kategori</value>
+    <comment>Cannot delete category</comment>
+  </data>
+  <data name="DeleteCategory_CannotDelete_UsedInFollowingRules" xml:space="preserve">
+    <value>Kategorin '{0}' används av följande regler:</value>
+    <comment>The category '{0}' is used in the following rules:</comment>
+  </data>
+  <data name="DeleteCategory_Category_Confirmation" xml:space="preserve">
+    <value>Är du säker på att du vill radera kategorin '{0}'?\n\nDenna åtgärd kan inte ångras.</value>
+    <comment>Are you sure that you want to delete the category '{0}'?\n\nThis action cannot be undone.</comment>
+  </data>
+  <data name="DeleteCategory_Category_Title" xml:space="preserve">
+    <value>Radera kategori?</value>
+    <comment>Delete category?</comment>
+  </data>
+  <data name="DeleteCategory_Filter_Confirmation" xml:space="preserve">
+    <value>Är du säker på att du vill radera filtret '{0}'?\n\nDenna åtgärd kan inte ångras.</value>
+    <comment>Are you sure that you want to delete the filter '{0}'?\n\nThis action cannot be undone.</comment>
+  </data>
+  <data name="DeleteCategory_Filter_Title" xml:space="preserve">
+    <value>Radera filter?</value>
+    <comment>Delete filter?</comment>
+  </data>
+  <data name="DeleteRule_Confirmation" xml:space="preserve">
+    <value>Är du säker på att du vill radera regeln '{0}'?\n\nDenna åtgärd kan inte ångras.</value>
+    <comment>Are you sure that you want to delete the rule '{0}'?\n\nThis action cannot be undone.</comment>
+  </data>
+  <data name="DeleteRule_Ok" xml:space="preserve">
+    <value>Radera</value>
+    <comment>Delete</comment>
+  </data>
+  <data name="DeleteRule_Title" xml:space="preserve">
+    <value>Radera regel?</value>
+    <comment>Delete rule?</comment>
+  </data>
+  <data name="EmojiPicker_Clear" xml:space="preserve">
+    <value>Rensa</value>
+    <comment>Clear</comment>
+  </data>
+  <data name="ExportProfile_Error" xml:space="preserve">
+    <value>Ett fel inträffade under export av profilen.\nSe Ghostlys logg för mer information.</value>
+    <comment>An error occured while exporting profile.\nSee the log for more information.</comment>
+  </data>
+  <data name="ExportProfile_Progress" xml:space="preserve">
+    <value>Exporterar profil {0}…</value>
+    <comment>Exporting profile {0}…</comment>
+  </data>
+  <data name="General_Cancel" xml:space="preserve">
+    <value>Avbryt</value>
+    <comment>Cancel</comment>
+  </data>
+  <data name="General_Close" xml:space="preserve">
+    <value>Stäng</value>
+    <comment>Close</comment>
+  </data>
+  <data name="General_Create" xml:space="preserve">
+    <value>Skapa</value>
+    <comment>Create</comment>
+  </data>
+  <data name="General_Delete" xml:space="preserve">
+    <value>Radera</value>
+    <comment>Delete</comment>
+  </data>
+  <data name="General_ErrorOccured" xml:space="preserve">
+    <value>Ett fel inträffade</value>
+    <comment>An error occurred</comment>
+  </data>
+  <data name="General_Export" xml:space="preserve">
+    <value>Exportera</value>
+    <comment>Export</comment>
+  </data>
+  <data name="General_Import" xml:space="preserve">
+    <value>Importera</value>
+    <comment>Import</comment>
+  </data>
+  <data name="General_Menu" xml:space="preserve">
+    <value>Meny</value>
+    <comment>Menu</comment>
+  </data>
+  <data name="General_Ok" xml:space="preserve">
+    <value>Ok</value>
+    <comment>Ok</comment>
+  </data>
+  <data name="General_Save" xml:space="preserve">
+    <value>Spara</value>
+    <comment>Save</comment>
+  </data>
+  <data name="GitHub_Broker_SignInUsingExternalBrowser" xml:space="preserve">
+    <value>Logga in med extern webbläsare</value>
+    <comment>Sign in using external browser</comment>
+  </data>
+  <data name="GitHub_FirstSynchronization" xml:space="preserve">
+    <value>Ghostly synkroniserar för första gången. Detta kan ta en liten stund. 😅</value>
+    <comment>Ghostly is synchronizing for the first time. This might take a little while. 😅</comment>
+  </data>
+  <data name="GitHub_Progress" xml:space="preserve">
+    <value>Synkroniserar {0} av {1} GitHub-meddelanden...</value>
+    <comment>Synchronizing {0} of {1} GitHub notifications...</comment>
+  </data>
+  <data name="GitHub_Progress_Unread" xml:space="preserve">
+    <value>Synkroniserar olästa meddelanden...</value>
+    <comment>Synchronizing unread items...</comment>
+  </data>
+  <data name="GitHub_RateLimitExceeded" xml:space="preserve">
+    <value>Vi överskred antalet tillåtna API-anrop mot GitHub 😢.\nVi kommer inte kunna synkronisera igen innan {0}.</value>
+    <comment>We've exceeded the GitHub API rate limit 😢.\nWe won't be able to synchronize until {0}.</comment>
+  </data>
+  <data name="GitHub_Toast_NewNotification_Title" xml:space="preserve">
+    <value>Nytt GitHub-meddelande</value>
+    <comment>New GitHub notification</comment>
+  </data>
+  <data name="GitHub_Toast_NewNotifications_Body" xml:space="preserve">
+    <value>{0} nya meddelanden</value>
+    <comment>{0} new notifications available.</comment>
+  </data>
+  <data name="GitHub_Toast_NewNotifications_Title" xml:space="preserve">
+    <value>Nya GitHub-meddelanden</value>
+    <comment>New GitHub notifications</comment>
+  </data>
+  <data name="ImportProfile_Progress" xml:space="preserve">
+    <value>Importerar profil {0}…</value>
+    <comment>Importing profile {0}…</comment>
+  </data>
+  <data name="Main_Archive" xml:space="preserve">
+    <value>Arkivera</value>
+    <comment>Archive</comment>
+  </data>
+  <data name="Main_Command_Archive" xml:space="preserve">
+    <value>Arkivera</value>
+    <comment>Archive</comment>
+  </data>
+  <data name="Main_Command_MarkAsRead" xml:space="preserve">
+    <value>Markera som läst</value>
+    <comment>Mark as read</comment>
+  </data>
+  <data name="Main_Command_Move" xml:space="preserve">
+    <value>Flytta</value>
+    <comment>Move</comment>
+  </data>
+  <data name="Main_MarkAsRead" xml:space="preserve">
+    <value>Markera som läst</value>
+    <comment>Mark as read</comment>
+  </data>
+  <data name="Main_Move" xml:space="preserve">
+    <value>Flytta</value>
+    <comment>Move</comment>
+  </data>
+  <data name="Main_Mute" xml:space="preserve">
+    <value>Tysta</value>
+    <comment>Mute</comment>
+  </data>
+  <data name="Main_NoNotificationSelected" xml:space="preserve">
+    <value>Inget meddelande valt</value>
+    <comment>No notification selected</comment>
+  </data>
+  <data name="Main_OpenInBrowser" xml:space="preserve">
+    <value>Öppna i webbläsare</value>
+    <comment>Open in browser</comment>
+  </data>
+  <data name="Main_SearchEverywhere" xml:space="preserve">
+    <value>Sök överallt</value>
+    <comment>Search everywhere</comment>
+  </data>
+  <data name="Main_SearchInCategory" xml:space="preserve">
+    <value>Sök i {0}</value>
+    <comment>Search in {0}</comment>
+  </data>
+  <data name="Main_Share" xml:space="preserve">
+    <value>Dela...</value>
+    <comment>Share...</comment>
+  </data>
+  <data name="Main_ShareGitHubLink" xml:space="preserve">
+    <value>Dela länk till GitHub-meddelande</value>
+    <comment>Share link to GitHub item</comment>
+  </data>
+  <data name="Main_Star" xml:space="preserve">
+    <value>Favoritmarkera</value>
+    <comment>Star</comment>
+  </data>
+  <data name="Main_Synchronize" xml:space="preserve">
+    <value>Synkronisera</value>
+    <comment>Synchronize</comment>
+  </data>
+  <data name="Main_Unmute" xml:space="preserve">
+    <value>Aktivera igen</value>
+    <comment>Unmute</comment>
+  </data>
+  <data name="Main_Unstar" xml:space="preserve">
+    <value>Ta bort favoritmarkering</value>
+    <comment>Unstar</comment>
+  </data>
+  <data name="Main_UpdateItem" xml:space="preserve">
+    <value>Uppdatera</value>
+    <comment>Update item</comment>
+  </data>
+  <data name="MarkAllAsRead_Confirmation" xml:space="preserve">
+    <value>Är du säker på att du vill markera alla meddelanden i '{0}' som lästa?\n\nDenna åtgärd kan inte ångras.</value>
+    <comment>Are you sure that you want to mark all notifications in '{0}' as read?\n\nThis action cannot be undone.</comment>
+  </data>
+  <data name="MarkAllAsRead_Ok" xml:space="preserve">
+    <value>Markera alla som lästa</value>
+    <comment>Mark all as read</comment>
+  </data>
+  <data name="MarkAllAsRead_Progress" xml:space="preserve">
+    <value>Markerar alla meddelanden i '{0}' som lästa...</value>
+    <comment>Marking all notifications in {0} as read...</comment>
+  </data>
+  <data name="MarkAllAsRead_Title" xml:space="preserve">
+    <value>Markera alla som lästa?</value>
+    <comment>Mark all as read?</comment>
+  </data>
+  <data name="MarkAsRead_Progress" xml:space="preserve">
+    <value>Markerar {0} meddelanden som lästa...</value>
+    <comment>Marking {0} notifications as read...</comment>
+  </data>
+  <data name="Move_Ok" xml:space="preserve">
+    <value>Flytta</value>
+    <comment>Move</comment>
+  </data>
+  <data name="Move_Progress" xml:space="preserve">
+    <value>Flyttar {0} meddelanden till '{1}'...</value>
+    <comment>Moving {0} notifications to {1}...</comment>
+  </data>
+  <data name="Move_Title_Plural" xml:space="preserve">
+    <value>Flytta meddelanden</value>
+    <comment>Move notifications</comment>
+  </data>
+  <data name="Move_Title_Singular" xml:space="preserve">
+    <value>Flytta meddelande</value>
+    <comment>Move notification</comment>
+  </data>
+  <data name="NewProfile_Placeholder" xml:space="preserve">
+    <value>Profilnamn</value>
+    <comment>Profile name</comment>
+  </data>
+  <data name="NewProfile_Title" xml:space="preserve">
+    <value>Skapa ny profil</value>
+    <comment>Create new profile</comment>
+  </data>
+  <data name="Query_Constant" xml:space="preserve">
+    <value>Konstant</value>
+    <comment>Constant</comment>
+  </data>
+  <data name="Query_Error_NeedHelp" xml:space="preserve">
+    <value>Behöver du hjälp?</value>
+    <comment>Need help?</comment>
+  </data>
+  <data name="Query_Error_Subtitle" xml:space="preserve">
+    <value>Något är fel med frågan...</value>
+    <comment>Something is wrong with the query...</comment>
+  </data>
+  <data name="Query_Error_Title" xml:space="preserve">
+    <value>Hoppsan!</value>
+    <comment>Oh no!</comment>
+  </data>
+  <data name="Query_Keyword" xml:space="preserve">
+    <value>Nyckelord</value>
+    <comment>Keyword</comment>
+  </data>
+  <data name="Query_Operator" xml:space="preserve">
+    <value>Operator</value>
+    <comment>Operator</comment>
+  </data>
+  <data name="Query_Property" xml:space="preserve">
+    <value>Egenskap</value>
+    <comment>Property</comment>
+  </data>
+  <data name="Query_Results_None" xml:space="preserve">
+    <value>Inga träffar</value>
+    <comment>No results found</comment>
+  </data>
+  <data name="Query_Results_Plural" xml:space="preserve">
+    <value>{0} träffar</value>
+    <comment>{0} results</comment>
+  </data>
+  <data name="Query_Results_Singular" xml:space="preserve">
+    <value>{0} träff</value>
+    <comment>{0} result</comment>
+  </data>
+  <data name="Query_Type_Boolean" xml:space="preserve">
+    <value>Boolesk</value>
+    <comment>Boolean</comment>
+  </data>
+  <data name="Query_Type_Integer" xml:space="preserve">
+    <value>Heltal</value>
+    <comment>Integer</comment>
+  </data>
+  <data name="Query_Type_String" xml:space="preserve">
+    <value>Text</value>
+    <comment>String</comment>
+  </data>
+  <data name="Query_Type_Unknown" xml:space="preserve">
+    <value>Okänd typ</value>
+    <comment>Unknown type</comment>
+  </data>
+  <data name="Query_Type_Username" xml:space="preserve">
+    <value>Användarnamn</value>
+    <comment>Username</comment>
+  </data>
+  <data name="RuleProcessor_Progress" xml:space="preserve">
+    <value>Kör regler för kategori '{0}'...</value>
+    <comment>Running rules for category '{0}'...</comment>
+  </data>
+  <data name="RuleProcessor_Progress_Single" xml:space="preserve">
+    <value>Kör regel '{0}' för kategory '{1}'...</value>
+    <comment>Running rule '{0}' for category '{1}'...</comment>
+  </data>
+  <data name="Rules_AddRule" xml:space="preserve">
+    <value>Lägg till regel...</value>
+    <comment>Add new rule...</comment>
+  </data>
+  <data name="Rules_Description_And" xml:space="preserve">
+    <value>Och</value>
+    <comment>And</comment>
+  </data>
+  <data name="Rules_Description_Contains" xml:space="preserve">
+    <value>Innehåller</value>
+    <comment>Contains</comment>
+  </data>
+  <data name="Rules_Description_DoNothing" xml:space="preserve">
+    <value>Gör ingenting</value>
+    <comment>Do nothing</comment>
+  </data>
+  <data name="Rules_Description_False" xml:space="preserve">
+    <value>Falskt</value>
+    <comment>False</comment>
+  </data>
+  <data name="Rules_Description_If" xml:space="preserve">
+    <value>Om</value>
+    <comment>If</comment>
+  </data>
+  <data name="Rules_Description_Is" xml:space="preserve">
+    <value>Är</value>
+    <comment>Is</comment>
+  </data>
+  <data name="Rules_Description_IsGreaterThan" xml:space="preserve">
+    <value>Är större än</value>
+    <comment>Is greater than</comment>
+  </data>
+  <data name="Rules_Description_IsGreaterThanOrEqualTo" xml:space="preserve">
+    <value>Är större än eller lika med</value>
+    <comment>Is greater than or equal to</comment>
+  </data>
+  <data name="Rules_Description_IsLessThan" xml:space="preserve">
+    <value>Är mindre än</value>
+    <comment>Is less than</comment>
+  </data>
+  <data name="Rules_Description_IsLessThanOrEqualTo" xml:space="preserve">
+    <value>Är mindre än eller lika med</value>
+    <comment>Is less than or equal to</comment>
+  </data>
+  <data name="Rules_Description_IsNot" xml:space="preserve">
+    <value>Inte</value>
+    <comment>Is not</comment>
+  </data>
+  <data name="Rules_Description_MarkItAsRead" xml:space="preserve">
+    <value>Markera som läst</value>
+    <comment>Mark it as read</comment>
+  </data>
+  <data name="Rules_Description_MoveItTo" xml:space="preserve">
+    <value>Flytta till '{0}'</value>
+    <comment>Move it to '{0}'</comment>
+  </data>
+  <data name="Rules_Description_MuteIt" xml:space="preserve">
+    <value>Tysta den</value>
+    <comment>Mute it</comment>
+  </data>
+  <data name="Rules_Description_Null" xml:space="preserve">
+    <value>Null</value>
+    <comment>Null</comment>
+  </data>
+  <data name="Rules_Description_Or" xml:space="preserve">
+    <value>Eller </value>
+    <comment>Or</comment>
+  </data>
+  <data name="Rules_Description_StarIt" xml:space="preserve">
+    <value>Favoritmarkera den</value>
+    <comment>Star it</comment>
+  </data>
+  <data name="Rules_Description_StopsProcessing" xml:space="preserve">
+    <value>Detta slutar även behandla andra regler. </value>
+    <comment>This also stops processing of other rules.</comment>
+  </data>
+  <data name="Rules_Description_Then" xml:space="preserve">
+    <value>Så</value>
+    <comment>Then</comment>
+  </data>
+  <data name="Rules_Description_True" xml:space="preserve">
+    <value>Sant</value>
+    <comment>True</comment>
+  </data>
+  <data name="Rules_MaximumReached" xml:space="preserve">
+    <value>Maximalt antar regler har nåtts. För att skapa fler regler, uppgradera till Ghostly Pro.</value>
+    <comment>Maximum number of rules reached. To create more rules, upgrade to Ghostly Pro.</comment>
+  </data>
+  <data name="Rules_NoRules" xml:space="preserve">
+    <value>Det finns inga regler.</value>
+    <comment>There are no rules.</comment>
+  </data>
+  <data name="Rules_RunRule_Title" xml:space="preserve">
+    <value>Kör '{0}'</value>
+    <comment>Run '{0}'</comment>
+  </data>
+  <data name="Rules_RunRules" xml:space="preserve">
+    <value>Kör regler...</value>
+    <comment>Run rules...</comment>
+  </data>
+  <data name="Rules_RunRules_Ok" xml:space="preserve">
+    <value>Kör</value>
+    <comment>Run</comment>
+  </data>
+  <data name="Rules_RunRules_Title" xml:space="preserve">
+    <value>Kör alla regler</value>
+    <comment>Run all rules</comment>
+  </data>
+  <data name="Rules_Title" xml:space="preserve">
+    <value>Regler</value>
+    <comment>Rules</comment>
+  </data>
+  <data name="SelectProfile_CreateNewProfile" xml:space="preserve">
+    <value>Skapa ny profil</value>
+    <comment>Create new profile</comment>
+  </data>
+  <data name="SelectProfile_ErrorLoading" xml:space="preserve">
+    <value>Ett fel inträffade när profiler laddades</value>
+    <comment>There was a problem loading account profiles</comment>
+  </data>
+  <data name="SelectProfile_Loading" xml:space="preserve">
+    <value>Laddar profiler…</value>
+    <comment>Loading profiles…</comment>
+  </data>
+  <data name="SelectProfile_Title_Export" xml:space="preserve">
+    <value>Exportera Ghostly-profil</value>
+    <comment>Export Ghostly profile</comment>
+  </data>
+  <data name="SelectProfile_Title_Import" xml:space="preserve">
+    <value>Importera Ghostly-profil</value>
+    <comment>Import Ghostly profile</comment>
+  </data>
+  <data name="Settings_About" xml:space="preserve">
+    <value>Om</value>
+    <comment>About</comment>
+  </data>
+  <data name="Settings_AggregateToasts" xml:space="preserve">
+    <value>Samla ihop meddelanden till en popup</value>
+    <comment>Aggregate notifications into a single toast</comment>
+  </data>
+  <data name="Settings_AllowSynchronizationOnMeteredConnections" xml:space="preserve">
+    <value>Tillåt synkronisering över anslutningar med datapris</value>
+    <comment>Allow synchronization on metered connections</comment>
+  </data>
+  <data name="Settings_AllowTelemetry" xml:space="preserve">
+    <value>Tillåt Ghostly att skicka telemetri om fel och allmänt användande.</value>
+    <comment>Allow Ghostly to send telemetry about errors and general usage.</comment>
+  </data>
+  <data name="Settings_AllowTelemetry_Anonymous" xml:space="preserve">
+    <value>All information som skickas är anonym och innehåller ingen personlig information eller data.</value>
+    <comment>All information is anonymous and does not contain any personal data.</comment>
+  </data>
+  <data name="Settings_AutomaticallyMarkAsRead" xml:space="preserve">
+    <value>Markera meddelanden automatiskt som lästa</value>
+    <comment>Automatically mark read notifications as read</comment>
+  </data>
+  <data name="Settings_Avatars" xml:space="preserve">
+    <value>Profilbilder</value>
+    <comment>Avatars</comment>
+  </data>
+  <data name="Settings_BackgroundSynchronization" xml:space="preserve">
+    <value>Bakgrundssynkronisering</value>
+    <comment>Background Synchronization</comment>
+  </data>
+  <data name="Settings_BackgroundTasksNotAllowed" xml:space="preserve">
+    <value>Bakgrundsaktiviteter är inte tillåtna</value>
+    <comment>Background tasks are not allowed.</comment>
+  </data>
+  <data name="Settings_Badge" xml:space="preserve">
+    <value>Aktivitetsikon</value>
+    <comment>Badge</comment>
+  </data>
+  <data name="Settings_ClickLibrary" xml:space="preserve">
+    <value>Klicka på ett bibliotek nedan för att se dess licensavtal.</value>
+    <comment>Click on a library below to see its license agreement.</comment>
+  </data>
+  <data name="Settings_Comments" xml:space="preserve">
+    <value>Kommentarer</value>
+    <comment>Comments</comment>
+  </data>
+  <data name="Settings_CreatedBy" xml:space="preserve">
+    <value>Skapad av</value>
+    <comment>Created by</comment>
+  </data>
+  <data name="Settings_CurrentLanguage" xml:space="preserve">
+    <value>Valt språk</value>
+    <comment>Current language</comment>
+  </data>
+  <data name="Settings_CurrentTheme" xml:space="preserve">
+    <value>Aktuellt tema</value>
+    <comment>Current theme</comment>
+  </data>
+  <data name="Settings_DisableAutomaticStartup" xml:space="preserve">
+    <value>Starta inte med Windows</value>
+    <comment>Disable automatic startup</comment>
+  </data>
+  <data name="Settings_EnableAutomaticStartup" xml:space="preserve">
+    <value>Starta med Windows</value>
+    <comment>Enable automatic startup</comment>
+  </data>
+  <data name="Settings_EnableBackgroundSynchronization" xml:space="preserve">
+    <value>Tillåt bakgrundsynkronisering</value>
+    <comment>Enable background synchronization</comment>
+  </data>
+  <data name="Settings_FollowOnTwitter" xml:space="preserve">
+    <value>Följ Ghostly på Twitter</value>
+    <comment>Follow Ghostly on Twitter</comment>
+  </data>
+  <data name="Settings_General" xml:space="preserve">
+    <value>Allmänt</value>
+    <comment>General</comment>
+  </data>
+  <data name="Settings_Images" xml:space="preserve">
+    <value>Bilder</value>
+    <comment>Images</comment>
+  </data>
+  <data name="Settings_Language" xml:space="preserve">
+    <value>Språk</value>
+    <comment>Language</comment>
+  </data>
+  <data name="Settings_Logging" xml:space="preserve">
+    <value>Loggning</value>
+    <comment>Logging</comment>
+  </data>
+  <data name="Settings_LogLevel" xml:space="preserve">
+    <value>Loggnivå</value>
+    <comment>Log level</comment>
+  </data>
+  <data name="Settings_MarkMutedAsRead" xml:space="preserve">
+    <value>Markera tystade som lästa</value>
+    <comment>Mark muted as read</comment>
+  </data>
+  <data name="Settings_Metered" xml:space="preserve">
+    <value>Anslutningar med datapris</value>
+    <comment>Metered Connections</comment>
+  </data>
+  <data name="Settings_Notifications" xml:space="preserve">
+    <value>Meddelanden</value>
+    <comment>Notifications</comment>
+  </data>
+  <data name="Settings_NotSure" xml:space="preserve">
+    <value>Inte säker?</value>
+    <comment>Not sure?</comment>
+  </data>
+  <data name="Settings_Open_Source" xml:space="preserve">
+    <value>Öppen källkod</value>
+    <comment>Open Source</comment>
+  </data>
+  <data name="Settings_OpenLogFolder" xml:space="preserve">
+    <value>Öppna loggmapp...</value>
+    <comment>Open log folder...</comment>
+  </data>
+  <data name="Settings_Personalize" xml:space="preserve">
+    <value>Anpassa</value>
+    <comment>Personalize</comment>
+  </data>
+  <data name="Settings_PreferCachedAvatars" xml:space="preserve">
+    <value>Föredra ej cachelagrade profilbilder  med högre kvalitet när Internetuppkoppling finns</value>
+    <comment>Prefer non-cached avatars with higher quality when online</comment>
+  </data>
+  <data name="Settings_PreferCachedAvatars_Explanation" xml:space="preserve">
+    <value>(Detta respekterar inställningar för anslutningar med datapris)</value>
+    <comment>(This respects metered connection settings)</comment>
+  </data>
+  <data name="Settings_Privacy" xml:space="preserve">
+    <value>Integritet</value>
+    <comment>Privacy</comment>
+  </data>
+  <data name="Settings_PrivacyStatement" xml:space="preserve">
+    <value>Sekretesspolicy</value>
+    <comment>Privacy statement</comment>
+  </data>
+  <data name="Settings_Reading" xml:space="preserve">
+    <value>Läsa</value>
+    <comment>Reading</comment>
+  </data>
+  <data name="Settings_ReadThePrivacyStatement" xml:space="preserve">
+    <value>Läs sekretesspolicyn</value>
+    <comment>Read the privacy statement</comment>
+  </data>
+  <data name="Settings_ReportIssue" xml:space="preserve">
+    <value>Rapportera ett fel eller föreslå ny funktionalitet</value>
+    <comment>Report a bug or suggest a feature</comment>
+  </data>
+  <data name="Settings_RestartRequired" xml:space="preserve">
+    <value>Du måste starta om Ghostly för att ändringen ska få effekt.</value>
+    <comment>You need to restart Ghostly for the change to take effect.</comment>
+  </data>
+  <data name="Settings_ScrollToLastComment" xml:space="preserve">
+    <value>Rulla till senaste kommentaren</value>
+    <comment>Scroll to last comment</comment>
+  </data>
+  <data name="Settings_ShowAvatars" xml:space="preserve">
+    <value>Visa profilbilder</value>
+    <comment>Show avatar for users</comment>
+  </data>
+  <data name="Settings_ShowNumberOfUnreadNotifications" xml:space="preserve">
+    <value>Via antal olästa meddelanden</value>
+    <comment>Show number of unread notifications</comment>
+  </data>
+  <data name="Settings_ShowToast" xml:space="preserve">
+    <value>Visa popup för nya meddelanden</value>
+    <comment>Show toast for new notifications</comment>
+  </data>
+  <data name="Settings_Startup" xml:space="preserve">
+    <value>Starta med Windows</value>
+    <comment>Start with Windows</comment>
+  </data>
+  <data name="Settings_StartupStateDisabled" xml:space="preserve">
+    <value>Automatisk uppstart är inaktiverad.</value>
+    <comment>Automatic startup is disabled.</comment>
+  </data>
+  <data name="Settings_StartupStateDisabledByPolicy" xml:space="preserve">
+    <value>Automatisk uppstart är inaktiverad via grupp-princip.</value>
+    <comment>Automatic startup is disabled by group policy.</comment>
+  </data>
+  <data name="Settings_StartupStateDisabledByUser" xml:space="preserve">
+    <value>Automatisk uppstart är inaktiverad av användare. Du kan ändra detta i uppstartsfliken i aktivitetshanteraren.</value>
+    <comment>Automatic startup is disabled by user. You can enable this in the Startup tab in Task Manager.</comment>
+  </data>
+  <data name="Settings_StartupStateEnabled" xml:space="preserve">
+    <value>Automatisk uppstart är aktiverad.</value>
+    <comment>Automatic startup is enabled.</comment>
+  </data>
+  <data name="Settings_StartupStateEnabledByPolicy" xml:space="preserve">
+    <value>Automatisk uppstart är aktiverad via grupp-princip.</value>
+    <comment>Automatic startup is enabled by group policy.</comment>
+  </data>
+  <data name="Settings_StartupStateError" xml:space="preserve">
+    <value>Ett fel inträffade när uppstartstillstånd hämtades.</value>
+    <comment>An error occured while retrieving startup state.</comment>
+  </data>
+  <data name="Settings_Synchronization" xml:space="preserve">
+    <value>Synkronisering</value>
+    <comment>Synchronization</comment>
+  </data>
+  <data name="Settings_Synchronization_General" xml:space="preserve">
+    <value>Allmänt</value>
+    <comment>General</comment>
+  </data>
+  <data name="Settings_SynchronizeAvatarsForOfflineUse" xml:space="preserve">
+    <value>Synkronisera profilbilder för frånkopplat läge</value>
+    <comment>Synchronize avatars for offline use</comment>
+  </data>
+  <data name="Settings_SynchronizeUnreadState" xml:space="preserve">
+    <value>Synkronisera olästa</value>
+    <comment>Synchronize unread state</comment>
+  </data>
+  <data name="Settings_Telemetry" xml:space="preserve">
+    <value>Telemetri</value>
+    <comment>Telemetry</comment>
+  </data>
+  <data name="Settings_Thanks" xml:space="preserve">
+    <value>Tack till</value>
+    <comment>Special Thanks</comment>
+  </data>
+  <data name="Settings_Theme" xml:space="preserve">
+    <value>Tema</value>
+    <comment>Theme</comment>
+  </data>
+  <data name="Settings_Toasts" xml:space="preserve">
+    <value>Popups</value>
+    <comment>Toasts</comment>
+  </data>
+  <data name="Settings_VisitWebsite" xml:space="preserve">
+    <value>Besök hemsidan</value>
+    <comment>Visit the website</comment>
+  </data>
+  <data name="Shell_Accounts" xml:space="preserve">
+    <value>Konton</value>
+    <comment>Accounts</comment>
+  </data>
+  <data name="Shell_Archive" xml:space="preserve">
+    <value>Arkiv</value>
+    <comment>Archive</comment>
+  </data>
+  <data name="Shell_ArchiveAll" xml:space="preserve">
+    <value>Arkivera alla...</value>
+    <comment>Archive all...</comment>
+  </data>
+  <data name="Shell_DeleteCategory" xml:space="preserve">
+    <value>Radera kategori...</value>
+    <comment>Delete category...</comment>
+  </data>
+  <data name="Shell_DeleteFilter" xml:space="preserve">
+    <value>Radera filter...</value>
+    <comment>Delete filter...</comment>
+  </data>
+  <data name="Shell_EditCategory" xml:space="preserve">
+    <value>Redigera kategori...</value>
+    <comment>Edit category...</comment>
+  </data>
+  <data name="Shell_EditFilter" xml:space="preserve">
+    <value>Redigera filter...</value>
+    <comment>Edit filter...</comment>
+  </data>
+  <data name="Shell_Inbox" xml:space="preserve">
+    <value>Inkorg</value>
+    <comment>Inbox</comment>
+  </data>
+  <data name="Shell_MarkAllAsRead" xml:space="preserve">
+    <value>Markera alla som lästa...</value>
+    <comment>Mark all as read...</comment>
+  </data>
+  <data name="Shell_Muted" xml:space="preserve">
+    <value>Ignorerade</value>
+    <comment>Muted</comment>
+  </data>
+  <data name="Shell_NewCategory" xml:space="preserve">
+    <value>Ny kategori</value>
+    <comment>New category...</comment>
+  </data>
+  <data name="Shell_Rules" xml:space="preserve">
+    <value>Regler</value>
+    <comment>Rules</comment>
+  </data>
+  <data name="Shell_Search" xml:space="preserve">
+    <value>Sök</value>
+    <comment>Search</comment>
+  </data>
+  <data name="Shell_Settings" xml:space="preserve">
+    <value>Inställningar</value>
+    <comment>Settings</comment>
+  </data>
+  <data name="Shell_Starred" xml:space="preserve">
+    <value>Favoriter</value>
+    <comment>Starred</comment>
+  </data>
+  <data name="Synchronization_DisabledBecauseOfMeteredConnection" xml:space="preserve">
+    <value>⚠ Synkronisering är inaktiverad för att du nuvarande är uppkopplad på en anslutning med datapris.\nDu kan aktivera synkronisering över anslutningar med datapris i Ghostlys inställningar.</value>
+    <comment>⚠ Synchronization is disabled since you're on a metered connection.\nYou can enable synchronization on a metered connection in Ghostly's settings.</comment>
+  </data>
+  <data name="Synchronization_Local_Status" xml:space="preserve">
+    <value>Synkroniserar lokala ändringar...</value>
+    <comment>Synchronizing local state...</comment>
+  </data>
+  <data name="Synchronization_Started" xml:space="preserve">
+    <value>Synkronisering startad...</value>
+    <comment>Synchronization started...</comment>
+  </data>
+  <data name="Template_Action_Approved" xml:space="preserve">
+    <value>Godkände detta</value>
+    <comment>Approved</comment>
+  </data>
+  <data name="Template_Action_Commented" xml:space="preserve">
+    <value>Kommenterade</value>
+    <comment>Commented</comment>
+  </data>
+  <data name="Template_Action_Dismissed" xml:space="preserve">
+    <value>Avvisade detta</value>
+    <comment>Dismissed</comment>
+  </data>
+  <data name="Template_Action_MergedThis" xml:space="preserve">
+    <value>Mergade detta</value>
+    <comment>Merged this</comment>
+  </data>
+  <data name="Template_Action_Pending" xml:space="preserve">
+    <value>Granskar detta (inte inskickat)</value>
+    <comment>Is reviewing (not submitted)</comment>
+  </data>
+  <data name="Template_Action_RequestedChanges" xml:space="preserve">
+    <value>Föreslog ändringar på detta</value>
+    <comment>Requested changes</comment>
+  </data>
+  <data name="Template_Action_Reviewed" xml:space="preserve">
+    <value>Granskade detta</value>
+    <comment>Reviewed</comment>
+  </data>
+  <data name="Template_Action_Unknown" xml:space="preserve">
+    <value>?</value>
+    <comment>?</comment>
+  </data>
+  <data name="Template_Authored" xml:space="preserve">
+    <value>Skapade detta</value>
+    <comment>Authored</comment>
+  </data>
+  <data name="Template_DiscussionOpenInBrowser" xml:space="preserve">
+    <value>Öppna diskussioner för repo i webbläsare</value>
+    <comment>Open discussions for repository in browser</comment>
+  </data>
+  <data name="Template_DiscussionUpdated" xml:space="preserve">
+    <value>Uppdaterad</value>
+    <comment>Updated</comment>
+  </data>
+  <data name="Template_NoDescriptionProvided" xml:space="preserve">
+    <value>Ingen beskrivning finns.</value>
+    <comment>No description provided.</comment>
+  </data>
+  <data name="Template_ReviewedAnd" xml:space="preserve">
+    <value>Granskade och</value>
+    <comment>Reviewed and</comment>
+  </data>
+  <data name="Template_SecurityVulnerabilityReported" xml:space="preserve">
+    <value>Säkerhetsrisk rapporterad</value>
+    <comment>Security vulnerability reported</comment>
+  </data>
+  <data name="Template_Wrote" xml:space="preserve">
+    <value>Skrev</value>
+    <comment>Wrote</comment>
+  </data>
+  <data name="Time_DaysAgo" xml:space="preserve">
+    <value>För {0} dagar sedan</value>
+    <comment>{0} days ago</comment>
+  </data>
+  <data name="Time_HoursAgo" xml:space="preserve">
+    <value>För {0} timmar sedan</value>
+    <comment>{0} hours ago</comment>
+  </data>
+  <data name="Time_MinutesAgo" xml:space="preserve">
+    <value>För {0} minuter sedan</value>
+    <comment>{0} minutes ago</comment>
+  </data>
+  <data name="Time_MonthsAgo" xml:space="preserve">
+    <value>För {0} månader sedan</value>
+    <comment>{0} months ago</comment>
+  </data>
+  <data name="Time_OneDayAgo" xml:space="preserve">
+    <value>För en dag sedan</value>
+    <comment>A day ago</comment>
+  </data>
+  <data name="Time_OneHourAgo" xml:space="preserve">
+    <value>För en timme sedan</value>
+    <comment>An hour ago</comment>
+  </data>
+  <data name="Time_OneMinuteAgo" xml:space="preserve">
+    <value>För en minut sedan</value>
+    <comment>A minute ago</comment>
+  </data>
+  <data name="Time_OneMonthAgo" xml:space="preserve">
+    <value>För en månad sedan</value>
+    <comment>A month ago</comment>
+  </data>
+  <data name="Time_OneSecondAgo" xml:space="preserve">
+    <value>För en sekund sedan</value>
+    <comment>A second ago</comment>
+  </data>
+  <data name="Time_OneYearAgo" xml:space="preserve">
+    <value>För ett år sedan</value>
+    <comment>A year ago</comment>
+  </data>
+  <data name="Time_SecondsAgo" xml:space="preserve">
+    <value>För {0} sekunder sedan</value>
+    <comment>{0} seconds ago</comment>
+  </data>
+  <data name="Time_YearsAgo" xml:space="preserve">
+    <value>För {0} år sedan</value>
+    <comment>{0} years ago</comment>
+  </data>
+  <data name="Time_Yesterday" xml:space="preserve">
+    <value>Igår</value>
+    <comment>Yesterday</comment>
+  </data>
+  <data name="WhatsNew_GhostlyWasUpdated" xml:space="preserve">
+    <value>Ghostly uppgraderades till version {0}.</value>
+    <comment>Ghostly was updated to version {0}.</comment>
+  </data>
+  <data name="WhatsNew_Title" xml:space="preserve">
+    <value>Ny version installerad!</value>
+    <comment>New version installed!</comment>
+  </data>
+  <data name="WhatsNew_ViewReleaseNotes" xml:space="preserve">
+    <value>Läs om vad som ändrats</value>
+    <comment>View release notes</comment>
+  </data>
+</root>

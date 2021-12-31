@@ -1,0 +1,89 @@
+<controls:ContentDialogView
+    x:Class="Ghostly.Uwp.Views.CreateCategoryView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:controls="using:Ghostly.Uwp.Controls"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:strings="using:Ghostly.Uwp.Strings"
+    mc:Ignorable="d"
+    d:DesignHeight="350"
+    d:DesignWidth="450"
+    DefaultButton="Primary"
+    PrimaryButtonText="{Binding ButtonText, Mode=OneWay}"
+    IsPrimaryButtonEnabled="{Binding IsValid, Mode=OneWay}"
+    FullSizeDesired="false"
+    CloseButtonText="{strings:Localize Key=General_Cancel}">
+
+    <!-- Header -->
+    <controls:ContentDialogView.TitleTemplate>
+        <DataTemplate>
+            <TextBlock Text="{Binding Title, Mode=OneWay}" />
+        </DataTemplate>
+    </controls:ContentDialogView.TitleTemplate>
+
+    <!-- Content -->
+    <StackPanel>
+
+        <!-- Icon and name -->
+        <Grid Margin="0,15,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <controls:EmojiPicker Grid.Column="0" Margin="0,0,0,0"
+                                  DefaultGlyph="{Binding DefaultGlyph, Mode=OneWay}"
+                                  Selected="{Binding Emoji, Mode=TwoWay}"/>
+            <TextBox Grid.Column="1" Width="250" PlaceholderText="{strings:Localize Key=CreateCategory_Name}"
+                     VerticalContentAlignment="Center"
+                     Margin="15,-1,0,0" Text="{Binding Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+        </Grid>
+       
+        <!-- "This is a filter" -->
+        <CheckBox Content="{strings:Localize Key=CreateCategory_ThisIsAFilter}"
+                  IsChecked="{Binding IsFilter, Mode=TwoWay}"
+                  Margin="0,15,0,0"/>
+
+        <!-- "Expression" -->
+        <controls:QueryControl PlaceholderText="{strings:Localize Key=CreateCategory_Expression}"
+                               Compile="False"
+                               IsEnabled="{Binding IsFilter, Mode=TwoWay}"
+                               Height="94"
+                               Text="{Binding Expression, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+
+        <!-- Expression error -->
+        <TextBlock Text="{Binding ExpressionError, Mode=OneWay}"
+                   Foreground="Red"
+                   Visibility="{Binding HasExpressionError, Mode=OneWay}" />
+
+        <!-- "What is this?" -->
+        <HyperlinkButton HorizontalAlignment="Right"
+                             NavigateUri="https://spectresystems.se/ghostly/docs/query"
+                             Content="{strings:Localize Key=CreateCategory_WhatIsThis}" />
+
+        <!-- "Show total count" -->
+        <CheckBox Content="{strings:Localize Key=CreateCategory_ShowTotal}"
+                  IsChecked="{Binding ShowTotal, Mode=TwoWay}"
+                  Margin="0,10,0,0"/>
+
+        <!-- "Muted" -->
+        <CheckBox Content="{strings:Localize Key=CreateCategory_Muted}"
+                  IsChecked="{Binding Muted, Mode=TwoWay}"
+                  Margin="0,0,0,0"/>
+
+        <!-- "Include Muted" -->
+        <CheckBox Grid.Column="0"
+                      Content="{strings:Localize Key=CreateCategory_IncludeMuted}"
+                      IsChecked="{Binding IncludeMuted, Mode=TwoWay}"
+                      IsEnabled="{Binding IsFilter, Mode=TwoWay}"
+                      Margin="0,0,0,0"/>
+        
+        <!-- Imported category -->
+        <StackPanel Visibility="{Binding ImportedInfo, Converter={StaticResource VisibleWhenNotEmpty}}"
+                    Margin="0,10,0,0">
+            <TextBlock Text="{Binding ImportedInfo}" Foreground="{ThemeResource DimmedText}" />
+            <TextBlock Text="{strings:Localize Key=CreateCategory_CategoryImported_Warning}" Foreground="{ThemeResource DimmedText}" />
+        </StackPanel>
+
+    </StackPanel>
+</controls:ContentDialogView>

@@ -1,0 +1,31 @@
+<controls:ContentDialogView
+    x:Class="Ghostly.Uwp.Views.NewProfileView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:controls="using:Ghostly.Uwp.Controls"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:community="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:strings="using:Ghostly.Uwp.Strings"
+    mc:Ignorable="d"
+    d:DesignHeight="350"
+    d:DesignWidth="450"
+    PrimaryButtonText="{strings:Localize Key=General_Create}"
+    IsPrimaryButtonEnabled="{Binding IsValid.Value}"
+    FullSizeDesired="false"
+    DefaultButton="Primary"
+    CloseButtonText="{strings:Localize Key=General_Cancel}">
+
+    <!-- Header -->
+    <controls:ContentDialogView.TitleTemplate>
+        <DataTemplate>
+            <TextBlock Text="{strings:Localize Key=NewProfile_Title}" />
+        </DataTemplate>
+    </controls:ContentDialogView.TitleTemplate>
+
+    <!-- Content -->
+    <StackPanel>
+        <TextBox Text="{Binding ProfileName.Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                 PlaceholderText="{strings:Localize Key=NewProfile_Placeholder}" />
+    </StackPanel>
+</controls:ContentDialogView>

@@ -1,0 +1,40 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:winui="using:Microsoft.Toolkit.Uwp.UI.Converters"
+    xmlns:local="using:Ghostly.Uwp.Converters">
+
+    <winui:BoolToVisibilityConverter x:Key="BoolToVisibility" />
+
+    <local:TimestampToStringConverter x:Key="TimestampToString" />
+    <local:BooleanToBoldConverter x:Key="BooleanToBold" />
+    <local:InverseBooleanToVisibilityConverter x:Key="InverseBoolToVisibility" />
+    <local:CommandToBooleanConverter x:Key="CommandToBoolean" />
+    <local:CommandToVisibilityConverter x:Key="CommandToVisibility" />
+    <local:StringFallbackConverter x:Key="StringFallback" />
+    <local:MutedOpacityConverter x:Key="MutedOpacity" />
+    <local:NotificationBorderConverter x:Key="NotificationBorderConverter" />
+    <local:NotificationTitleConverter x:Key="NotificationTitle" />
+    <local:HexStringToColorConverter x:Key="HexStringToColor" />
+    <local:InverseHexStringToColorConverter x:Key="InverseHexStringToColor" />
+    <local:IncrementalLoadingConverter x:Key="IncrementalLoading" />
+    <local:VisibleWhenNotZeroConverter x:Key="VisibleWhenNotZero" />
+    <local:VisibleWhenNotNullConverter x:Key="VisibleWhenNotNull" />
+    <local:VisibleWhenNotEmptyConverter x:Key="VisibleWhenNotEmpty" />
+    <local:VisibleWhenZeroConverter x:Key="VisibleWhenZero" />
+    <local:HeightToThicknessConverter x:Key="HeightToThickness" />
+    <local:NotificationIconConverter x:Key="NotificationIcon" />
+    <local:AccountIconConverter x:Key="AccountIcon" />
+    <local:NavigationItemForegroundConverter x:Key="NavigationItemForeground" />
+    <local:InverseBooleanConverter x:Key="InverseBool" />
+    <local:IntegerToStringConverter x:Key="IntegerToString" />
+    <local:VisibleWhenNullConverter x:Key="VisibleWhenNull" />
+    <local:NotNullOrEmptyConverter x:Key="NotNullOrEmpty" />
+    <local:VisibleWhenEmptyConverter x:Key="VisibleWhenEmpty" />
+    <local:AutoCompleteItemConverter x:Key="AutoCompleteItem" />
+    <local:LocalizedStringConverter x:Key="LocalizedString" />
+    <local:QueryResultsConverter x:Key="QueryResults" />
+    <local:NotNullConverter x:Key="NotNull" />
+    <local:NullableBoolConverter x:Key="NullableBool" />
+
+</ResourceDictionary>

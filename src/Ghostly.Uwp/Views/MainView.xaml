@@ -1,0 +1,504 @@
+<Page
+    x:Class="Ghostly.Uwp.Views.MainView"
+    x:Name="Page"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:domain="using:Ghostly.Domain"
+    xmlns:controls="using:Ghostly.Uwp.Controls"
+    xmlns:utilities="using:Ghostly.Uwp.Utilities"
+    xmlns:community="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:iconPacks="using:MahApps.Metro.IconPacks"
+    xmlns:winui="using:Microsoft.UI.Xaml.Controls"
+    xmlns:strings="using:Ghostly.Uwp.Strings"
+    mc:Ignorable="d"
+    NavigationCacheMode="Enabled"
+    Loaded="Page_Loaded">
+
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Styles/Buttons.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <!-- Animation -->
+            <Storyboard x:Name="IconRotation" AutoReverse="False" RepeatBehavior="Forever">
+                <DoubleAnimation Duration="0:0:1" To="360"
+                             Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)"
+                             Storyboard.TargetName="SyncIcon" />
+            </Storyboard>
+            <Storyboard x:Name="IconRotation2" AutoReverse="False" RepeatBehavior="Forever">
+                <DoubleAnimation Duration="0:0:1" To="360"
+                             Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)"
+                             Storyboard.TargetName="SyncSingleIcon" />
+            </Storyboard>
+        </ResourceDictionary>
+    </Page.Resources>
+
+    <!-- Master Details -->
+    <controls:MasterDetailsView
+                x:Name="MasterDetailsView"
+                Style="{StaticResource GhostlyMasterDetailsViewStyle}"
+                Margin="0,0,0,0"
+                ListPaneWidth="450"
+                DoubleTapped="MasterDetailsView_DoubleTapped"
+                SelectionMode="{x:Bind SelectionMode, Mode=OneWay}"
+                BorderBrush="{ThemeResource RegionBorderBrush}"
+                SelectedItem="{Binding SelectedItem, Mode=TwoWay}"
+                ItemsSource="{Binding Notifications, Converter={StaticResource IncrementalLoading}, Mode=OneWay}">
+
+        <controls:MasterDetailsView.ItemContainerStyle>
+            <Style TargetType="ListViewItem">
+                <Setter Property="Control.Margin" Value="1,0,0,0"/>
+                <Setter Property="Control.HorizontalContentAlignment" Value="Stretch"/>
+                <Setter Property="Control.BorderBrush" Value="{ThemeResource RegionBorderBrush}" />
+                <Setter Property="Control.BorderThickness" Value="0,0,0,1" />
+                <Setter Property="ContextFlyout">
+                    <Setter.Value>
+                        <MenuFlyout x:Name="Menu" Opening="Menu_Opening">
+                            <MenuFlyoutItem x:Name="MenuOpenInBrowser" Text="{strings:Localize Key=Main_OpenInBrowser}" Click="MenuOpenInBrowser_Click">
+                                <MenuFlyoutItem.Icon>
+                                    <FontIcon Glyph="&#xE8A7;" />
+                                </MenuFlyoutItem.Icon>
+                            </MenuFlyoutItem>
+                            <MenuFlyoutItem x:Name="MenuShare" Text="{strings:Localize Key=Main_Share}" Click="MenuShare_Click">
+                                <MenuFlyoutItem.Icon>
+                                    <FontIcon Glyph="&#xE8EB;" />
+                                </MenuFlyoutItem.Icon>
+                            </MenuFlyoutItem>
+                            <MenuFlyoutSeparator />
+                            <MenuFlyoutItem x:Name="MenuArchive" Text="{strings:Localize Key=Main_Archive}" Click="MenuArchive_Click">
+                                <MenuFlyoutItem.Icon>
+                                    <FontIcon Glyph="&#xE7B8;" />
+                                </MenuFlyoutItem.Icon>
+                            </MenuFlyoutItem>
+                            <MenuFlyoutItem x:Name="MenuMove" Icon="MoveToFolder" Text="{strings:Localize Key=Main_Move}" Click="MenuMove_Click" />
+                            <MenuFlyoutSeparator x:Name="MenuSeparator" />
+                            <MenuFlyoutItem x:Name="MenuStar" Text="{strings:Localize Key=Main_Star}" Click="MenuStar_Click">
+                                <MenuFlyoutItem.Icon>
+                                    <FontIcon Glyph="&#xE734;" />
+                                </MenuFlyoutItem.Icon>
+                            </MenuFlyoutItem>
+                            <MenuFlyoutItem x:Name="MenuUnstar" Text="{strings:Localize Key=Main_Unstar}" Click="MenuUnstar_Click">
+                                <MenuFlyoutItem.Icon>
+                                    <FontIcon Glyph="&#xE8D9;" />
+                                </MenuFlyoutItem.Icon>
+                            </MenuFlyoutItem>
+                            <MenuFlyoutItem x:Name="MenuMute" Text="{strings:Localize Key=Main_Mute}" Click="MenuMute_Click">
+                                <MenuFlyoutItem.Icon>
+                                    <FontIcon Glyph="&#xE74F;" />
+                                </MenuFlyoutItem.Icon>
+                            </MenuFlyoutItem>
+                            <MenuFlyoutItem x:Name="MenuUnmute" Text="{strings:Localize Key=Main_Unmute}" Click="MenuUnmute_Click">
+                                <MenuFlyoutItem.Icon>
+                                    <FontIcon Glyph="&#xE995;" />
+                                </MenuFlyoutItem.Icon>
+                            </MenuFlyoutItem>
+                            <MenuFlyoutSeparator />
+                            <MenuFlyoutItem x:Name="MenuMarkAsRead" Icon="Read" Text="{strings:Localize Key=Main_MarkAsRead}" Click="MenuMarkAsRead_Click" />
+                        </MenuFlyout>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </controls:MasterDetailsView.ItemContainerStyle>
+
+        <!-- Item Template -->
+        <controls:MasterDetailsView.ItemTemplate>
+            <DataTemplate x:DataType="domain:Notification">
+
+                <winui:SwipeControl Margin="-12,0,-12,0" IsHoldingEnabled="False">
+                    <winui:SwipeControl.RightItems>
+                        <winui:SwipeItems Mode="Reveal">
+                            <winui:SwipeItem  x:Name="SwipeOpenInBrowser" Text="{strings:Localize Key=Main_OpenInBrowser}" Invoked="SwipeOpenInBrowser_Invoked">
+                                <winui:SwipeItem.IconSource>
+                                    <winui:FontIconSource Glyph="&#xE8A7;"/>
+                                </winui:SwipeItem.IconSource>
+                            </winui:SwipeItem>
+                        </winui:SwipeItems>
+                    </winui:SwipeControl.RightItems>
+                    <winui:SwipeControl.LeftItems>
+                        <winui:SwipeItems Mode="Execute">
+                            <winui:SwipeItem x:Name="SwipeMove" Text="{strings:Localize Key=Main_Move}" Invoked="SwipeMove_Invoked">
+                                <winui:SwipeItem.IconSource>
+                                    <winui:FontIconSource Glyph="&#xE8DE;"/>
+                                </winui:SwipeItem.IconSource>
+                            </winui:SwipeItem>
+                        </winui:SwipeItems>
+                    </winui:SwipeControl.LeftItems>
+
+                    <Grid Margin="0,0,0,0" Padding="0,8"
+                          BorderThickness="{Binding Unread, Converter={StaticResource NotificationBorderConverter}, ConverterParameter=BorderThickness}"
+                          BorderBrush="{Binding Unread, Converter={StaticResource NotificationBorderConverter}, ConverterParameter=BorderBrush}">
+
+                        <Grid Margin="{Binding Unread, Converter={StaticResource NotificationBorderConverter}, ConverterParameter=Margin}"
+                              Padding="{Binding Unread, Converter={StaticResource NotificationBorderConverter}, ConverterParameter=Padding}"
+                              Background="Transparent"
+                              PointerEntered="Grid_PointerEntered" PointerExited="Grid_PointerExited" Loading="Grid_Loading">
+
+                            <Grid Padding="0,0,0,4" Opacity="{Binding Muted, Converter={StaticResource MutedOpacity}}">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <Grid Grid.Column="0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <StackPanel Grid.Column="0" VerticalAlignment="Center" Orientation="Vertical" Padding="0,0" Margin="0,0,5,0">
+                                        <iconPacks:PackIconOcticons
+                                            Margin="0,0,0,0"
+                                            Width="18" Height="18"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            Foreground="{Binding Converter={StaticResource NotificationIcon}, ConverterParameter=Foreground}"
+                                            Kind="{Binding Converter={StaticResource NotificationIcon}, ConverterParameter=Icon}" />
+                                        <iconPacks:PackIconOcticons
+                                            Margin="0,5,0,0"
+                                            Width="18" Height="18"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            Kind="Star"
+                                            Foreground="Gold"
+                                            Visibility="{Binding Starred, Converter={StaticResource BoolToVisibility}}"/>
+                                        <iconPacks:PackIconOcticons
+                                            Margin="0,5,0,0"
+                                            Width="18" Height="18"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            Kind="Lock"
+                                            Foreground="Gray"
+                                            Visibility="{Binding Locked, Converter={StaticResource BoolToVisibility}}"/>
+                                    </StackPanel>
+                                    <StackPanel Grid.Column="1" Margin="10,5">
+                                        <!-- Origin -->
+                                        <TextBlock Text="{Binding Origin}"
+                                       Foreground="{ThemeResource Text100}"
+                                       FontWeight="{Binding Unread, Converter={StaticResource BooleanToBold}, ConverterParameter=SemiBold}" />
+                                        <!-- Title -->
+                                        <TextBlock Text="{Binding Title}" Style="{ThemeResource BodyTextBlockStyle}"
+                                               Foreground="{Binding Unread, Converter={StaticResource NotificationTitle}, ConverterParameter=Foreground}"
+                                               FontWeight="{Binding Unread, Converter={StaticResource NotificationTitle}, ConverterParameter=FontWeight}"
+                                               ToolTipService.ToolTip="{Binding Title}"
+                                               TextTrimming="CharacterEllipsis" MaxLines="1" />
+                                        <!-- Preamble -->
+                                        <TextBlock Foreground="{ThemeResource Text80}"
+                                           Text="{Binding Preamble, Converter={StaticResource StringFallback}, ConverterParameter='No preview available.'}"
+                                           TextTrimming="CharacterEllipsis" MaxLines="1" />
+                                        <!-- Tags -->
+                                        <community:WrapPanel Orientation="Horizontal" Margin="0,4,0,0">
+                                            <!-- Draft -->
+                                            <Border BorderBrush="{ThemeResource TagBorder}" Background="{ThemeResource TagBackground}" BorderThickness="1" CornerRadius="0"
+                                                Opacity="0.8" Margin="0,3,3,0" Padding="4,1,4,1"
+                                                Visibility="{Binding Draft, Converter={StaticResource NullableBool}}">
+                                                <StackPanel Orientation="Horizontal">
+                                                    <FontIcon Glyph="&#xE70F;" FontSize="9"/>
+                                                    <TextBlock Margin="4,0,0,0" Text="Draft" FontSize="9"/>
+                                                </StackPanel>
+                                            </Border>
+                                            <!-- Category -->
+                                            <Border BorderBrush="{ThemeResource TagBorder}" Background="{ThemeResource TagBackground}" BorderThickness="1" CornerRadius="0"
+                                                Opacity="0.8" Margin="0,3,3,0" Padding="4,1,4,1"
+                                                Visibility="{Binding ViewModel.ShowCategoryTags, ElementName=Page, Converter={StaticResource BoolToVisibility}}">
+                                                <StackPanel Orientation="Horizontal">
+                                                    <FontIcon Glyph="{Binding Category.Glyph}" FontSize="9"/>
+                                                    <TextBlock Margin="4,0,0,0" Text="{Binding Category.Name}" FontSize="9"/>
+                                                </StackPanel>
+                                            </Border>
+                                            <!-- Milestone -->
+                                            <Border BorderBrush="{ThemeResource TagBorder}" Background="{ThemeResource TagBackground}" BorderThickness="1" CornerRadius="0" Opacity="0.8"
+                                                Padding="4,1,4,1" Margin="0,3,3,0"
+                                                Visibility="{Binding Milestone, Converter={StaticResource VisibleWhenNotNull}}">
+                                                <StackPanel Orientation="Horizontal">
+                                                    <FontIcon Glyph="&#xE816;" FontSize="9"/>
+                                                    <TextBlock Margin="4,0,0,0" Text="{Binding Milestone.Name}" FontSize="9"/>
+                                                </StackPanel>
+                                            </Border>
+                                            <!-- Tags -->
+                                            <controls:TagControl Margin="0,0,0,0" ItemsSource="{Binding Tags}" />
+                                        </community:WrapPanel>
+                                    </StackPanel>
+                                </Grid>
+                                <Grid Grid.Column="1">
+                                    <StackPanel HorizontalAlignment="Right" Margin="10,0,20,0" VerticalAlignment="Center">
+                                        <TextBlock FontSize="13"
+                                       VerticalAlignment="Center"
+                                       Text="{Binding Timestamp, Converter={StaticResource TimestampToString}}" />
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
+                            <Grid x:Name="HoverPanelGrid" x:Load="False">
+                                <Grid.Resources>
+                                    <Storyboard x:Name="EnterStoryboard">
+                                        <FadeInThemeAnimation Storyboard.TargetName="HoverPanel" />
+                                    </Storyboard>
+                                    <Storyboard x:Name="ExitStoryboard">
+                                        <FadeOutThemeAnimation Storyboard.TargetName="HoverPanel"  />
+                                    </Storyboard>
+                                </Grid.Resources>
+                                <Grid x:Name="HoverPanel" Margin="0,2,10,2">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*" />
+                                        <RowDefinition Height="*" />
+                                    </Grid.RowDefinitions>
+                                    <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,3,0" VerticalAlignment="Top" HorizontalAlignment="Right">
+                                        <!-- Archive -->
+                                        <Grid Visibility="{Binding Path=DataContext.Category.Archive, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource InverseBoolToVisibility}}">
+                                            <Button x:Name="ArchiveButton"
+                                            Background="Transparent"
+                                            Width="auto" Height="auto"
+                                            CommandParameter="{Binding Path=DataContext, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                            Command="{Binding ViewModel.ArchiveCommand, ElementName=Page}"
+                                            ToolTipService.ToolTip="{strings:Localize Key=Main_Archive}">
+                                                <FontIcon Glyph="&#xE7B8;" FontSize="12" />
+                                            </Button>
+                                        </Grid>
+                                        <!-- Mute -->
+                                        <Grid Visibility="{Binding Path=DataContext.Muted, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource InverseBoolToVisibility}}">
+                                            <Button x:Name="MuteButton"
+                                                Background="Transparent"
+                                                Width="auto" Height="auto"
+                                                CommandParameter="{Binding Path=DataContext, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                                Command="{Binding ViewModel.MuteCommand, ElementName=Page}"
+                                                ToolTipService.ToolTip="{strings:Localize Key=Main_Mute}">
+                                                <FontIcon Glyph="&#xE74F;" FontSize="12" />
+                                            </Button>
+                                        </Grid>
+                                        <!-- Unmute -->
+                                        <Grid Visibility="{Binding Path=DataContext.Muted, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource BoolToVisibility}}">
+                                            <Button x:Name="UnmuteButton"
+                                                Background="Transparent"
+                                                Width="auto" Height="auto"
+                                                CommandParameter="{Binding Path=DataContext, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                                Command="{Binding ViewModel.UnmuteCommand, ElementName=Page}"
+                                                ToolTipService.ToolTip="{strings:Localize Key=Main_Unmute}">
+                                                <FontIcon Glyph="&#xE995;" FontSize="12" />
+                                            </Button>
+                                        </Grid>
+                                        <!-- Star -->
+                                        <Grid Visibility="{Binding Path=DataContext.Starred, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource InverseBoolToVisibility}}">
+                                            <Button x:Name="StarButton"
+                                                Background="Transparent"
+                                                Width="auto" Height="auto"
+                                                CommandParameter="{Binding Path=DataContext, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                                Command="{Binding ViewModel.StarCommand, ElementName=Page}"
+                                                ToolTipService.ToolTip="{strings:Localize Key=Main_Star}">
+                                                <FontIcon Glyph="&#xE734;" FontSize="12" />
+                                            </Button>
+                                        </Grid>
+                                        <!-- Unstar -->
+                                        <Grid Visibility="{Binding Path=DataContext.Starred, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource BoolToVisibility}}">
+                                            <Button x:Name="UnstarButton" Tag="{Binding Path=DataContext, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                                Background="Transparent"
+                                                Width="auto" Height="auto"
+                                                CommandParameter="{Binding Path=DataContext, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                                Command="{Binding ViewModel.UnstarCommand, ElementName=Page}"
+                                                ToolTipService.ToolTip="{strings:Localize Key=Main_Unstar}">
+                                                <FontIcon Glyph="&#xE8D9;" FontSize="12" />
+                                            </Button>
+                                        </Grid>
+                                    </StackPanel>
+                                    <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,0,3,0" VerticalAlignment="Bottom" HorizontalAlignment="Right">
+                                        <!-- Mark as read -->
+                                        <Grid Visibility="{Binding Path=DataContext.Unread, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource BoolToVisibility}}">
+                                            <Button x:Name="MarkAsReadButton"
+                                                Background="Transparent"
+                                                Width="auto" Height="auto"
+                                                CommandParameter="{Binding Path=DataContext, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                                Command="{Binding ViewModel.MarkAsReadCommand, ElementName=Page}"
+                                                ToolTipService.ToolTip="{strings:Localize Key=Main_MarkAsRead}">
+                                                <FontIcon Glyph="&#xE8C3;" FontSize="12" />
+                                            </Button>
+                                        </Grid>
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </winui:SwipeControl>
+            </DataTemplate>
+        </controls:MasterDetailsView.ItemTemplate>
+
+        <!-- Master header -->
+        <controls:MasterDetailsView.ListHeader>
+            <StackPanel Margin="{x:Bind Titlebar.Top, Mode=OneWay}">
+                <Grid VerticalAlignment="Center" Margin="9,6,9,18">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <controls:QueryControl Grid.Column="0"
+                                           x:Name="QueryControl"
+                                           OnQueryCleared="QueryControl_OnQueryCleared"
+                                           OnQuerySubmitted="QueryControl_OnQuerySubmitted"
+                                           Visibility="{Binding IsMultipleSelected, Converter={StaticResource InverseBoolToVisibility}}"
+                                           PlaceholderText="{Binding SearchTitle, Mode=OneWay}" />
+
+                    <AutoSuggestBox Grid.Column="0" x:Name="QueryBox" PlaceholderText="{Binding SearchTitle, Mode=OneWay}"
+                                    VerticalAlignment="Center" QueryIcon="Find"
+                                    Visibility="Collapsed" />
+
+                    <CommandBar Grid.Column="1" OverflowButtonVisibility="Auto" DefaultLabelPosition="Right"
+                                Background="Transparent">
+
+                        <CommandBar.PrimaryCommands>
+                            <!-- Archive -->
+                            <AppBarButton Label="{strings:Localize Key=Main_Command_Archive}" Command="{Binding ArchiveCommand}"
+                                  Visibility="{Binding ArchiveCommand, Converter={StaticResource CommandToBoolean}}">
+                                <AppBarButton.Icon>
+                                    <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE8F1;"/>
+                                </AppBarButton.Icon>
+                            </AppBarButton>
+                            <!-- Move -->
+                            <AppBarButton Label="{strings:Localize Key=Main_Command_Move}" Command="{Binding MoveCommand}"
+                                  Visibility="{Binding MoveCommand, Converter={StaticResource CommandToBoolean}}">
+                                <AppBarButton.Icon>
+                                    <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE8DE;"/>
+                                </AppBarButton.Icon>
+                            </AppBarButton>
+                            <!-- Mark as read -->
+                            <AppBarButton Label="{strings:Localize Key=Main_MarkAsRead}" Command="{Binding MarkAsReadCommand}"
+                                  Visibility="{Binding MarkAsReadCommand, Converter={StaticResource CommandToBoolean}}">
+                                <AppBarButton.Icon>
+                                    <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE8C3;"/>
+                                </AppBarButton.Icon>
+                            </AppBarButton>
+                            <!-- Sync -->
+                            <AppBarButton x:Name="Sync" Command="{Binding SyncCommand}"
+                                      ToolTipService.ToolTip="{strings:Localize Key=Main_Synchronize}"
+                                      Visibility="{Binding IsMultipleSelected, Converter={StaticResource InverseBoolToVisibility}}"
+                                      HorizontalContentAlignment="Center">
+                                <AppBarButton.Icon>
+                                    <FontIcon x:Name="SyncIcon" HorizontalAlignment="Center"
+                                          RenderTransformOrigin="0.5,0.5"
+                                          FontFamily="Segoe MDL2 Assets" Glyph="&#xE895;">
+                                        <FontIcon.RenderTransform>
+                                            <CompositeTransform/>
+                                        </FontIcon.RenderTransform>
+                                    </FontIcon>
+                                </AppBarButton.Icon>
+                            </AppBarButton>
+                        </CommandBar.PrimaryCommands>
+                    </CommandBar>
+                </Grid>
+            </StackPanel>
+        </controls:MasterDetailsView.ListHeader>
+
+        <!-- Details header -->
+        <controls:MasterDetailsView.DetailsHeader>
+            <Grid Background="{ThemeResource DetailsPanelBackground}">
+                <Grid Margin="{x:Bind Titlebar.Top, Mode=OneWay}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0" Margin="10,10,10,10">
+                        <!-- Origin -->
+                        <TextBlock Style="{StaticResource NotificationOriginStyle}" Foreground="#FFFFFF" Opacity="0.6"
+                                   Visibility="{Binding SelectedItem.ShowExternalId, Converter={StaticResource BoolToVisibility}}">
+                            <Run Text="{Binding SelectedItem.Origin}" /> <Run Text="#" /><Run Text="{Binding SelectedItem.ExternalId}" />
+                        </TextBlock>
+                        <TextBlock Style="{StaticResource NotificationOriginStyle}" Foreground="#FFFFFF" Opacity="0.6"
+                                   Visibility="{Binding SelectedItem.ShowExternalId, Converter={StaticResource InverseBoolToVisibility}}">
+                            <Run Text="{Binding SelectedItem.Origin}" />
+                        </TextBlock>
+                        <!-- Title -->
+                        <TextBlock Style="{StaticResource NotificationTitleStyle}" TextWrapping="WrapWholeWords">
+                                <Run Text="{Binding SelectedItem.Title}" Foreground="#FFFFFF" />
+                        </TextBlock>
+                        <!-- Tags -->
+                        <community:WrapPanel Orientation="Horizontal">
+                            <!-- Draft -->
+                            <Border BorderBrush="{ThemeResource TagBorder}" Background="{ThemeResource TagBackground}" BorderThickness="1" CornerRadius="0"
+                                                Opacity="0.8" Margin="0,7,3,0" Padding="4,1,4,1"
+                                                Visibility="{Binding SelectedItem.Draft, Converter={StaticResource NullableBool}}">
+                                <StackPanel Orientation="Horizontal">
+                                    <FontIcon Glyph="&#xE70F;" FontSize="9"/>
+                                    <TextBlock Margin="4,0,0,0" Text="Draft" FontSize="9"/>
+                                </StackPanel>
+                            </Border>
+                            <!-- Category -->
+                            <Border BorderBrush="{ThemeResource TagBorder}"  Background="{ThemeResource TagBackground}" BorderThickness="1" CornerRadius="0"
+                                                Opacity="0.8" Margin="0,7,3,0" Padding="4,1,4,1"
+                                                Visibility="{Binding ViewModel.ShowCategoryTags, ElementName=Page, Converter={StaticResource BoolToVisibility}}">
+                                <StackPanel Orientation="Horizontal">
+                                    <FontIcon Glyph="{Binding SelectedItem.Category.Glyph}" FontSize="9"/>
+                                    <TextBlock Margin="4,0,0,0" Text="{Binding SelectedItem.Category.Name}" FontSize="9"/>
+                                </StackPanel>
+                            </Border>
+                            <!-- Milestone -->
+                            <Border BorderBrush="{ThemeResource TagBorder}" Background="{ThemeResource TagBackground}" BorderThickness="1" CornerRadius="0" Opacity="0.8"
+                                                Padding="4,1,4,1" Margin="0,7,3,0"
+                                                Visibility="{Binding SelectedItem.Milestone, Converter={StaticResource VisibleWhenNotNull}}">
+                                <StackPanel Orientation="Horizontal">
+                                    <FontIcon Glyph="&#xE816;" FontSize="9"/>
+                                    <TextBlock Margin="4,0,0,0" Text="{Binding SelectedItem.Milestone.Name}" FontSize="9"/>
+                                </StackPanel>
+                            </Border>
+                            <!-- Tags -->
+                            <controls:TagControl ItemsSource="{Binding SelectedItem.Tags}" Margin="0,4,0,0" />
+                        </community:WrapPanel>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Top">
+                        <!-- Synchronize notification -->
+                        <Button x:Name="ButtonSyncNotification" Width="43" Height="33"
+                                Click="ButtonSyncNotification_Click"
+                                IsEnabled="{Binding SyncSingleCommand, Converter={StaticResource CommandToBoolean}}"
+                                ToolTipService.ToolTip="{strings:Localize Key=Main_UpdateItem}"
+                                Style="{StaticResource DetailsHeaderButton}"
+                                VerticalAlignment="Top" Margin="0,0,0,0">
+                            <FontIcon x:Name="SyncSingleIcon" HorizontalAlignment="Center"
+                                          RenderTransformOrigin="0.5,0.5"
+                                      FontSize="13"
+                                          FontFamily="Segoe MDL2 Assets" Glyph="&#xE72C;">
+                                <FontIcon.RenderTransform>
+                                    <CompositeTransform/>
+                                </FontIcon.RenderTransform>
+                            </FontIcon>
+                        </Button>
+                        <!-- Share -->
+                        <Button x:Name="ButtonShare" Width="48" Height="33"
+                                    Click="ButtonShare_Click"
+                                    ToolTipService.ToolTip="{strings:Localize Key=Main_Share}"
+                                    Style="{StaticResource DetailsHeaderButton}"
+                                    VerticalAlignment="Top" Margin="0,1,-1,0">
+                            <FontIcon Glyph="&#xE8EB;" FontSize="16" />
+                        </Button>
+                        <!-- Open in browser -->
+                        <Button x:Name="ButtonOpenInBrowser" Width="48" Height="33"
+                                    Click="ButtonOpenInBrowser_Click"
+                                    ToolTipService.ToolTip="{strings:Localize Key=Main_OpenInBrowser}"
+                                    Style="{StaticResource DetailsHeaderButton}"
+                                    VerticalAlignment="Top" Margin="0,1,-2,0">
+                            <FontIcon Glyph="&#xE8A7;" FontSize="16" />
+                        </Button>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+        </controls:MasterDetailsView.DetailsHeader>
+
+        <!-- Details -->
+        <controls:MasterDetailsView.DetailsTemplate>
+            <DataTemplate>
+                <WebView x:Name="DetailsWebView" Margin="0"
+                        NavigationStarting="WebView_NavigationStarting"
+                        utilities:WebViewHelper.HtmlString="{Binding Html}" />
+            </DataTemplate>
+        </controls:MasterDetailsView.DetailsTemplate>
+
+        <!-- Nothing selected -->
+        <controls:MasterDetailsView.NoSelectionContentTemplate>
+            <DataTemplate>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Viewbox MaxHeight="100" MaxWidth="100">
+                        <SymbolIcon Foreground="LightGray" Symbol="Mail" />
+                    </Viewbox>
+                    <TextBlock Foreground="LightGray" Text="{strings:Localize Key=Main_NoNotificationSelected}" FontSize="24" Margin="0,12"/>
+                </StackPanel>
+            </DataTemplate>
+        </controls:MasterDetailsView.NoSelectionContentTemplate>
+
+    </controls:MasterDetailsView>
+
+</Page>

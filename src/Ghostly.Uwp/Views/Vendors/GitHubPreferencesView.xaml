@@ -1,0 +1,35 @@
+<ContentDialog
+    x:Class="Ghostly.Uwp.Views.GitHubPreferencesView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    DefaultButton="Primary"
+    CloseButtonText="Cancel"
+    PrimaryButtonText="Sign in using external browser">
+    <ContentDialog.TitleTemplate>
+        <DataTemplate>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="GitHub Permissions" VerticalAlignment="Center"/>
+            </StackPanel>
+        </DataTemplate>
+    </ContentDialog.TitleTemplate>
+    <ScrollViewer>
+        <StackPanel>
+            <StackPanel Margin="{StaticResource MediumTopMargin}">
+                <ToggleSwitch IsOn="{Binding PrivateRepositories, Mode=TwoWay}" OnContent="Public and private repositories" OffContent="Only public repositories">
+                    <TextBlock FontWeight="SemiBold" FontSize="16">Repository access</TextBlock>
+                </ToggleSwitch>
+            </StackPanel>
+            <StackPanel Margin="{StaticResource LargeTopMargin}">
+                <ToggleSwitch IsOn="{Binding Gists, Mode=TwoWay}" OnContent="Give Ghostly access to GitHub Gists" OffContent="Do not give Ghostly access to GitHub Gists">
+                    <TextBlock FontWeight="SemiBold" FontSize="16">Gist access</TextBlock>
+                </ToggleSwitch>
+                <StackPanel>
+                    <TextBlock Style="{StaticResource CaptionTextBlockStyle}" TextWrapping="WrapWholeWords">This permission is only necessary if you want to<LineBreak />import/export Ghostly settings from GitHub Gists.</TextBlock>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
+</ContentDialog>

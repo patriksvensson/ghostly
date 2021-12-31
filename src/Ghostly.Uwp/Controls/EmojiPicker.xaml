@@ -1,0 +1,86 @@
+<UserControl
+    x:Class="Ghostly.Uwp.Controls.EmojiPicker"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Ghostly.Uwp.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:strings="using:Ghostly.Uwp.Strings"
+    mc:Ignorable="d"
+    Opacity="1.0"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+    <StackPanel x:Name="Foo">
+
+        <!-- Button -->
+        <DropDownButton x:Name="SelectButton" Click="SelectButton_Click">
+            <StackPanel>
+                <TextBlock Width="16" Height="16" Text="{x:Bind Selected, Mode=OneWay}"
+                           FontFamily="Segoe UI Emoji" FontSize="12"
+                           Visibility="{x:Bind Selected, Mode=OneWay, Converter={StaticResource VisibleWhenNotNull}}"/>
+                <FontIcon Width="16" Height="16" Glyph="{x:Bind DefaultGlyph, Mode=OneWay}"
+                          FontFamily="Segoe MDL2 Assets" FontSize="12" 
+                          Visibility="{x:Bind Selected, Mode=OneWay, Converter={StaticResource VisibleWhenNull}}"/>
+            </StackPanel>
+        </DropDownButton>
+
+        <!-- Popup -->
+        <Popup x:Name="EmojiPopup" IsHitTestVisible="True"
+               LightDismissOverlayMode="On"
+               Margin="0,0,0,0" Translation="0,0,1">
+
+            <Grid Width="300" Height="230" Margin="0" Padding="15"
+                  BorderBrush="{ThemeResource SystemControlForegroundChromeHighBrush}"
+                  BorderThickness="{ThemeResource FlyoutBorderThemeThickness}"
+                  Background="{ThemeResource SystemControlBackgroundChromeMediumLowBrush}">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Button Grid.Row="0" x:Name="CloseButton"
+                        HorizontalAlignment="Right" Width="20" Height="20" Padding="0"
+                        Click="CloseButton_Click">
+                    <FontIcon Glyph="&#xE894;" FontSize="6" />
+                </Button>
+
+                <GridView Grid.Row="1" x:Name="EmojiGrid" SelectionChanged="EmojiGrid_SelectionChanged"
+                          Margin="0,5,0,0"
+                          ItemsSource="{x:Bind Emojis}"
+                          SelectedItem="{x:Bind Selected, Mode=TwoWay}">
+
+                    <GridView.ItemContainerStyle>
+                        <Style TargetType="GridViewItem">
+                            <Setter Property="Margin" Value="0" />
+                            <Setter Property="IsTabStop" Value="False" />
+                            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                            <Setter Property="VerticalContentAlignment" Value="Stretch" />
+                        </Style>
+                    </GridView.ItemContainerStyle>
+
+                    <GridView.ItemContainerTransitions>
+                        <TransitionCollection />
+                    </GridView.ItemContainerTransitions>
+
+                    <GridView.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding}" FontSize="18"
+                                       FontFamily="Segoe UI Emoji"
+                                       HorizontalAlignment="Stretch" VerticalAlignment="Center"
+                                       TextAlignment="Center" />
+                        </DataTemplate>
+                    </GridView.ItemTemplate>
+                </GridView>
+
+                <Button Grid.Row="2" x:Name="ClearButton" Click="ClearButton_Click"
+                        IsEnabled="{Binding Selected, Mode=OneWay, Converter={StaticResource NotNullOrEmpty}}"
+                        HorizontalAlignment="Stretch" Content="{strings:Localize Key=EmojiPicker_Clear}" />
+            </Grid>
+        </Popup>
+        
+    </StackPanel>
+
+</UserControl>

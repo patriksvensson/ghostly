@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:uap5="http://schemas.microsoft.com/appx/manifest/uap/windows10/5" IgnorableNamespaces="uap mp">
+    <Identity Name="SpectreSystemsAB.Ghostly.Dev" Publisher="CN=BD765503-99E8-40AA-91EC-B3E295890BB4" Version="0.0.0.0" />
+    <mp:PhoneIdentity PhoneProductId="66e02e2c-8914-4aa4-9e8f-59b12058f2d0" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+    <Properties>
+        <DisplayName>Ghostly</DisplayName>
+        <PublisherDisplayName>Spectre Systems AB</PublisherDisplayName>
+        <Logo>Assets\StoreLogo.png</Logo>
+    </Properties>
+    <Dependencies>
+        <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+    </Dependencies>
+    <Resources>
+        <Resource Language="x-generate" />
+    </Resources>
+    <Applications>
+        <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Ghostly.App">
+            <uap:VisualElements DisplayName="Ghostly (Dev)" Description="Ghostly is for GitHub what Outlook is for e-mail." BackgroundColor="#2D2D30" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png">
+                <uap:DefaultTile ShortName="Ghostly (Dev)" Square71x71Logo="Assets\Square71x71Logo.png" Square310x310Logo="Assets\Square310x310Logo.png" Wide310x150Logo="Assets\Wide310x150Logo.png">
+                    <uap:ShowNameOnTiles>
+                        <uap:ShowOn Tile="square150x150Logo" />
+                        <uap:ShowOn Tile="wide310x150Logo" />
+                        <uap:ShowOn Tile="square310x310Logo" />
+                    </uap:ShowNameOnTiles>
+                </uap:DefaultTile>
+                <uap:SplashScreen BackgroundColor="#96DCEA" Image="Assets\SplashScreen.png" />
+            </uap:VisualElements>
+            <Extensions>
+                <uap:Extension Category="windows.protocol">
+                    <uap:Protocol Name="ghostly">
+                        <uap:Logo>Assets\StoreLogo.png</uap:Logo>
+                        <uap:DisplayName>Ghostly</uap:DisplayName>
+                    </uap:Protocol>
+                </uap:Extension>
+                <uap5:Extension Category="windows.startupTask" Executable="Ghostly.Uwp.exe" EntryPoint="Ghostly.App">
+                    <uap5:StartupTask TaskId="Ghostly_Dev" Enabled="false" DisplayName="Ghostly (Dev)" />
+                </uap5:Extension>
+            </Extensions>
+        </Application>
+    </Applications>
+    <Capabilities>
+        <Capability Name="internetClient" />
+    </Capabilities>
+</Package>

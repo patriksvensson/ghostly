@@ -1,0 +1,76 @@
+<controls:ContentDialogView
+    x:Class="Ghostly.Uwp.Views.SelectProfileView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:controls="using:Ghostly.Uwp.Controls"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:strings="using:Ghostly.Uwp.Strings"
+    mc:Ignorable="d"
+    d:DesignHeight="350"
+    d:DesignWidth="450"
+    DefaultButton="Primary"
+    PrimaryButtonText="{Binding CreateText}"
+    IsPrimaryButtonEnabled="{Binding Selected.Value, Converter={StaticResource NotNull}}"
+    FullSizeDesired="false"
+    CloseButtonText="{strings:Localize Key=General_Cancel}">
+
+    <!-- Header -->
+    <controls:ContentDialogView.TitleTemplate>
+        <DataTemplate>
+            <TextBlock Text="{Binding Header}" />
+        </DataTemplate>
+    </controls:ContentDialogView.TitleTemplate>
+
+    <!-- Content -->
+    <StackPanel>
+        <!-- Profiles -->
+        <StackPanel Visibility="{Binding Loaded.Value, Converter={StaticResource BoolToVisibility}}">
+            <ListView ItemsSource="{Binding Profiles, Mode=OneWay}"
+                      SelectedItem="{Binding Selected.Value, Mode=TwoWay}"
+                      IsEnabled="{Binding Loaded.Value}"
+                      BorderBrush="{ThemeResource RegionBorderBrush}" BorderThickness="0,1,0,0">
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="Padding" Value="10" />
+                        <Setter Property="BorderThickness" Value="0,0,0,1" />
+                        <Setter Property="BorderBrush" Value="{ThemeResource RegionBorderBrush}" />
+                    </Style>
+                </ListView.ItemContainerStyle>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Margin="0" Padding="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="42" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <FontIcon Grid.Column="0" Margin="0" Width="32" Height="32" Glyph="{Binding Glyph, Mode=OneWay}"
+                                      HorizontalAlignment="Left" />
+                            <TextBlock Grid.Column="1" Text="{Binding Text, Mode=OneWay}"
+                                       Padding="10,0,0,0" VerticalAlignment="Center"
+                                       HorizontalAlignment="Left"/>
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackPanel>
+        <!-- Loading -->
+        <StackPanel Orientation="Horizontal" Padding="0,12,0,0"
+                    Visibility="{Binding Loading.Value, Converter={StaticResource BoolToVisibility}}">
+            <ProgressRing IsActive="True" Width="28" Height="28" VerticalAlignment="Center" />
+            <TextBlock Text="{strings:Localize Key=SelectProfile_Loading}" Margin="12,0,0,0" VerticalAlignment="Center" />
+        </StackPanel>
+        <!-- Error -->
+        <Grid Visibility="{Binding ErrorLoading.Value, Converter={StaticResource BoolToVisibility}}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <FontIcon Glyph="&#xE7BA;" FontSize="16" Foreground="{ThemeResource WarningText}" />
+            <StackPanel Grid.Column="1" VerticalAlignment="Top" Margin="10,0,0,0">
+                <TextBlock Text="{strings:Localize Key=SelectProfile_ErrorLoading}" Foreground="{ThemeResource WarningText}" />
+            </StackPanel>
+        </Grid>
+    </StackPanel>
+</controls:ContentDialogView>

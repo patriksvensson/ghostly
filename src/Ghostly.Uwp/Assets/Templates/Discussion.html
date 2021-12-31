@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="ms-appx-web:///Assets/Templates/Notification{{theme}}.css">
+</head>
+<body>
+
+    <!-- Information -->
+    <div class="comment">
+        <div class="header">
+            {{ "Template_DiscussionUpdated" | localize }} {{ work_item.timestamp | humanize }}
+        </div>
+        <div class="text">
+            <a title="{{ work_item.url }}" href="{{ work_item.url }}">{{ "Template_DiscussionOpenInBrowser" | localize }}</a>
+        </div>
+
+    </div>
+
+</body>
+</html>

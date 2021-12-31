@@ -1,0 +1,1141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Accounts_Account" xml:space="preserve">
+    <value>Account</value>
+    <comment>Account</comment>
+  </data>
+  <data name="Accounts_AuthorizationProblem" xml:space="preserve">
+    <value>There was a problem authorizing this account.</value>
+    <comment>There was a problem authorizing this account.</comment>
+  </data>
+  <data name="Accounts_ExportProfile" xml:space="preserve">
+    <value>Export profile</value>
+    <comment>Export profile</comment>
+  </data>
+  <data name="Accounts_ImportProfile" xml:space="preserve">
+    <value>Import profile</value>
+    <comment>Import profile</comment>
+  </data>
+  <data name="Accounts_NoAccounts" xml:space="preserve">
+    <value>There are no accounts.</value>
+    <comment>There are no accounts.</comment>
+  </data>
+  <data name="Accounts_NoInternetConnection" xml:space="preserve">
+    <value>No Internet connection.</value>
+    <comment>No Internet connection.</comment>
+  </data>
+  <data name="Accounts_PleaseSignInAgain" xml:space="preserve">
+    <value>Please sign out and sign in again.</value>
+    <comment>Please sign out and sign in again.</comment>
+  </data>
+  <data name="Accounts_ProfileManagementProhibited" xml:space="preserve">
+    <value>Profile management prohibited</value>
+    <comment>Profile management prohibited</comment>
+  </data>
+  <data name="Accounts_Profiles" xml:space="preserve">
+    <value>Profiles</value>
+    <comment>Profiles</comment>
+  </data>
+  <data name="Accounts_PublicAndPrivateRepositories" xml:space="preserve">
+    <value>Public and private repositories</value>
+    <comment>Public and private repositories</comment>
+  </data>
+  <data name="Accounts_PublicAndPrivateRepositoriesMorePermissions" xml:space="preserve">
+    <value>Public and private repositories (requires more permissions)</value>
+    <comment>Public and private repositories (requires more permissions)</comment>
+  </data>
+  <data name="Accounts_PublicRepositories" xml:space="preserve">
+    <value>Public repositories</value>
+    <comment>Public repositories</comment>
+  </data>
+  <data name="Accounts_PublicRepositoriesOnly" xml:space="preserve">
+    <value>Public repositories only</value>
+    <comment>Public repositories only</comment>
+  </data>
+  <data name="Accounts_Review" xml:space="preserve">
+    <value>Review account permissions</value>
+    <comment>Review account permissions</comment>
+  </data>
+  <data name="Accounts_SignInToGitHub" xml:space="preserve">
+    <value>Sign in to GitHub...</value>
+    <comment>Sign in to GitHub...</comment>
+  </data>
+  <data name="Accounts_SignOut" xml:space="preserve">
+    <value>Sign out</value>
+    <comment>Sign out</comment>
+  </data>
+  <data name="Accounts_Title" xml:space="preserve">
+    <value>Accounts</value>
+    <comment>Accounts</comment>
+  </data>
+  <data name="Archive_Progress_Archiving" xml:space="preserve">
+    <value>Archiving notifications...</value>
+    <comment>Archiving notifications...</comment>
+  </data>
+  <data name="Archive_Progress_MarkingAsRead" xml:space="preserve">
+    <value>Marking notifications as read...</value>
+    <comment>Marking notifications as read...</comment>
+  </data>
+  <data name="ArchiveAll_Confirmation" xml:space="preserve">
+    <value>Are you sure that you want to archive all notifications in '{0}'?\n\nThis action cannot be undone.</value>
+    <comment>Are you sure that you want to archive all notifications in '{0}'?\n\nThis action cannot be undone.</comment>
+  </data>
+  <data name="ArchiveAll_Ok" xml:space="preserve">
+    <value>Archive</value>
+    <comment>Archive</comment>
+  </data>
+  <data name="ArchiveAll_Progress" xml:space="preserve">
+    <value>Archiving notifications in {0}...</value>
+    <comment>Archiving notifications in {0}...</comment>
+  </data>
+  <data name="ArchiveAll_Title" xml:space="preserve">
+    <value>Archive all?</value>
+    <comment>Archive all?</comment>
+  </data>
+  <data name="CreateCategory_CategoryImported" xml:space="preserve">
+    <value>The category was previously imported from '{0}'.</value>
+    <comment>The category was previously imported from '{0}'.</comment>
+  </data>
+  <data name="CreateCategory_CategoryImported_Warning" xml:space="preserve">
+    <value>Changes to this category will be lost if re-importing again.</value>
+    <comment>Changes to this category will be lost if re-importing again.</comment>
+  </data>
+  <data name="CreateCategory_Expression" xml:space="preserve">
+    <value>Expression</value>
+    <comment>Expression</comment>
+  </data>
+  <data name="CreateCategory_IncludeMuted" xml:space="preserve">
+    <value>Include muted</value>
+    <comment>Include muted</comment>
+  </data>
+  <data name="CreateCategory_Muted" xml:space="preserve">
+    <value>Mute</value>
+    <comment>Mute</comment>
+  </data>
+  <data name="CreateCategory_Name" xml:space="preserve">
+    <value>Name</value>
+    <comment>Name</comment>
+  </data>
+  <data name="CreateCategory_ShowTotal" xml:space="preserve">
+    <value>Show total count</value>
+    <comment>Show total count</comment>
+  </data>
+  <data name="CreateCategory_ThisIsAFilter" xml:space="preserve">
+    <value>This is a filter</value>
+    <comment>This is a filter</comment>
+  </data>
+  <data name="CreateCategory_Title_EditCategory" xml:space="preserve">
+    <value>Edit category</value>
+    <comment>Edit category</comment>
+  </data>
+  <data name="CreateCategory_Title_EditFilter" xml:space="preserve">
+    <value>Edit filter</value>
+    <comment>Edit filter</comment>
+  </data>
+  <data name="CreateCategory_Title_NewCategory" xml:space="preserve">
+    <value>Create category</value>
+    <comment>Create category</comment>
+  </data>
+  <data name="CreateCategory_Title_NewFilter" xml:space="preserve">
+    <value>Create filter</value>
+    <comment>Create filter</comment>
+  </data>
+  <data name="CreateCategory_Upgrade" xml:space="preserve">
+    <value>To create more, upgrade to Ghostly Pro.</value>
+    <comment>To create more, upgrade to Ghostly Pro.</comment>
+  </data>
+  <data name="CreateCategory_WhatIsThis" xml:space="preserve">
+    <value>What is this?</value>
+    <comment>What is this?</comment>
+  </data>
+  <data name="CreateRule_Condition" xml:space="preserve">
+    <value>Condition</value>
+    <comment>Condition</comment>
+  </data>
+  <data name="CreateRule_Condition_Placeholder" xml:space="preserve">
+    <value>Expression</value>
+    <comment>Expression</comment>
+  </data>
+  <data name="CreateRule_EditRule" xml:space="preserve">
+    <value>Edit rule</value>
+    <comment>Edit rule</comment>
+  </data>
+  <data name="CreateRule_MarkAsRead" xml:space="preserve">
+    <value>Mark as read</value>
+    <comment>Mark as read</comment>
+  </data>
+  <data name="CreateRule_MoveToCategory" xml:space="preserve">
+    <value>Move to category</value>
+    <comment>Move to category</comment>
+  </data>
+  <data name="CreateRule_Mute" xml:space="preserve">
+    <value>Mute</value>
+    <comment>Mute</comment>
+  </data>
+  <data name="CreateRule_Name" xml:space="preserve">
+    <value>Name</value>
+    <comment>Name</comment>
+  </data>
+  <data name="CreateRule_Name_Placeholder" xml:space="preserve">
+    <value>Name of the rule</value>
+    <comment>Name of the rule</comment>
+  </data>
+  <data name="CreateRule_NewRule" xml:space="preserve">
+    <value>New rule</value>
+    <comment>New rule</comment>
+  </data>
+  <data name="CreateRule_RuleImported" xml:space="preserve">
+    <value>The rule was previously imported from '{0}'.</value>
+    <comment>The rule was previously imported from '{0}'.</comment>
+  </data>
+  <data name="CreateRule_RuleImported_Warning" xml:space="preserve">
+    <value>Changes to this rule will be lost if re-importing again.</value>
+    <comment>Changes to this rule will be lost if re-importing again.</comment>
+  </data>
+  <data name="CreateRule_Star" xml:space="preserve">
+    <value>Star</value>
+    <comment>Star</comment>
+  </data>
+  <data name="CreateRule_StopProcessingOtherRules" xml:space="preserve">
+    <value>Stop processing other rules</value>
+    <comment>Stop processing other rules</comment>
+  </data>
+  <data name="CreateRule_WhatIsThis" xml:space="preserve">
+    <value>What is this?</value>
+    <comment>What is this?</comment>
+  </data>
+  <data name="DeleteCategory_CannotDelete_ChangeOrDeleteRule" xml:space="preserve">
+    <value>Change or delete the affected rules to delete this category.</value>
+    <comment>Change or delete the affected rules to delete this category.</comment>
+  </data>
+  <data name="DeleteCategory_CannotDelete_Title" xml:space="preserve">
+    <value>Cannot delete category</value>
+    <comment>Cannot delete category</comment>
+  </data>
+  <data name="DeleteCategory_CannotDelete_UsedInFollowingRules" xml:space="preserve">
+    <value>The category '{0}' is used in the following rules:</value>
+    <comment>The category '{0}' is used in the following rules:</comment>
+  </data>
+  <data name="DeleteCategory_Category_Confirmation" xml:space="preserve">
+    <value>Are you sure that you want to delete the category '{0}'?\n\nThis action cannot be undone.</value>
+    <comment>Are you sure that you want to delete the category '{0}'?\n\nThis action cannot be undone.</comment>
+  </data>
+  <data name="DeleteCategory_Category_Title" xml:space="preserve">
+    <value>Delete category?</value>
+    <comment>Delete category?</comment>
+  </data>
+  <data name="DeleteCategory_Filter_Confirmation" xml:space="preserve">
+    <value>Are you sure that you want to delete the filter '{0}'?\n\nThis action cannot be undone.</value>
+    <comment>Are you sure that you want to delete the filter '{0}'?\n\nThis action cannot be undone.</comment>
+  </data>
+  <data name="DeleteCategory_Filter_Title" xml:space="preserve">
+    <value>Delete filter?</value>
+    <comment>Delete filter?</comment>
+  </data>
+  <data name="DeleteRule_Confirmation" xml:space="preserve">
+    <value>Are you sure that you want to delete the rule '{0}'?\n\nThis action cannot be undone.</value>
+    <comment>Are you sure that you want to delete the rule '{0}'?\n\nThis action cannot be undone.</comment>
+  </data>
+  <data name="DeleteRule_Ok" xml:space="preserve">
+    <value>Delete</value>
+    <comment>Delete</comment>
+  </data>
+  <data name="DeleteRule_Title" xml:space="preserve">
+    <value>Delete rule?</value>
+    <comment>Delete rule?</comment>
+  </data>
+  <data name="EmojiPicker_Clear" xml:space="preserve">
+    <value>Clear</value>
+    <comment>Clear</comment>
+  </data>
+  <data name="ExportProfile_Error" xml:space="preserve">
+    <value>An error occured while exporting profile.\nSee the log for more information.</value>
+    <comment>An error occured while exporting profile.\nSee the log for more information.</comment>
+  </data>
+  <data name="ExportProfile_Progress" xml:space="preserve">
+    <value>Exporting profile {0}…</value>
+    <comment>Exporting profile {0}…</comment>
+  </data>
+  <data name="General_Cancel" xml:space="preserve">
+    <value>Cancel</value>
+    <comment>Cancel</comment>
+  </data>
+  <data name="General_Close" xml:space="preserve">
+    <value>Close</value>
+    <comment>Close</comment>
+  </data>
+  <data name="General_Create" xml:space="preserve">
+    <value>Create</value>
+    <comment>Create</comment>
+  </data>
+  <data name="General_Delete" xml:space="preserve">
+    <value>Delete</value>
+    <comment>Delete</comment>
+  </data>
+  <data name="General_ErrorOccured" xml:space="preserve">
+    <value>An error occurred</value>
+    <comment>An error occurred</comment>
+  </data>
+  <data name="General_Export" xml:space="preserve">
+    <value>Export</value>
+    <comment>Export</comment>
+  </data>
+  <data name="General_Import" xml:space="preserve">
+    <value>Import</value>
+    <comment>Import</comment>
+  </data>
+  <data name="General_Menu" xml:space="preserve">
+    <value>Menu</value>
+    <comment>Menu</comment>
+  </data>
+  <data name="General_Ok" xml:space="preserve">
+    <value>Ok</value>
+    <comment>Ok</comment>
+  </data>
+  <data name="General_Save" xml:space="preserve">
+    <value>Save</value>
+    <comment>Save</comment>
+  </data>
+  <data name="GitHub_Broker_SignInUsingExternalBrowser" xml:space="preserve">
+    <value>Sign in using external browser</value>
+    <comment>Sign in using external browser</comment>
+  </data>
+  <data name="GitHub_FirstSynchronization" xml:space="preserve">
+    <value>Ghostly is synchronizing for the first time. This might take a little while. 😅</value>
+    <comment>Ghostly is synchronizing for the first time. This might take a little while. 😅</comment>
+  </data>
+  <data name="GitHub_Progress" xml:space="preserve">
+    <value>Synchronizing {0} of {1} GitHub notifications...</value>
+    <comment>Synchronizing {0} of {1} GitHub notifications...</comment>
+  </data>
+  <data name="GitHub_Progress_Unread" xml:space="preserve">
+    <value>Synchronizing unread items...</value>
+    <comment>Synchronizing unread items...</comment>
+  </data>
+  <data name="GitHub_RateLimitExceeded" xml:space="preserve">
+    <value>We've exceeded the GitHub API rate limit 😢.\nWe won't be able to synchronize until {0}.</value>
+    <comment>We've exceeded the GitHub API rate limit 😢.\nWe won't be able to synchronize until {0}.</comment>
+  </data>
+  <data name="GitHub_Toast_NewNotification_Title" xml:space="preserve">
+    <value>New GitHub notification</value>
+    <comment>New GitHub notification</comment>
+  </data>
+  <data name="GitHub_Toast_NewNotifications_Body" xml:space="preserve">
+    <value>{0} new notifications available.</value>
+    <comment>{0} new notifications available.</comment>
+  </data>
+  <data name="GitHub_Toast_NewNotifications_Title" xml:space="preserve">
+    <value>New GitHub notifications</value>
+    <comment>New GitHub notifications</comment>
+  </data>
+  <data name="ImportProfile_Progress" xml:space="preserve">
+    <value>Importing profile {0}…</value>
+    <comment>Importing profile {0}…</comment>
+  </data>
+  <data name="Main_Archive" xml:space="preserve">
+    <value>Archive</value>
+    <comment>Archive</comment>
+  </data>
+  <data name="Main_Command_Archive" xml:space="preserve">
+    <value>Archive</value>
+    <comment>Archive</comment>
+  </data>
+  <data name="Main_Command_MarkAsRead" xml:space="preserve">
+    <value>Mark as read</value>
+    <comment>Mark as read</comment>
+  </data>
+  <data name="Main_Command_Move" xml:space="preserve">
+    <value>Move</value>
+    <comment>Move</comment>
+  </data>
+  <data name="Main_MarkAsRead" xml:space="preserve">
+    <value>Mark as read</value>
+    <comment>Mark as read</comment>
+  </data>
+  <data name="Main_Move" xml:space="preserve">
+    <value>Move</value>
+    <comment>Move</comment>
+  </data>
+  <data name="Main_Mute" xml:space="preserve">
+    <value>Mute</value>
+    <comment>Mute</comment>
+  </data>
+  <data name="Main_NoNotificationSelected" xml:space="preserve">
+    <value>No notification selected</value>
+    <comment>No notification selected</comment>
+  </data>
+  <data name="Main_OpenInBrowser" xml:space="preserve">
+    <value>Open in browser</value>
+    <comment>Open in browser</comment>
+  </data>
+  <data name="Main_SearchEverywhere" xml:space="preserve">
+    <value>Search everywhere</value>
+    <comment>Search everywhere</comment>
+  </data>
+  <data name="Main_SearchInCategory" xml:space="preserve">
+    <value>Search in {0}</value>
+    <comment>Search in {0}</comment>
+  </data>
+  <data name="Main_Share" xml:space="preserve">
+    <value>Share...</value>
+    <comment>Share...</comment>
+  </data>
+  <data name="Main_ShareGitHubLink" xml:space="preserve">
+    <value>Share link to GitHub item</value>
+    <comment>Share link to GitHub item</comment>
+  </data>
+  <data name="Main_Star" xml:space="preserve">
+    <value>Star</value>
+    <comment>Star</comment>
+  </data>
+  <data name="Main_Synchronize" xml:space="preserve">
+    <value>Synchronize</value>
+    <comment>Synchronize</comment>
+  </data>
+  <data name="Main_Unmute" xml:space="preserve">
+    <value>Unmute</value>
+    <comment>Unmute</comment>
+  </data>
+  <data name="Main_Unstar" xml:space="preserve">
+    <value>Unstar</value>
+    <comment>Unstar</comment>
+  </data>
+  <data name="Main_UpdateItem" xml:space="preserve">
+    <value>Update item</value>
+    <comment>Update item</comment>
+  </data>
+  <data name="MarkAllAsRead_Confirmation" xml:space="preserve">
+    <value>Are you sure that you want to mark all notifications in '{0}' as read?\n\nThis action cannot be undone.</value>
+    <comment>Are you sure that you want to mark all notifications in '{0}' as read?\n\nThis action cannot be undone.</comment>
+  </data>
+  <data name="MarkAllAsRead_Ok" xml:space="preserve">
+    <value>Mark all as read</value>
+    <comment>Mark all as read</comment>
+  </data>
+  <data name="MarkAllAsRead_Progress" xml:space="preserve">
+    <value>Marking all notifications in {0} as read...</value>
+    <comment>Marking all notifications in {0} as read...</comment>
+  </data>
+  <data name="MarkAllAsRead_Title" xml:space="preserve">
+    <value>Mark all as read?</value>
+    <comment>Mark all as read?</comment>
+  </data>
+  <data name="MarkAsRead_Progress" xml:space="preserve">
+    <value>Marking {0} notifications as read...</value>
+    <comment>Marking {0} notifications as read...</comment>
+  </data>
+  <data name="Move_Ok" xml:space="preserve">
+    <value>Move</value>
+    <comment>Move</comment>
+  </data>
+  <data name="Move_Progress" xml:space="preserve">
+    <value>Moving {0} notifications to {1}...</value>
+    <comment>Moving {0} notifications to {1}...</comment>
+  </data>
+  <data name="Move_Title_Plural" xml:space="preserve">
+    <value>Move notifications</value>
+    <comment>Move notifications</comment>
+  </data>
+  <data name="Move_Title_Singular" xml:space="preserve">
+    <value>Move notification</value>
+    <comment>Move notification</comment>
+  </data>
+  <data name="NewProfile_Placeholder" xml:space="preserve">
+    <value>Profile name</value>
+    <comment>Profile name</comment>
+  </data>
+  <data name="NewProfile_Title" xml:space="preserve">
+    <value>Create new profile</value>
+    <comment>Create new profile</comment>
+  </data>
+  <data name="Query_Constant" xml:space="preserve">
+    <value>Constant</value>
+    <comment>Constant</comment>
+  </data>
+  <data name="Query_Error_NeedHelp" xml:space="preserve">
+    <value>Need help?</value>
+    <comment>Need help?</comment>
+  </data>
+  <data name="Query_Error_Subtitle" xml:space="preserve">
+    <value>Something is wrong with the query...</value>
+    <comment>Something is wrong with the query...</comment>
+  </data>
+  <data name="Query_Error_Title" xml:space="preserve">
+    <value>Oh no!</value>
+    <comment>Oh no!</comment>
+  </data>
+  <data name="Query_Keyword" xml:space="preserve">
+    <value>Keyword</value>
+    <comment>Keyword</comment>
+  </data>
+  <data name="Query_Operator" xml:space="preserve">
+    <value>Operator</value>
+    <comment>Operator</comment>
+  </data>
+  <data name="Query_Property" xml:space="preserve">
+    <value>Property</value>
+    <comment>Property</comment>
+  </data>
+  <data name="Query_Results_None" xml:space="preserve">
+    <value>No results found</value>
+    <comment>No results found</comment>
+  </data>
+  <data name="Query_Results_Plural" xml:space="preserve">
+    <value>{0} results</value>
+    <comment>{0} results</comment>
+  </data>
+  <data name="Query_Results_Singular" xml:space="preserve">
+    <value>{0} result</value>
+    <comment>{0} result</comment>
+  </data>
+  <data name="Query_Type_Boolean" xml:space="preserve">
+    <value>Boolean</value>
+    <comment>Boolean</comment>
+  </data>
+  <data name="Query_Type_Integer" xml:space="preserve">
+    <value>Integer</value>
+    <comment>Integer</comment>
+  </data>
+  <data name="Query_Type_String" xml:space="preserve">
+    <value>String</value>
+    <comment>String</comment>
+  </data>
+  <data name="Query_Type_Unknown" xml:space="preserve">
+    <value>Unknown type</value>
+    <comment>Unknown type</comment>
+  </data>
+  <data name="Query_Type_Username" xml:space="preserve">
+    <value>Username</value>
+    <comment>Username</comment>
+  </data>
+  <data name="RuleProcessor_Progress" xml:space="preserve">
+    <value>Running rules for category '{0}'...</value>
+    <comment>Running rules for category '{0}'...</comment>
+  </data>
+  <data name="RuleProcessor_Progress_Single" xml:space="preserve">
+    <value>Running rule '{0}' for category '{1}'...</value>
+    <comment>Running rule '{0}' for category '{1}'...</comment>
+  </data>
+  <data name="Rules_AddRule" xml:space="preserve">
+    <value>Add new rule...</value>
+    <comment>Add new rule...</comment>
+  </data>
+  <data name="Rules_Description_And" xml:space="preserve">
+    <value>And</value>
+    <comment>And</comment>
+  </data>
+  <data name="Rules_Description_Contains" xml:space="preserve">
+    <value>Contains</value>
+    <comment>Contains</comment>
+  </data>
+  <data name="Rules_Description_DoNothing" xml:space="preserve">
+    <value>Do nothing</value>
+    <comment>Do nothing</comment>
+  </data>
+  <data name="Rules_Description_False" xml:space="preserve">
+    <value>False</value>
+    <comment>False</comment>
+  </data>
+  <data name="Rules_Description_If" xml:space="preserve">
+    <value>If</value>
+    <comment>If</comment>
+  </data>
+  <data name="Rules_Description_Is" xml:space="preserve">
+    <value>Is</value>
+    <comment>Is</comment>
+  </data>
+  <data name="Rules_Description_IsGreaterThan" xml:space="preserve">
+    <value>Is greater than</value>
+    <comment>Is greater than</comment>
+  </data>
+  <data name="Rules_Description_IsGreaterThanOrEqualTo" xml:space="preserve">
+    <value>Is greater than or equal to</value>
+    <comment>Is greater than or equal to</comment>
+  </data>
+  <data name="Rules_Description_IsLessThan" xml:space="preserve">
+    <value>Is less than</value>
+    <comment>Is less than</comment>
+  </data>
+  <data name="Rules_Description_IsLessThanOrEqualTo" xml:space="preserve">
+    <value>Is less than or equal to</value>
+    <comment>Is less than or equal to</comment>
+  </data>
+  <data name="Rules_Description_IsNot" xml:space="preserve">
+    <value>Is not</value>
+    <comment>Is not</comment>
+  </data>
+  <data name="Rules_Description_MarkItAsRead" xml:space="preserve">
+    <value>Mark it as read</value>
+    <comment>Mark it as read</comment>
+  </data>
+  <data name="Rules_Description_MoveItTo" xml:space="preserve">
+    <value>Move it to '{0}'</value>
+    <comment>Move it to '{0}'</comment>
+  </data>
+  <data name="Rules_Description_MuteIt" xml:space="preserve">
+    <value>Mute it</value>
+    <comment>Mute it</comment>
+  </data>
+  <data name="Rules_Description_Null" xml:space="preserve">
+    <value>Null</value>
+    <comment>Null</comment>
+  </data>
+  <data name="Rules_Description_Or" xml:space="preserve">
+    <value>Or</value>
+    <comment>Or</comment>
+  </data>
+  <data name="Rules_Description_StarIt" xml:space="preserve">
+    <value>Star it</value>
+    <comment>Star it</comment>
+  </data>
+  <data name="Rules_Description_StopsProcessing" xml:space="preserve">
+    <value>This also stops processing of other rules.</value>
+    <comment>This also stops processing of other rules.</comment>
+  </data>
+  <data name="Rules_Description_Then" xml:space="preserve">
+    <value>Then</value>
+    <comment>Then</comment>
+  </data>
+  <data name="Rules_Description_True" xml:space="preserve">
+    <value>True</value>
+    <comment>True</comment>
+  </data>
+  <data name="Rules_MaximumReached" xml:space="preserve">
+    <value>Maximum number of rules reached. To create more rules, upgrade to Ghostly Pro.</value>
+    <comment>Maximum number of rules reached. To create more rules, upgrade to Ghostly Pro.</comment>
+  </data>
+  <data name="Rules_NoRules" xml:space="preserve">
+    <value>There are no rules.</value>
+    <comment>There are no rules.</comment>
+  </data>
+  <data name="Rules_RunRule_Title" xml:space="preserve">
+    <value>Run '{0}'</value>
+    <comment>Run '{0}'</comment>
+  </data>
+  <data name="Rules_RunRules" xml:space="preserve">
+    <value>Run rules...</value>
+    <comment>Run rules...</comment>
+  </data>
+  <data name="Rules_RunRules_Ok" xml:space="preserve">
+    <value>Run</value>
+    <comment>Run</comment>
+  </data>
+  <data name="Rules_RunRules_Title" xml:space="preserve">
+    <value>Run all rules</value>
+    <comment>Run all rules</comment>
+  </data>
+  <data name="Rules_Title" xml:space="preserve">
+    <value>Rules</value>
+    <comment>Rules</comment>
+  </data>
+  <data name="SelectProfile_CreateNewProfile" xml:space="preserve">
+    <value>Create new profile</value>
+    <comment>Create new profile</comment>
+  </data>
+  <data name="SelectProfile_ErrorLoading" xml:space="preserve">
+    <value>There was a problem loading account profiles</value>
+    <comment>There was a problem loading account profiles</comment>
+  </data>
+  <data name="SelectProfile_Loading" xml:space="preserve">
+    <value>Loading profiles…</value>
+    <comment>Loading profiles…</comment>
+  </data>
+  <data name="SelectProfile_Title_Export" xml:space="preserve">
+    <value>Export Ghostly profile</value>
+    <comment>Export Ghostly profile</comment>
+  </data>
+  <data name="SelectProfile_Title_Import" xml:space="preserve">
+    <value>Import Ghostly profile</value>
+    <comment>Import Ghostly profile</comment>
+  </data>
+  <data name="Settings_About" xml:space="preserve">
+    <value>About</value>
+    <comment>About</comment>
+  </data>
+  <data name="Settings_AggregateToasts" xml:space="preserve">
+    <value>Aggregate notifications into a single toast</value>
+    <comment>Aggregate notifications into a single toast</comment>
+  </data>
+  <data name="Settings_AllowSynchronizationOnMeteredConnections" xml:space="preserve">
+    <value>Allow synchronization on metered connections</value>
+    <comment>Allow synchronization on metered connections</comment>
+  </data>
+  <data name="Settings_AllowTelemetry" xml:space="preserve">
+    <value>Allow Ghostly to send telemetry about errors and general usage.</value>
+    <comment>Allow Ghostly to send telemetry about errors and general usage.</comment>
+  </data>
+  <data name="Settings_AllowTelemetry_Anonymous" xml:space="preserve">
+    <value>All information is anonymous and does not contain any personal data.</value>
+    <comment>All information is anonymous and does not contain any personal data.</comment>
+  </data>
+  <data name="Settings_AutomaticallyMarkAsRead" xml:space="preserve">
+    <value>Automatically mark read notifications as read</value>
+    <comment>Automatically mark read notifications as read</comment>
+  </data>
+  <data name="Settings_Avatars" xml:space="preserve">
+    <value>Avatars</value>
+    <comment>Avatars</comment>
+  </data>
+  <data name="Settings_BackgroundSynchronization" xml:space="preserve">
+    <value>Background Synchronization</value>
+    <comment>Background Synchronization</comment>
+  </data>
+  <data name="Settings_BackgroundTasksNotAllowed" xml:space="preserve">
+    <value>Background tasks are not allowed.</value>
+    <comment>Background tasks are not allowed.</comment>
+  </data>
+  <data name="Settings_Badge" xml:space="preserve">
+    <value>Badge</value>
+    <comment>Badge</comment>
+  </data>
+  <data name="Settings_ClickLibrary" xml:space="preserve">
+    <value>Click on a library below to see its license agreement.</value>
+    <comment>Click on a library below to see its license agreement.</comment>
+  </data>
+  <data name="Settings_Comments" xml:space="preserve">
+    <value>Comments</value>
+    <comment>Comments</comment>
+  </data>
+  <data name="Settings_CreatedBy" xml:space="preserve">
+    <value>Created by</value>
+    <comment>Created by</comment>
+  </data>
+  <data name="Settings_CurrentLanguage" xml:space="preserve">
+    <value>Current language</value>
+    <comment>Current language</comment>
+  </data>
+  <data name="Settings_CurrentTheme" xml:space="preserve">
+    <value>Current theme</value>
+    <comment>Current theme</comment>
+  </data>
+  <data name="Settings_DisableAutomaticStartup" xml:space="preserve">
+    <value>Disable automatic startup</value>
+    <comment>Disable automatic startup</comment>
+  </data>
+  <data name="Settings_EnableAutomaticStartup" xml:space="preserve">
+    <value>Enable automatic startup</value>
+    <comment>Enable automatic startup</comment>
+  </data>
+  <data name="Settings_EnableBackgroundSynchronization" xml:space="preserve">
+    <value>Enable background synchronization</value>
+    <comment>Enable background synchronization</comment>
+  </data>
+  <data name="Settings_FollowOnTwitter" xml:space="preserve">
+    <value>Follow Ghostly on Twitter</value>
+    <comment>Follow Ghostly on Twitter</comment>
+  </data>
+  <data name="Settings_General" xml:space="preserve">
+    <value>General</value>
+    <comment>General</comment>
+  </data>
+  <data name="Settings_Images" xml:space="preserve">
+    <value>Images</value>
+    <comment>Images</comment>
+  </data>
+  <data name="Settings_Language" xml:space="preserve">
+    <value>Language</value>
+    <comment>Language</comment>
+  </data>
+  <data name="Settings_Logging" xml:space="preserve">
+    <value>Logging</value>
+    <comment>Logging</comment>
+  </data>
+  <data name="Settings_LogLevel" xml:space="preserve">
+    <value>Log level</value>
+    <comment>Log level</comment>
+  </data>
+  <data name="Settings_MarkMutedAsRead" xml:space="preserve">
+    <value>Mark muted as read</value>
+    <comment>Mark muted as read</comment>
+  </data>
+  <data name="Settings_Metered" xml:space="preserve">
+    <value>Metered Connections</value>
+    <comment>Metered Connections</comment>
+  </data>
+  <data name="Settings_Notifications" xml:space="preserve">
+    <value>Notifications</value>
+    <comment>Notifications</comment>
+  </data>
+  <data name="Settings_NotSure" xml:space="preserve">
+    <value>Not sure?</value>
+    <comment>Not sure?</comment>
+  </data>
+  <data name="Settings_Open_Source" xml:space="preserve">
+    <value>Open Source</value>
+    <comment>Open Source</comment>
+  </data>
+  <data name="Settings_OpenLogFolder" xml:space="preserve">
+    <value>Open log folder...</value>
+    <comment>Open log folder...</comment>
+  </data>
+  <data name="Settings_Personalize" xml:space="preserve">
+    <value>Personalize</value>
+    <comment>Personalize</comment>
+  </data>
+  <data name="Settings_PreferCachedAvatars" xml:space="preserve">
+    <value>Prefer non-cached avatars with higher quality when online</value>
+    <comment>Prefer non-cached avatars with higher quality when online</comment>
+  </data>
+  <data name="Settings_PreferCachedAvatars_Explanation" xml:space="preserve">
+    <value>(This respects metered connection settings)</value>
+    <comment>(This respects metered connection settings)</comment>
+  </data>
+  <data name="Settings_Privacy" xml:space="preserve">
+    <value>Privacy</value>
+    <comment>Privacy</comment>
+  </data>
+  <data name="Settings_PrivacyStatement" xml:space="preserve">
+    <value>Privacy statement</value>
+    <comment>Privacy statement</comment>
+  </data>
+  <data name="Settings_Reading" xml:space="preserve">
+    <value>Reading</value>
+    <comment>Reading</comment>
+  </data>
+  <data name="Settings_ReadThePrivacyStatement" xml:space="preserve">
+    <value>Read the privacy statement</value>
+    <comment>Read the privacy statement</comment>
+  </data>
+  <data name="Settings_ReportIssue" xml:space="preserve">
+    <value>Report a bug or suggest a feature</value>
+    <comment>Report a bug or suggest a feature</comment>
+  </data>
+  <data name="Settings_RestartRequired" xml:space="preserve">
+    <value>You need to restart Ghostly for the change to take effect.</value>
+    <comment>You need to restart Ghostly for the change to take effect.</comment>
+  </data>
+  <data name="Settings_ScrollToLastComment" xml:space="preserve">
+    <value>Scroll to last comment</value>
+    <comment>Scroll to last comment</comment>
+  </data>
+  <data name="Settings_ShowAvatars" xml:space="preserve">
+    <value>Show avatar for users</value>
+    <comment>Show avatar for users</comment>
+  </data>
+  <data name="Settings_ShowNumberOfUnreadNotifications" xml:space="preserve">
+    <value>Show number of unread notifications</value>
+    <comment>Show number of unread notifications</comment>
+  </data>
+  <data name="Settings_ShowToast" xml:space="preserve">
+    <value>Show toast for new notifications</value>
+    <comment>Show toast for new notifications</comment>
+  </data>
+  <data name="Settings_Startup" xml:space="preserve">
+    <value>Start with Windows</value>
+    <comment>Start with Windows</comment>
+  </data>
+  <data name="Settings_StartupStateDisabled" xml:space="preserve">
+    <value>Automatic startup is disabled.</value>
+    <comment>Automatic startup is disabled.</comment>
+  </data>
+  <data name="Settings_StartupStateDisabledByPolicy" xml:space="preserve">
+    <value>Automatic startup is disabled by group policy.</value>
+    <comment>Automatic startup is disabled by group policy.</comment>
+  </data>
+  <data name="Settings_StartupStateDisabledByUser" xml:space="preserve">
+    <value>Automatic startup is disabled by user. You can enable this in the Startup tab in Task Manager.</value>
+    <comment>Automatic startup is disabled by user. You can enable this in the Startup tab in Task Manager.</comment>
+  </data>
+  <data name="Settings_StartupStateEnabled" xml:space="preserve">
+    <value>Automatic startup is enabled.</value>
+    <comment>Automatic startup is enabled.</comment>
+  </data>
+  <data name="Settings_StartupStateEnabledByPolicy" xml:space="preserve">
+    <value>Automatic startup is enabled by group policy.</value>
+    <comment>Automatic startup is enabled by group policy.</comment>
+  </data>
+  <data name="Settings_StartupStateError" xml:space="preserve">
+    <value>An error occured while retrieving startup state.</value>
+    <comment>An error occured while retrieving startup state.</comment>
+  </data>
+  <data name="Settings_Synchronization" xml:space="preserve">
+    <value>Synchronization</value>
+    <comment>Synchronization</comment>
+  </data>
+  <data name="Settings_Synchronization_General" xml:space="preserve">
+    <value>General</value>
+    <comment>General</comment>
+  </data>
+  <data name="Settings_SynchronizeAvatarsForOfflineUse" xml:space="preserve">
+    <value>Synchronize avatars for offline use</value>
+    <comment>Synchronize avatars for offline use</comment>
+  </data>
+  <data name="Settings_SynchronizeUnreadState" xml:space="preserve">
+    <value>Synchronize unread state</value>
+    <comment>Synchronize unread state</comment>
+  </data>
+  <data name="Settings_Telemetry" xml:space="preserve">
+    <value>Telemetry</value>
+    <comment>Telemetry</comment>
+  </data>
+  <data name="Settings_Thanks" xml:space="preserve">
+    <value>Special Thanks</value>
+    <comment>Special Thanks</comment>
+  </data>
+  <data name="Settings_Theme" xml:space="preserve">
+    <value>Theme</value>
+    <comment>Theme</comment>
+  </data>
+  <data name="Settings_Toasts" xml:space="preserve">
+    <value>Toasts</value>
+    <comment>Toasts</comment>
+  </data>
+  <data name="Settings_VisitWebsite" xml:space="preserve">
+    <value>Visit the website</value>
+    <comment>Visit the website</comment>
+  </data>
+  <data name="Shell_Accounts" xml:space="preserve">
+    <value>Accounts</value>
+    <comment>Accounts</comment>
+  </data>
+  <data name="Shell_Archive" xml:space="preserve">
+    <value>Archive</value>
+    <comment>Archive</comment>
+  </data>
+  <data name="Shell_ArchiveAll" xml:space="preserve">
+    <value>Archive all...</value>
+    <comment>Archive all...</comment>
+  </data>
+  <data name="Shell_DeleteCategory" xml:space="preserve">
+    <value>Delete category...</value>
+    <comment>Delete category...</comment>
+  </data>
+  <data name="Shell_DeleteFilter" xml:space="preserve">
+    <value>Delete filter...</value>
+    <comment>Delete filter...</comment>
+  </data>
+  <data name="Shell_EditCategory" xml:space="preserve">
+    <value>Edit category...</value>
+    <comment>Edit category...</comment>
+  </data>
+  <data name="Shell_EditFilter" xml:space="preserve">
+    <value>Edit filter...</value>
+    <comment>Edit filter...</comment>
+  </data>
+  <data name="Shell_Inbox" xml:space="preserve">
+    <value>Inbox</value>
+    <comment>Inbox</comment>
+  </data>
+  <data name="Shell_MarkAllAsRead" xml:space="preserve">
+    <value>Mark all as read...</value>
+    <comment>Mark all as read...</comment>
+  </data>
+  <data name="Shell_Muted" xml:space="preserve">
+    <value>Muted</value>
+    <comment>Muted</comment>
+  </data>
+  <data name="Shell_NewCategory" xml:space="preserve">
+    <value>New category...</value>
+    <comment>New category...</comment>
+  </data>
+  <data name="Shell_Rules" xml:space="preserve">
+    <value>Rules</value>
+    <comment>Rules</comment>
+  </data>
+  <data name="Shell_Search" xml:space="preserve">
+    <value>Search</value>
+    <comment>Search</comment>
+  </data>
+  <data name="Shell_Settings" xml:space="preserve">
+    <value>Settings</value>
+    <comment>Settings</comment>
+  </data>
+  <data name="Shell_Starred" xml:space="preserve">
+    <value>Starred</value>
+    <comment>Starred</comment>
+  </data>
+  <data name="Synchronization_DisabledBecauseOfMeteredConnection" xml:space="preserve">
+    <value>⚠ Synchronization is disabled since you're on a metered connection.\nYou can enable synchronization on a metered connection in Ghostly's settings.</value>
+    <comment>⚠ Synchronization is disabled since you're on a metered connection.\nYou can enable synchronization on a metered connection in Ghostly's settings.</comment>
+  </data>
+  <data name="Synchronization_Local_Status" xml:space="preserve">
+    <value>Synchronizing local state...</value>
+    <comment>Synchronizing local state...</comment>
+  </data>
+  <data name="Synchronization_Started" xml:space="preserve">
+    <value>Synchronization started...</value>
+    <comment>Synchronization started...</comment>
+  </data>
+  <data name="Template_Action_Approved" xml:space="preserve">
+    <value>Approved</value>
+    <comment>Approved</comment>
+  </data>
+  <data name="Template_Action_Commented" xml:space="preserve">
+    <value>Commented</value>
+    <comment>Commented</comment>
+  </data>
+  <data name="Template_Action_Dismissed" xml:space="preserve">
+    <value>Dismissed</value>
+    <comment>Dismissed</comment>
+  </data>
+  <data name="Template_Action_MergedThis" xml:space="preserve">
+    <value>Merged this</value>
+    <comment>Merged this</comment>
+  </data>
+  <data name="Template_Action_Pending" xml:space="preserve">
+    <value>Is reviewing (not submitted)</value>
+    <comment>Is reviewing (not submitted)</comment>
+  </data>
+  <data name="Template_Action_RequestedChanges" xml:space="preserve">
+    <value>Requested changes</value>
+    <comment>Requested changes</comment>
+  </data>
+  <data name="Template_Action_Reviewed" xml:space="preserve">
+    <value>Reviewed</value>
+    <comment>Reviewed</comment>
+  </data>
+  <data name="Template_Action_Unknown" xml:space="preserve">
+    <value>?</value>
+    <comment>?</comment>
+  </data>
+  <data name="Template_Authored" xml:space="preserve">
+    <value>Authored</value>
+    <comment>Authored</comment>
+  </data>
+  <data name="Template_DiscussionOpenInBrowser" xml:space="preserve">
+    <value>Open discussions for repository in browser</value>
+    <comment>Open discussions for repository in browser</comment>
+  </data>
+  <data name="Template_DiscussionUpdated" xml:space="preserve">
+    <value>Updated</value>
+    <comment>Updated</comment>
+  </data>
+  <data name="Template_NoDescriptionProvided" xml:space="preserve">
+    <value>No description provided.</value>
+    <comment>No description provided.</comment>
+  </data>
+  <data name="Template_ReviewedAnd" xml:space="preserve">
+    <value>Reviewed and</value>
+    <comment>Reviewed and</comment>
+  </data>
+  <data name="Template_SecurityVulnerabilityReported" xml:space="preserve">
+    <value>Security vulnerability reported</value>
+    <comment>Security vulnerability reported</comment>
+  </data>
+  <data name="Template_Wrote" xml:space="preserve">
+    <value>Wrote</value>
+    <comment>Wrote</comment>
+  </data>
+  <data name="Time_DaysAgo" xml:space="preserve">
+    <value>{0} days ago</value>
+    <comment>{0} days ago</comment>
+  </data>
+  <data name="Time_HoursAgo" xml:space="preserve">
+    <value>{0} hours ago</value>
+    <comment>{0} hours ago</comment>
+  </data>
+  <data name="Time_MinutesAgo" xml:space="preserve">
+    <value>{0} minutes ago</value>
+    <comment>{0} minutes ago</comment>
+  </data>
+  <data name="Time_MonthsAgo" xml:space="preserve">
+    <value>{0} months ago</value>
+    <comment>{0} months ago</comment>
+  </data>
+  <data name="Time_OneDayAgo" xml:space="preserve">
+    <value>A day ago</value>
+    <comment>A day ago</comment>
+  </data>
+  <data name="Time_OneHourAgo" xml:space="preserve">
+    <value>An hour ago</value>
+    <comment>An hour ago</comment>
+  </data>
+  <data name="Time_OneMinuteAgo" xml:space="preserve">
+    <value>A minute ago</value>
+    <comment>A minute ago</comment>
+  </data>
+  <data name="Time_OneMonthAgo" xml:space="preserve">
+    <value>A month ago</value>
+    <comment>A month ago</comment>
+  </data>
+  <data name="Time_OneSecondAgo" xml:space="preserve">
+    <value>A second ago</value>
+    <comment>A second ago</comment>
+  </data>
+  <data name="Time_OneYearAgo" xml:space="preserve">
+    <value>A year ago</value>
+    <comment>A year ago</comment>
+  </data>
+  <data name="Time_SecondsAgo" xml:space="preserve">
+    <value>{0} seconds ago</value>
+    <comment>{0} seconds ago</comment>
+  </data>
+  <data name="Time_YearsAgo" xml:space="preserve">
+    <value>{0} years ago</value>
+    <comment>{0} years ago</comment>
+  </data>
+  <data name="Time_Yesterday" xml:space="preserve">
+    <value>Yesterday</value>
+    <comment>Yesterday</comment>
+  </data>
+  <data name="WhatsNew_GhostlyWasUpdated" xml:space="preserve">
+    <value>Ghostly was updated to version {0}.</value>
+    <comment>Ghostly was updated to version {0}.</comment>
+  </data>
+  <data name="WhatsNew_Title" xml:space="preserve">
+    <value>New version installed!</value>
+    <comment>New version installed!</comment>
+  </data>
+  <data name="WhatsNew_ViewReleaseNotes" xml:space="preserve">
+    <value>View release notes</value>
+    <comment>View release notes</comment>
+  </data>
+</root>

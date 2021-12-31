@@ -1,0 +1,118 @@
+<controls:ContentDialogView
+    x:Class="Ghostly.Uwp.Views.CreateRuleView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:controls="using:Ghostly.Uwp.Controls"
+    xmlns:domain="using:Ghostly.Domain"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:strings="using:Ghostly.Uwp.Strings"
+    mc:Ignorable="d"
+    d:DesignHeight="350"
+    d:DesignWidth="640"
+    DefaultButton="Primary"
+    PrimaryButtonText="{Binding ButtonText, Mode=OneWay}"
+    IsPrimaryButtonEnabled="{Binding IsValid, Mode=OneWay}"
+    CloseButtonText="{strings:Localize Key=General_Cancel}">
+    
+    <controls:ContentDialogView.TitleTemplate>
+        <DataTemplate>
+            <StackPanel Orientation="Horizontal">
+                <FontIcon x:Name="Glyph" Glyph="&#xE7C1;" VerticalAlignment="Center" FontSize="16" />
+                <TextBlock Text="{Binding Title, Mode=OneWay}" Margin="{StaticResource SmallLeftMargin}" VerticalAlignment="Center"/>
+            </StackPanel>
+        </DataTemplate>
+    </controls:ContentDialogView.TitleTemplate>
+    <StackPanel>
+
+        <!-- Name -->
+        <TextBox Header="{strings:Localize Key=CreateRule_Name}" PlaceholderText="{strings:Localize Key=CreateRule_Name_Placeholder}"
+                 Text="{Binding Name.Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+
+        <!-- Expression -->
+        <controls:QueryControl PlaceholderText="{strings:Localize Key=CreateRule_Condition_Placeholder}"
+                               Header="{strings:Localize Key=CreateRule_Condition}" Margin="0,15,0,0"
+                               Compile="False"
+                               IsEnabled="{Binding IsFilter, Mode=TwoWay}"
+                               Height="94"
+                               Text="{Binding Expression.Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBlock Text="{Binding ExpressionError.Value, Mode=OneWay}"
+                   Foreground="Red" TextWrapping="Wrap"
+                   Visibility="{Binding ExpressionError.Value, Mode=OneWay, Converter={StaticResource VisibleWhenNotEmpty}}" />
+        <HyperlinkButton HorizontalAlignment="Right"
+                         NavigateUri="https://spectresystems.se/ghostly/docs/query"
+                         Content="{strings:Localize Key=CreateRule_WhatIsThis}" />
+
+        <!-- Consequences -->
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <CheckBox Grid.Row="0" Grid.Column="0" Content="{strings:Localize Key=CreateRule_Star}"
+                      IsChecked="{Binding Star.Value, Mode=TwoWay}" Margin="0,5,0,0" />
+
+            <CheckBox Grid.Row="0" Grid.Column="1" Content="{strings:Localize Key=CreateRule_Mute}"
+                      IsChecked="{Binding Mute.Value, Mode=TwoWay}" />
+
+            <CheckBox Grid.Row="1" Grid.Column="0" Content="{strings:Localize Key=CreateRule_MarkAsRead}"
+                      IsChecked="{Binding MarkAsRead.Value, Mode=TwoWay}" />
+
+            <CheckBox Grid.Row="1" Grid.Column="1" Content="{strings:Localize Key=CreateRule_StopProcessingOtherRules}"
+                      IsChecked="{Binding StopProcessing.Value, Mode=TwoWay}" />
+
+            <StackPanel Grid.Row="2" Grid.ColumnSpan="2">
+                <CheckBox Content="{strings:Localize Key=CreateRule_MoveToCategory}" IsChecked="{Binding Move.Value, Mode=TwoWay}" />
+                <ComboBox Margin="25,5,0,0" Width="170" Height="36" ItemsSource="{Binding Categories}"
+                  IsEnabled="{Binding Move.Value, Mode=OneWay}"
+                  SelectedItem="{Binding Category.Value, Mode=TwoWay}">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate x:DataType="domain:Category">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="22" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="32" />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+
+                                <!-- Emoji -->
+                                <TextBlock Grid.Column="0" Text="{Binding Emoji}"
+                                   FontFamily="Segoe UI Emoji"
+                                   Visibility="{Binding Emoji, Converter={StaticResource VisibleWhenNotEmpty}}"
+                                   VerticalAlignment="Center" HorizontalAlignment="Left"
+                                   FontSize="16" ToolTipService.ToolTip="{Binding Name}"/>
+
+                                <!-- Glyph -->
+                                <FontIcon Grid.Column="0" Glyph="{Binding Glyph}"
+                                  FontFamily="Segoe MDL2 Assets"
+                                  Margin="3,0,0,0"
+                                  Visibility="{Binding Emoji, Converter={StaticResource VisibleWhenEmpty}}"
+                                  VerticalAlignment="Center" HorizontalAlignment="Left"
+                                  FontSize="16" ToolTipService.ToolTip="{Binding Name}" />
+
+                                <!-- Name -->
+                                <TextBlock x:Name="Text" Grid.Column="1"
+                                       Margin="3,0,0,0" VerticalAlignment="Center"
+                                       Text="{Binding Name}" TextWrapping="NoWrap" />
+                            </Grid>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+            </StackPanel>
+        </Grid>
+
+        <!-- Imported rule -->
+        <StackPanel Visibility="{Binding ImportedInfo, Converter={StaticResource VisibleWhenNotEmpty}}" Margin="0,10,0,0">
+            <TextBlock Text="{Binding ImportedInfo}" Foreground="{ThemeResource DimmedText}" />
+            <TextBlock Text="{strings:Localize Key=CreateRule_RuleImported_Warning}" Foreground="{ThemeResource DimmedText}" />
+        </StackPanel>
+
+    </StackPanel>
+</controls:ContentDialogView>

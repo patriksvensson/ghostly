@@ -1,0 +1,1355 @@
+{
+  "Culture": "sv-SE",
+  "Entries": [
+    {
+      "Key": "Accounts_Account",
+      "Translation": "Konto",
+      "Comment": "Account"
+    },
+    {
+      "Key": "Accounts_AuthorizationProblem",
+      "Translation": "Det inträffade ett problem när detta kontot skulle auktoriseras.",
+      "Comment": "There was a problem authorizing this account."
+    },
+    {
+      "Key": "Accounts_ExportProfile",
+      "Translation": "Exportera profil",
+      "Comment": "Export profile"
+    },
+    {
+      "Key": "Accounts_ImportProfile",
+      "Translation": "Importera profil",
+      "Comment": "Import profile"
+    },
+    {
+      "Key": "Accounts_NoAccounts",
+      "Translation": "Det finns inga konton.",
+      "Comment": "There are no accounts."
+    },
+    {
+      "Key": "Accounts_NoInternetConnection",
+      "Translation": "Ingen Internetuppkoppling tillgänglig.",
+      "Comment": "No Internet connection."
+    },
+    {
+      "Key": "Accounts_PleaseSignInAgain",
+      "Translation": "Vänligen logga ut och logga in igen.",
+      "Comment": "Please sign out and sign in again."
+    },
+    {
+      "Key": "Accounts_ProfileManagementProhibited",
+      "Translation": "Profilhantering inte tillåten",
+      "Comment": "Profile management prohibited"
+    },
+    {
+      "Key": "Accounts_Profiles",
+      "Translation": "Profiler",
+      "Comment": "Profiles"
+    },
+    {
+      "Key": "Accounts_PublicAndPrivateRepositories",
+      "Translation": "Publika och privata repon",
+      "Comment": "Public and private repositories"
+    },
+    {
+      "Key": "Accounts_PublicAndPrivateRepositoriesMorePermissions",
+      "Translation": "Publika och privata repon (kräver mer rättigheter)",
+      "Comment": "Public and private repositories (requires more permissions)"
+    },
+    {
+      "Key": "Accounts_PublicRepositories",
+      "Translation": "Enbart publika repon",
+      "Comment": "Public repositories"
+    },
+    {
+      "Key": "Accounts_PublicRepositoriesOnly",
+      "Translation": "Publika repon",
+      "Comment": "Public repositories only"
+    },
+    {
+      "Key": "Accounts_Review",
+      "Translation": "Granska rättigheter",
+      "Comment": "Review account permissions"
+    },
+    {
+      "Key": "Accounts_SignInToGitHub",
+      "Translation": "Logga in till GitHub...",
+      "Comment": "Sign in to GitHub..."
+    },
+    {
+      "Key": "Accounts_SignOut",
+      "Translation": "Logga ut",
+      "Comment": "Sign out"
+    },
+    {
+      "Key": "Accounts_Title",
+      "Translation": "Konton",
+      "Comment": "Accounts"
+    },
+    {
+      "Key": "Archive_Progress_Archiving",
+      "Translation": "Arkiverar meddelanden...",
+      "Comment": "Archiving notifications..."
+    },
+    {
+      "Key": "Archive_Progress_MarkingAsRead",
+      "Translation": "Markerar meddelanen som lästa...",
+      "Comment": "Marking notifications as read..."
+    },
+    {
+      "Key": "ArchiveAll_Confirmation",
+      "Translation": "Är du säker på att du vill arkivera alla meddelanden i '{0}'?\\n\\nDenna åtgärd kan inte ångras.",
+      "Comment": "Are you sure that you want to archive all notifications in '{0}'?\\n\\nThis action cannot be undone."
+    },
+    {
+      "Key": "ArchiveAll_Ok",
+      "Translation": "Arkivera",
+      "Comment": "Archive"
+    },
+    {
+      "Key": "ArchiveAll_Progress",
+      "Translation": "Arkiverar meddelanden i '{0}'...",
+      "Comment": "Archiving notifications in {0}..."
+    },
+    {
+      "Key": "ArchiveAll_Title",
+      "Translation": "Arkivera allt?",
+      "Comment": "Archive all?"
+    },
+    {
+      "Key": "CreateCategory_CategoryImported",
+      "Translation": "Kategorin har tidigare importerats från '{0}'.",
+      "Comment": "The category was previously imported from '{0}'."
+    },
+    {
+      "Key": "CreateCategory_CategoryImported_Warning",
+      "Translation": "Ändringar gjorda till denna kategori förloras om en ny import görs.",
+      "Comment": "Changes to this category will be lost if re-importing again."
+    },
+    {
+      "Key": "CreateCategory_Expression",
+      "Translation": "Uttryck",
+      "Comment": "Expression"
+    },
+    {
+      "Key": "CreateCategory_IncludeMuted",
+      "Translation": "Visa tystade",
+      "Comment": "Include muted"
+    },
+    {
+      "Key": "CreateCategory_Muted",
+      "Translation": "Tysta",
+      "Comment": "Mute"
+    },
+    {
+      "Key": "CreateCategory_Name",
+      "Translation": "Namn",
+      "Comment": "Name"
+    },
+    {
+      "Key": "CreateCategory_ShowTotal",
+      "Translation": "Visa antal meddelanden",
+      "Comment": "Show total count"
+    },
+    {
+      "Key": "CreateCategory_ThisIsAFilter",
+      "Translation": "Detta är ett filter",
+      "Comment": "This is a filter"
+    },
+    {
+      "Key": "CreateCategory_Title_EditCategory",
+      "Translation": "Redigera kategori",
+      "Comment": "Edit category"
+    },
+    {
+      "Key": "CreateCategory_Title_EditFilter",
+      "Translation": "Redigera filter",
+      "Comment": "Edit filter"
+    },
+    {
+      "Key": "CreateCategory_Title_NewCategory",
+      "Translation": "Skapa kategori",
+      "Comment": "Create category"
+    },
+    {
+      "Key": "CreateCategory_Title_NewFilter",
+      "Translation": "Skapa filter",
+      "Comment": "Create filter"
+    },
+    {
+      "Key": "CreateCategory_Upgrade",
+      "Translation": "För att skapa fler, uppgradera till Ghostly Pro.",
+      "Comment": "To create more, upgrade to Ghostly Pro."
+    },
+    {
+      "Key": "CreateCategory_WhatIsThis",
+      "Translation": "Vad är detta?",
+      "Comment": "What is this?"
+    },
+    {
+      "Key": "CreateRule_Condition",
+      "Translation": "Villkor",
+      "Comment": "Condition"
+    },
+    {
+      "Key": "CreateRule_Condition_Placeholder",
+      "Translation": "Uttryck",
+      "Comment": "Expression"
+    },
+    {
+      "Key": "CreateRule_EditRule",
+      "Translation": "Redigera regel",
+      "Comment": "Edit rule"
+    },
+    {
+      "Key": "CreateRule_MarkAsRead",
+      "Translation": "Markera som läst",
+      "Comment": "Mark as read"
+    },
+    {
+      "Key": "CreateRule_MoveToCategory",
+      "Translation": "Flytta till kategori",
+      "Comment": "Move to category"
+    },
+    {
+      "Key": "CreateRule_Mute",
+      "Translation": "Tysta",
+      "Comment": "Mute"
+    },
+    {
+      "Key": "CreateRule_Name",
+      "Translation": "Namn",
+      "Comment": "Name"
+    },
+    {
+      "Key": "CreateRule_Name_Placeholder",
+      "Translation": "Regelns namn",
+      "Comment": "Name of the rule"
+    },
+    {
+      "Key": "CreateRule_NewRule",
+      "Translation": "Ny regel",
+      "Comment": "New rule"
+    },
+    {
+      "Key": "CreateRule_RuleImported",
+      "Translation": "Regeln har tidigare importerats från '{0}'.",
+      "Comment": "The rule was previously imported from '{0}'."
+    },
+    {
+      "Key": "CreateRule_RuleImported_Warning",
+      "Translation": "Ändringar gjorda till denna regel förloras om en ny import görs",
+      "Comment": "Changes to this rule will be lost if re-importing again."
+    },
+    {
+      "Key": "CreateRule_Star",
+      "Translation": "Favoritmarkera",
+      "Comment": "Star"
+    },
+    {
+      "Key": "CreateRule_StopProcessingOtherRules",
+      "Translation": "Sluta behandla andra regler",
+      "Comment": "Stop processing other rules"
+    },
+    {
+      "Key": "CreateRule_WhatIsThis",
+      "Translation": "Vad är detta?",
+      "Comment": "What is this?"
+    },
+    {
+      "Key": "DeleteCategory_CannotDelete_ChangeOrDeleteRule",
+      "Translation": "Ändra eller radera den påverkade regeln för att radera denna kategorin.",
+      "Comment": "Change or delete the affected rules to delete this category."
+    },
+    {
+      "Key": "DeleteCategory_CannotDelete_Title",
+      "Translation": "Kan inte radera kategori",
+      "Comment": "Cannot delete category"
+    },
+    {
+      "Key": "DeleteCategory_CannotDelete_UsedInFollowingRules",
+      "Translation": "Kategorin '{0}' används av följande regler:",
+      "Comment": "The category '{0}' is used in the following rules:"
+    },
+    {
+      "Key": "DeleteCategory_Category_Confirmation",
+      "Translation": "Är du säker på att du vill radera kategorin '{0}'?\\n\\nDenna åtgärd kan inte ångras.",
+      "Comment": "Are you sure that you want to delete the category '{0}'?\\n\\nThis action cannot be undone."
+    },
+    {
+      "Key": "DeleteCategory_Category_Title",
+      "Translation": "Radera kategori?",
+      "Comment": "Delete category?"
+    },
+    {
+      "Key": "DeleteCategory_Filter_Confirmation",
+      "Translation": "Är du säker på att du vill radera filtret '{0}'?\\n\\nDenna åtgärd kan inte ångras.",
+      "Comment": "Are you sure that you want to delete the filter '{0}'?\\n\\nThis action cannot be undone."
+    },
+    {
+      "Key": "DeleteCategory_Filter_Title",
+      "Translation": "Radera filter?",
+      "Comment": "Delete filter?"
+    },
+    {
+      "Key": "DeleteRule_Confirmation",
+      "Translation": "Är du säker på att du vill radera regeln '{0}'?\\n\\nDenna åtgärd kan inte ångras.",
+      "Comment": "Are you sure that you want to delete the rule '{0}'?\\n\\nThis action cannot be undone."
+    },
+    {
+      "Key": "DeleteRule_Ok",
+      "Translation": "Radera",
+      "Comment": "Delete"
+    },
+    {
+      "Key": "DeleteRule_Title",
+      "Translation": "Radera regel?",
+      "Comment": "Delete rule?"
+    },
+    {
+      "Key": "EmojiPicker_Clear",
+      "Translation": "Rensa",
+      "Comment": "Clear"
+    },
+    {
+      "Key": "ExportProfile_Error",
+      "Translation": "Ett fel inträffade under export av profilen.\\nSe Ghostlys logg för mer information.",
+      "Comment": "An error occured while exporting profile.\\nSee the log for more information."
+    },
+    {
+      "Key": "ExportProfile_Progress",
+      "Translation": "Exporterar profil {0}…",
+      "Comment": "Exporting profile {0}…"
+    },
+    {
+      "Key": "General_Cancel",
+      "Translation": "Avbryt",
+      "Comment": "Cancel"
+    },
+    {
+      "Key": "General_Close",
+      "Translation": "Stäng",
+      "Comment": "Close"
+    },
+    {
+      "Key": "General_Create",
+      "Translation": "Skapa",
+      "Comment": "Create"
+    },
+    {
+      "Key": "General_Delete",
+      "Translation": "Radera",
+      "Comment": "Delete"
+    },
+    {
+      "Key": "General_ErrorOccured",
+      "Translation": "Ett fel inträffade",
+      "Comment": "An error occurred"
+    },
+    {
+      "Key": "General_Export",
+      "Translation": "Exportera",
+      "Comment": "Export"
+    },
+    {
+      "Key": "General_Import",
+      "Translation": "Importera",
+      "Comment": "Import"
+    },
+    {
+      "Key": "General_Menu",
+      "Translation": "Meny",
+      "Comment": "Menu"
+    },
+    {
+      "Key": "General_Ok",
+      "Translation": "Ok",
+      "Comment": "Ok"
+    },
+    {
+      "Key": "General_Save",
+      "Translation": "Spara",
+      "Comment": "Save"
+    },
+    {
+      "Key": "GitHub_Broker_SignInUsingExternalBrowser",
+      "Translation": "Logga in med extern webbläsare",
+      "Comment": "Sign in using external browser"
+    },
+    {
+      "Key": "GitHub_FirstSynchronization",
+      "Translation": "Ghostly synkroniserar för första gången. Detta kan ta en liten stund. 😅",
+      "Comment": "Ghostly is synchronizing for the first time. This might take a little while. 😅"
+    },
+    {
+      "Key": "GitHub_Progress",
+      "Translation": "Synkroniserar {0} av {1} GitHub-meddelanden...",
+      "Comment": "Synchronizing {0} of {1} GitHub notifications..."
+    },
+    {
+      "Key": "GitHub_Progress_Unread",
+      "Translation": "Synkroniserar olästa meddelanden...",
+      "Comment": "Synchronizing unread items..."
+    },
+    {
+      "Key": "GitHub_RateLimitExceeded",
+      "Translation": "Vi överskred antalet tillåtna API-anrop mot GitHub 😢.\\nVi kommer inte kunna synkronisera igen innan {0}.",
+      "Comment": "We've exceeded the GitHub API rate limit 😢.\\nWe won't be able to synchronize until {0}."
+    },
+    {
+      "Key": "GitHub_Toast_NewNotification_Title",
+      "Translation": "Nytt GitHub-meddelande",
+      "Comment": "New GitHub notification"
+    },
+    {
+      "Key": "GitHub_Toast_NewNotifications_Body",
+      "Translation": "{0} nya meddelanden",
+      "Comment": "{0} new notifications available."
+    },
+    {
+      "Key": "GitHub_Toast_NewNotifications_Title",
+      "Translation": "Nya GitHub-meddelanden",
+      "Comment": "New GitHub notifications"
+    },
+    {
+      "Key": "ImportProfile_Progress",
+      "Translation": "Importerar profil {0}…",
+      "Comment": "Importing profile {0}…"
+    },
+    {
+      "Key": "Main_Archive",
+      "Translation": "Arkivera",
+      "Comment": "Archive"
+    },
+    {
+      "Key": "Main_Command_Archive",
+      "Translation": "Arkivera",
+      "Comment": "Archive"
+    },
+    {
+      "Key": "Main_Command_MarkAsRead",
+      "Translation": "Markera som läst",
+      "Comment": "Mark as read"
+    },
+    {
+      "Key": "Main_Command_Move",
+      "Translation": "Flytta",
+      "Comment": "Move"
+    },
+    {
+      "Key": "Main_MarkAsRead",
+      "Translation": "Markera som läst",
+      "Comment": "Mark as read"
+    },
+    {
+      "Key": "Main_Move",
+      "Translation": "Flytta",
+      "Comment": "Move"
+    },
+    {
+      "Key": "Main_Mute",
+      "Translation": "Tysta",
+      "Comment": "Mute"
+    },
+    {
+      "Key": "Main_NoNotificationSelected",
+      "Translation": "Inget meddelande valt",
+      "Comment": "No notification selected"
+    },
+    {
+      "Key": "Main_OpenInBrowser",
+      "Translation": "Öppna i webbläsare",
+      "Comment": "Open in browser"
+    },
+    {
+      "Key": "Main_SearchEverywhere",
+      "Translation": "Sök överallt",
+      "Comment": "Search everywhere"
+    },
+    {
+      "Key": "Main_SearchInCategory",
+      "Translation": "Sök i {0}",
+      "Comment": "Search in {0}"
+    },
+    {
+      "Key": "Main_Share",
+      "Translation": "Dela...",
+      "Comment": "Share..."
+    },
+    {
+      "Key": "Main_ShareGitHubLink",
+      "Translation": "Dela länk till GitHub-meddelande",
+      "Comment": "Share link to GitHub item"
+    },
+    {
+      "Key": "Main_Star",
+      "Translation": "Favoritmarkera",
+      "Comment": "Star"
+    },
+    {
+      "Key": "Main_Synchronize",
+      "Translation": "Synkronisera",
+      "Comment": "Synchronize"
+    },
+    {
+      "Key": "Main_Unmute",
+      "Translation": "Aktivera igen",
+      "Comment": "Unmute"
+    },
+    {
+      "Key": "Main_Unstar",
+      "Translation": "Ta bort favoritmarkering",
+      "Comment": "Unstar"
+    },
+    {
+      "Key": "Main_UpdateItem",
+      "Translation": "Uppdatera",
+      "Comment": "Update item"
+    },
+    {
+      "Key": "MarkAllAsRead_Confirmation",
+      "Translation": "Är du säker på att du vill markera alla meddelanden i '{0}' som lästa?\\n\\nDenna åtgärd kan inte ångras.",
+      "Comment": "Are you sure that you want to mark all notifications in '{0}' as read?\\n\\nThis action cannot be undone."
+    },
+    {
+      "Key": "MarkAllAsRead_Ok",
+      "Translation": "Markera alla som lästa",
+      "Comment": "Mark all as read"
+    },
+    {
+      "Key": "MarkAllAsRead_Progress",
+      "Translation": "Markerar alla meddelanden i '{0}' som lästa...",
+      "Comment": "Marking all notifications in {0} as read..."
+    },
+    {
+      "Key": "MarkAllAsRead_Title",
+      "Translation": "Markera alla som lästa?",
+      "Comment": "Mark all as read?"
+    },
+    {
+      "Key": "MarkAsRead_Progress",
+      "Translation": "Markerar {0} meddelanden som lästa...",
+      "Comment": "Marking {0} notifications as read..."
+    },
+    {
+      "Key": "Move_Ok",
+      "Translation": "Flytta",
+      "Comment": "Move"
+    },
+    {
+      "Key": "Move_Progress",
+      "Translation": "Flyttar {0} meddelanden till '{1}'...",
+      "Comment": "Moving {0} notifications to {1}..."
+    },
+    {
+      "Key": "Move_Title_Plural",
+      "Translation": "Flytta meddelanden",
+      "Comment": "Move notifications"
+    },
+    {
+      "Key": "Move_Title_Singular",
+      "Translation": "Flytta meddelande",
+      "Comment": "Move notification"
+    },
+    {
+      "Key": "NewProfile_Placeholder",
+      "Translation": "Profilnamn",
+      "Comment": "Profile name"
+    },
+    {
+      "Key": "NewProfile_Title",
+      "Translation": "Skapa ny profil",
+      "Comment": "Create new profile"
+    },
+    {
+      "Key": "Query_Constant",
+      "Translation": "Konstant",
+      "Comment": "Constant"
+    },
+    {
+      "Key": "Query_Error_NeedHelp",
+      "Translation": "Behöver du hjälp?",
+      "Comment": "Need help?"
+    },
+    {
+      "Key": "Query_Error_Subtitle",
+      "Translation": "Något är fel med frågan...",
+      "Comment": "Something is wrong with the query..."
+    },
+    {
+      "Key": "Query_Error_Title",
+      "Translation": "Hoppsan!",
+      "Comment": "Oh no!"
+    },
+    {
+      "Key": "Query_Keyword",
+      "Translation": "Nyckelord",
+      "Comment": "Keyword"
+    },
+    {
+      "Key": "Query_Operator",
+      "Translation": "Operator",
+      "Comment": "Operator"
+    },
+    {
+      "Key": "Query_Property",
+      "Translation": "Egenskap",
+      "Comment": "Property"
+    },
+    {
+      "Key": "Query_Results_None",
+      "Translation": "Inga träffar",
+      "Comment": "No results found"
+    },
+    {
+      "Key": "Query_Results_Plural",
+      "Translation": "{0} träffar",
+      "Comment": "{0} results"
+    },
+    {
+      "Key": "Query_Results_Singular",
+      "Translation": "{0} träff",
+      "Comment": "{0} result"
+    },
+    {
+      "Key": "Query_Type_Boolean",
+      "Translation": "Boolesk",
+      "Comment": "Boolean"
+    },
+    {
+      "Key": "Query_Type_Integer",
+      "Translation": "Heltal",
+      "Comment": "Integer"
+    },
+    {
+      "Key": "Query_Type_String",
+      "Translation": "Text",
+      "Comment": "String"
+    },
+    {
+      "Key": "Query_Type_Unknown",
+      "Translation": "Okänd typ",
+      "Comment": "Unknown type"
+    },
+    {
+      "Key": "Query_Type_Username",
+      "Translation": "Användarnamn",
+      "Comment": "Username"
+    },
+    {
+      "Key": "RuleProcessor_Progress",
+      "Translation": "Kör regler för kategori '{0}'...",
+      "Comment": "Running rules for category '{0}'..."
+    },
+    {
+      "Key": "RuleProcessor_Progress_Single",
+      "Translation": "Kör regel '{0}' för kategory '{1}'...",
+      "Comment": "Running rule '{0}' for category '{1}'..."
+    },
+    {
+      "Key": "Rules_AddRule",
+      "Translation": "Lägg till regel...",
+      "Comment": "Add new rule..."
+    },
+    {
+      "Key": "Rules_Description_And",
+      "Translation": "Och",
+      "Comment": "And"
+    },
+    {
+      "Key": "Rules_Description_Contains",
+      "Translation": "Innehåller",
+      "Comment": "Contains"
+    },
+    {
+      "Key": "Rules_Description_DoNothing",
+      "Translation": "Gör ingenting",
+      "Comment": "Do nothing"
+    },
+    {
+      "Key": "Rules_Description_False",
+      "Translation": "Falskt",
+      "Comment": "False"
+    },
+    {
+      "Key": "Rules_Description_If",
+      "Translation": "Om",
+      "Comment": "If"
+    },
+    {
+      "Key": "Rules_Description_Is",
+      "Translation": "Är",
+      "Comment": "Is"
+    },
+    {
+      "Key": "Rules_Description_IsGreaterThan",
+      "Translation": "Är större än",
+      "Comment": "Is greater than"
+    },
+    {
+      "Key": "Rules_Description_IsGreaterThanOrEqualTo",
+      "Translation": "Är större än eller lika med",
+      "Comment": "Is greater than or equal to"
+    },
+    {
+      "Key": "Rules_Description_IsLessThan",
+      "Translation": "Är mindre än",
+      "Comment": "Is less than"
+    },
+    {
+      "Key": "Rules_Description_IsLessThanOrEqualTo",
+      "Translation": "Är mindre än eller lika med",
+      "Comment": "Is less than or equal to"
+    },
+    {
+      "Key": "Rules_Description_IsNot",
+      "Translation": "Inte",
+      "Comment": "Is not"
+    },
+    {
+      "Key": "Rules_Description_MarkItAsRead",
+      "Translation": "Markera som läst",
+      "Comment": "Mark it as read"
+    },
+    {
+      "Key": "Rules_Description_MoveItTo",
+      "Translation": "Flytta till '{0}'",
+      "Comment": "Move it to '{0}'"
+    },
+    {
+      "Key": "Rules_Description_MuteIt",
+      "Translation": "Tysta den",
+      "Comment": "Mute it"
+    },
+    {
+      "Key": "Rules_Description_Null",
+      "Translation": "Null",
+      "Comment": "Null"
+    },
+    {
+      "Key": "Rules_Description_Or",
+      "Translation": "Eller ",
+      "Comment": "Or"
+    },
+    {
+      "Key": "Rules_Description_StarIt",
+      "Translation": "Favoritmarkera den",
+      "Comment": "Star it"
+    },
+    {
+      "Key": "Rules_Description_StopsProcessing",
+      "Translation": "Detta slutar även behandla andra regler. ",
+      "Comment": "This also stops processing of other rules."
+    },
+    {
+      "Key": "Rules_Description_Then",
+      "Translation": "Så",
+      "Comment": "Then"
+    },
+    {
+      "Key": "Rules_Description_True",
+      "Translation": "Sant",
+      "Comment": "True"
+    },
+    {
+      "Key": "Rules_MaximumReached",
+      "Translation": "Maximalt antar regler har nåtts. För att skapa fler regler, uppgradera till Ghostly Pro.",
+      "Comment": "Maximum number of rules reached. To create more rules, upgrade to Ghostly Pro."
+    },
+    {
+      "Key": "Rules_NoRules",
+      "Translation": "Det finns inga regler.",
+      "Comment": "There are no rules."
+    },
+    {
+      "Key": "Rules_RunRule_Title",
+      "Translation": "Kör '{0}'",
+      "Comment": "Run '{0}'"
+    },
+    {
+      "Key": "Rules_RunRules",
+      "Translation": "Kör regler...",
+      "Comment": "Run rules..."
+    },
+    {
+      "Key": "Rules_RunRules_Ok",
+      "Translation": "Kör",
+      "Comment": "Run"
+    },
+    {
+      "Key": "Rules_RunRules_Title",
+      "Translation": "Kör alla regler",
+      "Comment": "Run all rules"
+    },
+    {
+      "Key": "Rules_Title",
+      "Translation": "Regler",
+      "Comment": "Rules"
+    },
+    {
+      "Key": "SelectProfile_CreateNewProfile",
+      "Translation": "Skapa ny profil",
+      "Comment": "Create new profile"
+    },
+    {
+      "Key": "SelectProfile_ErrorLoading",
+      "Translation": "Ett fel inträffade när profiler laddades",
+      "Comment": "There was a problem loading account profiles"
+    },
+    {
+      "Key": "SelectProfile_Loading",
+      "Translation": "Laddar profiler…",
+      "Comment": "Loading profiles…"
+    },
+    {
+      "Key": "SelectProfile_Title_Export",
+      "Translation": "Exportera Ghostly-profil",
+      "Comment": "Export Ghostly profile"
+    },
+    {
+      "Key": "SelectProfile_Title_Import",
+      "Translation": "Importera Ghostly-profil",
+      "Comment": "Import Ghostly profile"
+    },
+    {
+      "Key": "Settings_About",
+      "Translation": "Om",
+      "Comment": "About"
+    },
+    {
+      "Key": "Settings_AggregateToasts",
+      "Translation": "Samla ihop meddelanden till en popup",
+      "Comment": "Aggregate notifications into a single toast"
+    },
+    {
+      "Key": "Settings_AllowSynchronizationOnMeteredConnections",
+      "Translation": "Tillåt synkronisering över anslutningar med datapris",
+      "Comment": "Allow synchronization on metered connections"
+    },
+    {
+      "Key": "Settings_AllowTelemetry",
+      "Translation": "Tillåt Ghostly att skicka telemetri om fel och allmänt användande.",
+      "Comment": "Allow Ghostly to send telemetry about errors and general usage."
+    },
+    {
+      "Key": "Settings_AllowTelemetry_Anonymous",
+      "Translation": "All information som skickas är anonym och innehåller ingen personlig information eller data.",
+      "Comment": "All information is anonymous and does not contain any personal data."
+    },
+    {
+      "Key": "Settings_AutomaticallyMarkAsRead",
+      "Translation": "Markera meddelanden automatiskt som lästa",
+      "Comment": "Automatically mark read notifications as read"
+    },
+    {
+      "Key": "Settings_Avatars",
+      "Translation": "Profilbilder",
+      "Comment": "Avatars"
+    },
+    {
+      "Key": "Settings_BackgroundSynchronization",
+      "Translation": "Bakgrundssynkronisering",
+      "Comment": "Background Synchronization"
+    },
+    {
+      "Key": "Settings_BackgroundTasksNotAllowed",
+      "Translation": "Bakgrundsaktiviteter är inte tillåtna",
+      "Comment": "Background tasks are not allowed."
+    },
+    {
+      "Key": "Settings_Badge",
+      "Translation": "Aktivitetsikon",
+      "Comment": "Badge"
+    },
+    {
+      "Key": "Settings_ClickLibrary",
+      "Translation": "Klicka på ett bibliotek nedan för att se dess licensavtal.",
+      "Comment": "Click on a library below to see its license agreement."
+    },
+    {
+      "Key": "Settings_Comments",
+      "Translation": "Kommentarer",
+      "Comment": "Comments"
+    },
+    {
+      "Key": "Settings_CreatedBy",
+      "Translation": "Skapad av",
+      "Comment": "Created by"
+    },
+    {
+      "Key": "Settings_CurrentLanguage",
+      "Translation": "Valt språk",
+      "Comment": "Current language"
+    },
+    {
+      "Key": "Settings_CurrentTheme",
+      "Translation": "Aktuellt tema",
+      "Comment": "Current theme"
+    },
+    {
+      "Key": "Settings_DisableAutomaticStartup",
+      "Translation": "Starta inte med Windows",
+      "Comment": "Disable automatic startup"
+    },
+    {
+      "Key": "Settings_EnableAutomaticStartup",
+      "Translation": "Starta med Windows",
+      "Comment": "Enable automatic startup"
+    },
+    {
+      "Key": "Settings_EnableBackgroundSynchronization",
+      "Translation": "Tillåt bakgrundsynkronisering",
+      "Comment": "Enable background synchronization"
+    },
+    {
+      "Key": "Settings_FollowOnTwitter",
+      "Translation": "Följ Ghostly på Twitter",
+      "Comment": "Follow Ghostly on Twitter"
+    },
+    {
+      "Key": "Settings_General",
+      "Translation": "Allmänt",
+      "Comment": "General"
+    },
+    {
+      "Key": "Settings_Images",
+      "Translation": "Bilder",
+      "Comment": "Images"
+    },
+    {
+      "Key": "Settings_Language",
+      "Translation": "Språk",
+      "Comment": "Language"
+    },
+    {
+      "Key": "Settings_Logging",
+      "Translation": "Loggning",
+      "Comment": "Logging"
+    },
+    {
+      "Key": "Settings_LogLevel",
+      "Translation": "Loggnivå",
+      "Comment": "Log level"
+    },
+    {
+      "Key": "Settings_MarkMutedAsRead",
+      "Translation": "Markera tystade som lästa",
+      "Comment": "Mark muted as read"
+    },
+    {
+      "Key": "Settings_Metered",
+      "Translation": "Anslutningar med datapris",
+      "Comment": "Metered Connections"
+    },
+    {
+      "Key": "Settings_Notifications",
+      "Translation": "Meddelanden",
+      "Comment": "Notifications"
+    },
+    {
+      "Key": "Settings_NotSure",
+      "Translation": "Inte säker?",
+      "Comment": "Not sure?"
+    },
+    {
+      "Key": "Settings_Open_Source",
+      "Translation": "Öppen källkod",
+      "Comment": "Open Source"
+    },
+    {
+      "Key": "Settings_OpenLogFolder",
+      "Translation": "Öppna loggmapp...",
+      "Comment": "Open log folder..."
+    },
+    {
+      "Key": "Settings_Personalize",
+      "Translation": "Anpassa",
+      "Comment": "Personalize"
+    },
+    {
+      "Key": "Settings_PreferCachedAvatars",
+      "Translation": "Föredra ej cachelagrade profilbilder  med högre kvalitet när Internetuppkoppling finns",
+      "Comment": "Prefer non-cached avatars with higher quality when online"
+    },
+    {
+      "Key": "Settings_PreferCachedAvatars_Explanation",
+      "Translation": "(Detta respekterar inställningar för anslutningar med datapris)",
+      "Comment": "(This respects metered connection settings)"
+    },
+    {
+      "Key": "Settings_Privacy",
+      "Translation": "Integritet",
+      "Comment": "Privacy"
+    },
+    {
+      "Key": "Settings_PrivacyStatement",
+      "Translation": "Sekretesspolicy",
+      "Comment": "Privacy statement"
+    },
+    {
+      "Key": "Settings_Reading",
+      "Translation": "Läsa",
+      "Comment": "Reading"
+    },
+    {
+      "Key": "Settings_ReadThePrivacyStatement",
+      "Translation": "Läs sekretesspolicyn",
+      "Comment": "Read the privacy statement"
+    },
+    {
+      "Key": "Settings_ReportIssue",
+      "Translation": "Rapportera ett fel eller föreslå ny funktionalitet",
+      "Comment": "Report a bug or suggest a feature"
+    },
+    {
+      "Key": "Settings_RestartRequired",
+      "Translation": "Du måste starta om Ghostly för att ändringen ska få effekt.",
+      "Comment": "You need to restart Ghostly for the change to take effect."
+    },
+    {
+      "Key": "Settings_ScrollToLastComment",
+      "Translation": "Rulla till senaste kommentaren",
+      "Comment": "Scroll to last comment"
+    },
+    {
+      "Key": "Settings_ShowAvatars",
+      "Translation": "Visa profilbilder",
+      "Comment": "Show avatar for users"
+    },
+    {
+      "Key": "Settings_ShowNumberOfUnreadNotifications",
+      "Translation": "Via antal olästa meddelanden",
+      "Comment": "Show number of unread notifications"
+    },
+    {
+      "Key": "Settings_ShowToast",
+      "Translation": "Visa popup för nya meddelanden",
+      "Comment": "Show toast for new notifications"
+    },
+    {
+      "Key": "Settings_Startup",
+      "Translation": "Starta med Windows",
+      "Comment": "Start with Windows"
+    },
+    {
+      "Key": "Settings_StartupStateDisabled",
+      "Translation": "Automatisk uppstart är inaktiverad.",
+      "Comment": "Automatic startup is disabled."
+    },
+    {
+      "Key": "Settings_StartupStateDisabledByPolicy",
+      "Translation": "Automatisk uppstart är inaktiverad via grupp-princip.",
+      "Comment": "Automatic startup is disabled by group policy."
+    },
+    {
+      "Key": "Settings_StartupStateDisabledByUser",
+      "Translation": "Automatisk uppstart är inaktiverad av användare. Du kan ändra detta i uppstartsfliken i aktivitetshanteraren.",
+      "Comment": "Automatic startup is disabled by user. You can enable this in the Startup tab in Task Manager."
+    },
+    {
+      "Key": "Settings_StartupStateEnabled",
+      "Translation": "Automatisk uppstart är aktiverad.",
+      "Comment": "Automatic startup is enabled."
+    },
+    {
+      "Key": "Settings_StartupStateEnabledByPolicy",
+      "Translation": "Automatisk uppstart är aktiverad via grupp-princip.",
+      "Comment": "Automatic startup is enabled by group policy."
+    },
+    {
+      "Key": "Settings_StartupStateError",
+      "Translation": "Ett fel inträffade när uppstartstillstånd hämtades.",
+      "Comment": "An error occured while retrieving startup state."
+    },
+    {
+      "Key": "Settings_Synchronization",
+      "Translation": "Synkronisering",
+      "Comment": "Synchronization"
+    },
+    {
+      "Key": "Settings_Synchronization_General",
+      "Translation": "Allmänt",
+      "Comment": "General"
+    },
+    {
+      "Key": "Settings_SynchronizeAvatarsForOfflineUse",
+      "Translation": "Synkronisera profilbilder för frånkopplat läge",
+      "Comment": "Synchronize avatars for offline use"
+    },
+    {
+      "Key": "Settings_SynchronizeUnreadState",
+      "Translation": "Synkronisera olästa",
+      "Comment": "Synchronize unread state"
+    },
+    {
+      "Key": "Settings_Telemetry",
+      "Translation": "Telemetri",
+      "Comment": "Telemetry"
+    },
+    {
+      "Key": "Settings_Thanks",
+      "Translation": "Tack till",
+      "Comment": "Special Thanks"
+    },
+    {
+      "Key": "Settings_Theme",
+      "Translation": "Tema",
+      "Comment": "Theme"
+    },
+    {
+      "Key": "Settings_Toasts",
+      "Translation": "Popups",
+      "Comment": "Toasts"
+    },
+    {
+      "Key": "Settings_VisitWebsite",
+      "Translation": "Besök hemsidan",
+      "Comment": "Visit the website"
+    },
+    {
+      "Key": "Shell_Accounts",
+      "Translation": "Konton",
+      "Comment": "Accounts"
+    },
+    {
+      "Key": "Shell_Archive",
+      "Translation": "Arkiv",
+      "Comment": "Archive"
+    },
+    {
+      "Key": "Shell_ArchiveAll",
+      "Translation": "Arkivera alla...",
+      "Comment": "Archive all..."
+    },
+    {
+      "Key": "Shell_DeleteCategory",
+      "Translation": "Radera kategori...",
+      "Comment": "Delete category..."
+    },
+    {
+      "Key": "Shell_DeleteFilter",
+      "Translation": "Radera filter...",
+      "Comment": "Delete filter..."
+    },
+    {
+      "Key": "Shell_EditCategory",
+      "Translation": "Redigera kategori...",
+      "Comment": "Edit category..."
+    },
+    {
+      "Key": "Shell_EditFilter",
+      "Translation": "Redigera filter...",
+      "Comment": "Edit filter..."
+    },
+    {
+      "Key": "Shell_Inbox",
+      "Translation": "Inkorg",
+      "Comment": "Inbox"
+    },
+    {
+      "Key": "Shell_MarkAllAsRead",
+      "Translation": "Markera alla som lästa...",
+      "Comment": "Mark all as read..."
+    },
+    {
+      "Key": "Shell_Muted",
+      "Translation": "Ignorerade",
+      "Comment": "Muted"
+    },
+    {
+      "Key": "Shell_NewCategory",
+      "Translation": "Ny kategori",
+      "Comment": "New category..."
+    },
+    {
+      "Key": "Shell_Rules",
+      "Translation": "Regler",
+      "Comment": "Rules"
+    },
+    {
+      "Key": "Shell_Search",
+      "Translation": "Sök",
+      "Comment": "Search"
+    },
+    {
+      "Key": "Shell_Settings",
+      "Translation": "Inställningar",
+      "Comment": "Settings"
+    },
+    {
+      "Key": "Shell_Starred",
+      "Translation": "Favoriter",
+      "Comment": "Starred"
+    },
+    {
+      "Key": "Synchronization_DisabledBecauseOfMeteredConnection",
+      "Translation": "⚠ Synkronisering är inaktiverad för att du nuvarande är uppkopplad på en anslutning med datapris.\\nDu kan aktivera synkronisering över anslutningar med datapris i Ghostlys inställningar.",
+      "Comment": "⚠ Synchronization is disabled since you're on a metered connection.\\nYou can enable synchronization on a metered connection in Ghostly's settings."
+    },
+    {
+      "Key": "Synchronization_Local_Status",
+      "Translation": "Synkroniserar lokala ändringar...",
+      "Comment": "Synchronizing local state..."
+    },
+    {
+      "Key": "Synchronization_Started",
+      "Translation": "Synkronisering startad...",
+      "Comment": "Synchronization started..."
+    },
+    {
+      "Key": "Template_Action_Approved",
+      "Translation": "Godkände detta",
+      "Comment": "Approved"
+    },
+    {
+      "Key": "Template_Action_Commented",
+      "Translation": "Kommenterade",
+      "Comment": "Commented"
+    },
+    {
+      "Key": "Template_Action_Dismissed",
+      "Translation": "Avvisade detta",
+      "Comment": "Dismissed"
+    },
+    {
+      "Key": "Template_Action_MergedThis",
+      "Translation": "Mergade detta",
+      "Comment": "Merged this"
+    },
+    {
+      "Key": "Template_Action_Pending",
+      "Translation": "Granskar detta (inte inskickat)",
+      "Comment": "Is reviewing (not submitted)"
+    },
+    {
+      "Key": "Template_Action_RequestedChanges",
+      "Translation": "Föreslog ändringar på detta",
+      "Comment": "Requested changes"
+    },
+    {
+      "Key": "Template_Action_Reviewed",
+      "Translation": "Granskade detta",
+      "Comment": "Reviewed"
+    },
+    {
+      "Key": "Template_Action_Unknown",
+      "Translation": "?",
+      "Comment": "?"
+    },
+    {
+      "Key": "Template_Authored",
+      "Translation": "Skapade detta",
+      "Comment": "Authored"
+    },
+    {
+      "Key": "Template_DiscussionOpenInBrowser",
+      "Translation": "Öppna diskussioner för repo i webbläsare",
+      "Comment": "Open discussions for repository in browser"
+    },
+    {
+      "Key": "Template_DiscussionUpdated",
+      "Translation": "Uppdaterad",
+      "Comment": "Updated"
+    },
+    {
+      "Key": "Template_NoDescriptionProvided",
+      "Translation": "Ingen beskrivning finns.",
+      "Comment": "No description provided."
+    },
+    {
+      "Key": "Template_ReviewedAnd",
+      "Translation": "Granskade och",
+      "Comment": "Reviewed and"
+    },
+    {
+      "Key": "Template_SecurityVulnerabilityReported",
+      "Translation": "Säkerhetsrisk rapporterad",
+      "Comment": "Security vulnerability reported"
+    },
+    {
+      "Key": "Template_Wrote",
+      "Translation": "Skrev",
+      "Comment": "Wrote"
+    },
+    {
+      "Key": "Time_DaysAgo",
+      "Translation": "För {0} dagar sedan",
+      "Comment": "{0} days ago"
+    },
+    {
+      "Key": "Time_HoursAgo",
+      "Translation": "För {0} timmar sedan",
+      "Comment": "{0} hours ago"
+    },
+    {
+      "Key": "Time_MinutesAgo",
+      "Translation": "För {0} minuter sedan",
+      "Comment": "{0} minutes ago"
+    },
+    {
+      "Key": "Time_MonthsAgo",
+      "Translation": "För {0} månader sedan",
+      "Comment": "{0} months ago"
+    },
+    {
+      "Key": "Time_OneDayAgo",
+      "Translation": "För en dag sedan",
+      "Comment": "A day ago"
+    },
+    {
+      "Key": "Time_OneHourAgo",
+      "Translation": "För en timme sedan",
+      "Comment": "An hour ago"
+    },
+    {
+      "Key": "Time_OneMinuteAgo",
+      "Translation": "För en minut sedan",
+      "Comment": "A minute ago"
+    },
+    {
+      "Key": "Time_OneMonthAgo",
+      "Translation": "För en månad sedan",
+      "Comment": "A month ago"
+    },
+    {
+      "Key": "Time_OneSecondAgo",
+      "Translation": "För en sekund sedan",
+      "Comment": "A second ago"
+    },
+    {
+      "Key": "Time_OneYearAgo",
+      "Translation": "För ett år sedan",
+      "Comment": "A year ago"
+    },
+    {
+      "Key": "Time_SecondsAgo",
+      "Translation": "För {0} sekunder sedan",
+      "Comment": "{0} seconds ago"
+    },
+    {
+      "Key": "Time_YearsAgo",
+      "Translation": "För {0} år sedan",
+      "Comment": "{0} years ago"
+    },
+    {
+      "Key": "Time_Yesterday",
+      "Translation": "Igår",
+      "Comment": "Yesterday"
+    },
+    {
+      "Key": "WhatsNew_GhostlyWasUpdated",
+      "Translation": "Ghostly uppgraderades till version {0}.",
+      "Comment": "Ghostly was updated to version {0}."
+    },
+    {
+      "Key": "WhatsNew_Title",
+      "Translation": "Ny version installerad!",
+      "Comment": "New version installed!"
+    },
+    {
+      "Key": "WhatsNew_ViewReleaseNotes",
+      "Translation": "Läs om vad som ändrats",
+      "Comment": "View release notes"
+    }
+  ]
+}

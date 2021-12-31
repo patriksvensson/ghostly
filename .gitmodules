@@ -1,0 +1,3 @@
+[submodule "lib/octokit"]
+	path = lib/octokit
+	url = git@github.com:patriksvensson-forks/octokit.net.git

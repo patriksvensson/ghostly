@@ -1,0 +1,236 @@
+<Page
+    x:Class="Ghostly.Uwp.Views.SettingsView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:strings="using:Ghostly.Uwp.Strings"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    mc:Ignorable="d"
+    NavigationCacheMode="Enabled">
+
+    <Grid Margin="{x:Bind Titlebar.Top, Mode=OneWay}">
+        <Pivot Margin="{StaticResource PageMargin}">
+            <PivotItem Header="{strings:Localize Key=Settings_General}">
+                <ScrollViewer>
+                    <StackPanel>
+                        <!-- GENERAL -->
+                        <StackPanel Margin="{StaticResource MediumTopMargin}">
+                            <TextBlock Text="{strings:Localize Key=Settings_Comments}" Style="{StaticResource SubtitleTextBlockStyle}" />
+                            <ToggleSwitch Header="{strings:Localize Key=Settings_ScrollToLastComment}"
+                                          Margin="{StaticResource XSmallTopMargin}"
+                                          IsOn="{Binding ScrollToLastComment, Mode=TwoWay}" />
+                        </StackPanel>
+                        <!-- READING -->
+                        <StackPanel Margin="{StaticResource MediumTopMargin}">
+                            <TextBlock Text="{strings:Localize Key=Settings_Reading}" Style="{StaticResource SubtitleTextBlockStyle}" />
+                            <ToggleSwitch Header="{strings:Localize Key=Settings_AutomaticallyMarkAsRead}" Margin="{StaticResource XSmallTopMargin}"
+                                          IsOn="{Binding AutomaticallyMarkAsRead, Mode=TwoWay}" />
+                        </StackPanel>
+                        <!-- AVATARS -->
+                        <StackPanel Margin="{StaticResource MediumTopMargin}">
+                            <TextBlock Text="{strings:Localize Key=Settings_Avatars}" Style="{StaticResource SubtitleTextBlockStyle}" />
+                            <ToggleSwitch Header="{strings:Localize Key=Settings_ShowAvatars}" Margin="{StaticResource XSmallTopMargin}"
+                                          IsOn="{Binding ShowAvatars, Mode=TwoWay}" />
+                            <ToggleSwitch Margin="{StaticResource XSmallTopMargin}"
+                                          IsEnabled="{Binding ShowAvatars}"
+                                          IsOn="{Binding PreferInternetAvatars, Mode=TwoWay}">
+                                <ToggleSwitch.HeaderTemplate>
+                                    <DataTemplate>
+                                        <StackPanel>
+                                            <TextBlock Text="{strings:Localize Key=Settings_PreferCachedAvatars}" />
+                                            <TextBlock Text="{strings:Localize Key=Settings_PreferCachedAvatars_Explanation}" />
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ToggleSwitch.HeaderTemplate>
+                            </ToggleSwitch>
+                        </StackPanel>
+                    </StackPanel>
+                </ScrollViewer>
+            </PivotItem>
+            <PivotItem Header="{strings:Localize Key=Settings_Synchronization}">
+                <ScrollViewer>
+                    <StackPanel>
+                        <!-- GENERAL -->
+                        <StackPanel Margin="{StaticResource MediumTopMargin}">
+                            <TextBlock Text="{strings:Localize Key=Settings_Synchronization_General}" Style="{StaticResource SubtitleTextBlockStyle}" />
+                            <!-- Synchronize unread state -->
+                            <ToggleSwitch Header="{strings:Localize Key=Settings_SynchronizeUnreadState}" Margin="{StaticResource XSmallTopMargin}"
+                                          IsOn="{Binding SynchronizeUnreadState, Mode=TwoWay}" />
+                            <!-- Mark muted as muted -->
+                            <ToggleSwitch Header="{strings:Localize Key=Settings_MarkMutedAsRead}" Margin="{StaticResource XSmallTopMargin}"
+                                          IsOn="{Binding MarkMutedAsRead, Mode=TwoWay}" />
+                        </StackPanel>
+                        <!-- BACKGROUND SYNCHRONIZATION -->
+                        <StackPanel Margin="{StaticResource MediumTopMargin}">
+                            <TextBlock Text="{strings:Localize Key=Settings_BackgroundSynchronization}" Style="{StaticResource SubtitleTextBlockStyle}" />
+                            <ToggleSwitch Header="{strings:Localize Key=Settings_EnableBackgroundSynchronization}"
+                                          Margin="{StaticResource XSmallTopMargin}"
+                                          IsOn="{Binding SynchronizationEnabled, Mode=TwoWay}"
+                                          IsEnabled="{Binding BackgroundTasksAllowed}" />
+                            <TextBlock Text="{strings:Localize Key=Settings_BackgroundTasksNotAllowed}" Foreground="Gray" Margin="0,5,0,0"
+                                       Visibility="{Binding BackgroundTasksAllowed, Converter={StaticResource InverseBoolToVisibility}}"/>
+                        </StackPanel>
+                        <!-- IMAGES -->
+                        <StackPanel Margin="{StaticResource MediumTopMargin}">
+                            <TextBlock Text="{strings:Localize Key=Settings_Images}"
+                                       Style="{StaticResource SubtitleTextBlockStyle}" />
+                            <ToggleSwitch Header="{strings:Localize Key=Settings_SynchronizeAvatarsForOfflineUse}"
+                                          Margin="{StaticResource XSmallTopMargin}"
+                                          IsOn="{Binding SynchronizeAvatars, Mode=TwoWay}" />
+                        </StackPanel>
+                        <!-- NETWORK -->
+                        <StackPanel Margin="{StaticResource MediumTopMargin}">
+                            <TextBlock Text="{strings:Localize Key=Settings_Metered}" Style="{StaticResource SubtitleTextBlockStyle}" />
+                            <ToggleSwitch Header="{strings:Localize Key=Settings_AllowSynchronizationOnMeteredConnections}"
+                                          Margin="{StaticResource XSmallTopMargin}"
+                                          IsOn="{Binding AllowMeteredConnection, Mode=TwoWay}" />
+                        </StackPanel>
+                    </StackPanel>
+                </ScrollViewer>
+            </PivotItem>
+            <PivotItem Header="{strings:Localize Key=Settings_Notifications}">
+                <ScrollViewer>
+                    <StackPanel>
+                        <!-- BADGE -->
+                        <StackPanel Margin="{StaticResource MediumTopMargin}">
+                            <TextBlock Text="{strings:Localize Key=Settings_Badge}" Style="{StaticResource SubtitleTextBlockStyle}" />
+                            <ToggleSwitch Header="{strings:Localize Key=Settings_ShowNumberOfUnreadNotifications}"
+                                          Margin="{StaticResource XSmallTopMargin}" IsOn="{Binding ShowBadge, Mode=TwoWay}" />
+                        </StackPanel>
+                        <!-- TOASTS -->
+                        <StackPanel Margin="{StaticResource MediumTopMargin}">
+                            <TextBlock Text="{strings:Localize Key=Settings_Toasts}"
+                                       Style="{StaticResource SubtitleTextBlockStyle}" />
+                            <ToggleSwitch Header="{strings:Localize Key=Settings_ShowToast}"
+                                          Margin="{StaticResource XSmallTopMargin}"
+                                          IsOn="{Binding ShowToast, Mode=TwoWay}" />
+                            <ToggleSwitch Header="{strings:Localize Key=Settings_AggregateToasts}"
+                                          Margin="{StaticResource XSmallTopMargin}"
+                                          IsOn="{Binding AggregateToasts, Mode=TwoWay}"
+                                          IsEnabled="{Binding ShowToast}" />
+                        </StackPanel>
+                    </StackPanel>
+                </ScrollViewer>
+            </PivotItem>
+            <PivotItem Header="{strings:Localize Key=Settings_Personalize}">
+                <ScrollViewer>
+                    <StackPanel>
+                        <!-- THEME -->
+                        <StackPanel Margin="{StaticResource MediumTopMargin}" Padding="0,0,0,0">
+                            <TextBlock Text="{strings:Localize Key=Settings_Theme}"
+                                       Style="{StaticResource SubtitleTextBlockStyle}" />
+                            <ComboBox Margin="{StaticResource SmallTopMargin}"
+                                      ItemsSource="{Binding Themes}"
+                                      SelectedItem="{Binding CurrentTheme.Value, Mode=TwoWay}" />
+                        </StackPanel>
+                        <!-- LANGUAGE -->
+                        <StackPanel Margin="{StaticResource MediumTopMargin}">
+                            <TextBlock Text="{strings:Localize Key=Settings_Language}"
+                                           Style="{StaticResource SubtitleTextBlockStyle}" />
+                            <ComboBox Margin="{StaticResource SmallTopMargin}"
+                                      ItemsSource="{Binding Cultures}"
+                                      SelectedItem="{Binding CurrentCulture.Value, Mode=TwoWay}">
+                                <ComboBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel>
+                                            <TextBlock Text="{Binding Name}" />
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ComboBox.ItemTemplate>
+                            </ComboBox>
+                            <TextBlock Foreground="{ThemeResource WarningText}" Margin="0,5,0,0"
+                                       Visibility="{Binding NeedsRestart.Value, Converter={StaticResource BoolToVisibility}}"
+                                       Text="{strings:Localize Key=Settings_RestartRequired}" />
+                        </StackPanel>
+                        <!-- STARTUP -->
+                        <StackPanel Margin="{StaticResource MediumTopMargin}">
+                            <TextBlock Text="{strings:Localize Key=Settings_Startup}"
+                                       Style="{StaticResource SubtitleTextBlockStyle}" />
+                            <StackPanel Margin="0,10,0,0">
+                                <Button Content="{Binding StartupStateActionText}" Command="{Binding StartupStateCommand}" />
+                                <TextBlock Foreground="Gray" Margin="0,5,0,0" Text="{Binding StartupStateMessage}" TextWrapping="Wrap" />
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+                </ScrollViewer>
+            </PivotItem>
+            <PivotItem Header="{strings:Localize Key=Settings_About}">
+                <ScrollViewer>
+                    <StackPanel>
+                        <!-- ABOUT -->
+                        <StackPanel Margin="{StaticResource MediumTopMargin}">
+                            <TextBlock Text="Ghostly" Style="{StaticResource SubtitleTextBlockStyle}" />
+                            <TextBlock Margin="{StaticResource XSmallTopMargin}">
+                                <Span xml:space="preserve"><Run>Version </Run><Run Text="{Binding Version}" /> (<Run Text="{x:Bind Architecture, Mode=OneTime}" />)</Span>
+                            </TextBlock>
+                            <TextBlock TextWrapping="Wrap" Width="Auto">
+                                <Span xml:space="preserve">Copyright © Patrik Svensson</Span>
+                            </TextBlock>
+                            <!-- Links -->
+                            <HyperlinkButton Content="{strings:Localize Key=Settings_PrivacyStatement}" Margin="0,20,0,0" Padding="0"
+                                             NavigateUri="https://spectresystems.se/ghostly/docs/privacy" />
+                            <HyperlinkButton Content="{strings:Localize Key=Settings_ReportIssue}" Margin="0,5,0,0" Padding="0"
+                                             NavigateUri="https://github.com/spectresystems/ghostly/issues" />
+                            <HyperlinkButton Content="{strings:Localize Key=Settings_VisitWebsite}" Margin="0,5,0,0" Padding="0"
+                                             NavigateUri="https://spectresystems.se/ghostly" />
+                            <HyperlinkButton Content="{strings:Localize Key=Settings_FollowOnTwitter}" Margin="0,5,0,0" Padding="0"
+                                             NavigateUri="https://twitter.com/theghostlyapp" />
+                        </StackPanel>
+                        <!-- OPEN SOURCE -->
+                        <StackPanel Margin="{StaticResource MediumTopMargin}">
+                            <TextBlock Text="{strings:Localize Key=Settings_Open_Source}" Style="{StaticResource SubtitleTextBlockStyle}" />
+                            <TextBlock Text="{strings:Localize Key=Settings_ClickLibrary}" />
+                            <controls:WrapPanel Margin="{StaticResource XSmallTopMargin}">
+                                <TextBlock TextWrapping="Wrap">
+                                    <Hyperlink NavigateUri="https://github.com/autofac/Autofac/blob/develop/LICENSE">Autofac</Hyperlink>, 
+                                    <Hyperlink NavigateUri="https://github.com/cake-build/cake/blob/develop/LICENSE">Cake</Hyperlink>, 
+                                    <Hyperlink NavigateUri="https://github.com/MahApps/MahApps.Metro.IconPacks/blob/dev/LICENSE">MahApps.Metro.IconPacks</Hyperlink>, 
+                                    <Hyperlink NavigateUri="https://github.com/lunet-io/markdig/blob/master/license.txt">Markdig</Hyperlink>, 
+                                    <Hyperlink NavigateUri="https://github.com/jbogard/MediatR/blob/master/LICENSE">MediatR</Hyperlink>, 
+                                    <Hyperlink NavigateUri="https://github.com/octokit/octokit.net/blob/master/LICENSE.txt">Octokit</Hyperlink>, 
+                                    <Hyperlink NavigateUri="https://github.com/lunet-io/scriban/blob/master/license.txt">Scriban</Hyperlink>, 
+                                    <Hyperlink NavigateUri="https://github.com/serilog/serilog/blob/dev/LICENSE">Serilog</Hyperlink>, 
+                                    <Hyperlink NavigateUri="https://github.com/datalust/superpower/blob/dev/LICENSE">Superpower</Hyperlink>, 
+                                    <Hyperlink NavigateUri="https://www.sqlite.org/copyright.html">SQLite</Hyperlink>, 
+                                    <Hyperlink NavigateUri="https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/master/license.md">Windows Community Toolkit</Hyperlink>, 
+                                    <Hyperlink NavigateUri="https://github.com/Microsoft/XamlBehaviors/blob/master/LICENSE">XAML Behaviors</Hyperlink>
+                                </TextBlock>
+                            </controls:WrapPanel>
+                        </StackPanel>
+                        <!-- OPEN SOURCE -->
+                        <StackPanel Margin="{StaticResource MediumTopMargin}">
+                            <TextBlock Text="{strings:Localize Key=Settings_Thanks}" Style="{StaticResource SubtitleTextBlockStyle}" />
+                            <controls:WrapPanel Margin="{StaticResource XSmallTopMargin}">
+                                <TextBlock TextWrapping="Wrap">
+                                    <Hyperlink NavigateUri="https://github.com/agc93">Alistair Chapman</Hyperlink>,
+                                    <Hyperlink NavigateUri="https://github.com/clairernovotny">Claire Novotny</Hyperlink>
+                                    <Hyperlink NavigateUri="https://github.com/daveaglick">Dave Glick</Hyperlink>,
+                                    <Hyperlink NavigateUri="https://github.com/gep13">Gary Ewan Park</Hyperlink>,
+                                    <Hyperlink NavigateUri="https://github.com/hansmbakker">Hans Bakker</Hyperlink>,
+                                    <Hyperlink NavigateUri="https://github.com/punker76">Jan Karger</Hyperlink>,
+                                    <Hyperlink NavigateUri="https://github.com/mholo65">Martin Björkström</Hyperlink>,
+                                    <Hyperlink NavigateUri="https://github.com/devlead">Mattias Karlsson</Hyperlink>,
+                                    <Hyperlink NavigateUri="https://github.com/m-zuber">Mordechai Zuber</Hyperlink>,
+                                    <Hyperlink NavigateUri="https://github.com/pascalberger">Pascal Berger</Hyperlink>,
+                                    <Hyperlink NavigateUri="https://github.com/RichiCoder1">Richard Simpson</Hyperlink>
+                                    <Hyperlink NavigateUri="https://github.com/mkevenaar">Maurice Kevenaar</Hyperlink>
+                                </TextBlock>
+                            </controls:WrapPanel>
+                        </StackPanel>
+                        <!-- LOGGING -->
+                        <StackPanel Margin="{StaticResource MediumTopMargin}">
+                            <TextBlock Text="{strings:Localize Key=Settings_LogLevel}"
+                                       Style="{StaticResource SubtitleTextBlockStyle}"/>
+                            <ComboBox Margin="{StaticResource XSmallTopMargin}"
+                                      ItemsSource="{Binding LogLevels}"
+                                      SelectedItem="{Binding LogLevel.Value, Mode=TwoWay}" />
+                            <Button Command="{Binding LaunchLogFolder}" Margin="0,15,0,15"
+                                    Content="{strings:Localize Key=Settings_OpenLogFolder}" />
+                        </StackPanel>
+                    </StackPanel>
+                </ScrollViewer>
+            </PivotItem>
+        </Pivot>
+    </Grid>
+</Page>

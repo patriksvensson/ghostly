@@ -1,0 +1,188 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    padding: 0;
+    margin: 0px;
+    background-color: #252525;
+    color: #ffffff;
+}
+
+img {
+    max-width: 100%;
+}
+
+a:link, a:visited, a:active {
+    color: #0991F9;
+}
+
+a:hover {
+    color: #8B8B8B;
+}
+
+.comment {
+    background: #252525;
+    margin-bottom: 20px;
+}
+
+    .comment .header {
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background: #555555;
+        color: #dddddd;
+        border-bottom: solid 1px #353535;
+    }
+
+        .comment .header a {
+            color: #dddddd;
+            text-decoration: none;
+        }
+
+            .comment .header a:hover {
+                color: #dddddd;
+                text-decoration: underline;
+            }
+
+    .comment > .header > .avatar {
+        width: 44px;
+        height: 44px;
+        vertical-align: middle;
+        line-height: 44px;
+        background: #777777;
+        border-radius: 50%;
+        margin-right: 8px;
+    }
+
+    .comment > .header > .username {
+        font-weight: bold;
+    }
+
+    .comment:nth-child(n+2) {
+        border-top: solid 1px #353535;
+    }
+
+    .comment .text {
+        padding: 10px;
+        padding-right: 30px;
+        margin-top: 10px;
+        overflow-x: auto;
+    }
+
+        .comment .text p:first-of-type,
+        .comment .text h1:first-of-type,
+        .comment .text h2:first-of-type,
+        .comment .text h3:first-of-type,
+        .comment .text h4:first-of-type,
+        .comment .text h5:first-of-type {
+            margin-top: 0;
+        }
+
+        .comment .text p:last-of-type {
+            margin-bottom: 0;
+        }
+
+    .comment table {
+        margin-top: 10px;
+        border-collapse: collapse;
+        border-radius: 2px;
+        border: solid 1px #353535;
+    }
+
+    .comment th, td {
+        padding: 10px;
+        border-bottom: solid 1px #555555;
+    }
+
+    .comment th {
+        border-bottom: solid 1px #353535;
+        text-align: left;
+        background-color: #555555;
+        color: #ffffff;
+    }
+
+    .comment .text pre {
+        background: #303030;
+        padding: 20px;
+        margin: 0px;
+        overflow-x: auto;
+    }
+
+    .comment .text > pre code {
+        padding: 0px;
+    }
+
+    .comment .text code {
+        background: #303030;
+        padding: 2px 4px;
+    }
+
+.review {
+    margin-left: 20px;
+    margin-right: 20px;
+    border: solid 1px #666666;
+    margin-top: 10px;
+}
+
+    .review > .path {
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 0px;
+        background: #555555;
+    }
+
+        .review > .path > pre {
+            margin: 0px;
+        }
+
+    .review > .reviewcomment {
+        background: #252525;
+        margin: 0px 0px 0px 0px;
+    }
+
+.reviewcomment:nth-child(n+2) {
+    border-top: solid 1px #666666;
+}
+
+.review > .reviewcomment > .header {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    background: #252525;
+}
+
+    .review > .reviewcomment > .header > .avatar {
+        width: 28px;
+        height: 28px;
+        vertical-align: middle;
+        line-height: 28px;
+        background: #777777;
+        border-radius: 50%;
+        margin-right: 8px;
+    }
+
+    .review > .reviewcomment > .header > .username {
+        font-weight: 600;
+    }
+
+.review > .reviewcomment > .text {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+    .review > .reviewcomment > .text pre {
+        background: #303030;
+        padding: 20px;
+        overflow-x: auto;
+    }
+
+    .review > .reviewcomment > .text > pre code {
+        padding: 0px;
+    }
+
+    .review > .reviewcomment > .text code {
+        background: #303030;
+        padding: 2px;
+    }
