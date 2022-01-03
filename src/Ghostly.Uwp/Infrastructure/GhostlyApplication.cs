@@ -1,4 +1,4 @@
-using System.Diagnostics.CodeAnalysis;
+using System.Threading.Tasks;
 using Autofac;
 using Ghostly.Core;
 using Serilog;
@@ -83,14 +83,15 @@ namespace Ghostly.Uwp.Infrastructure
                 if (args.Kind == ActivationKind.Launch && args.PreviousExecutionState != ApplicationExecutionState.Running)
                 {
                     Log.Debug("Launching Ghostly...");
-                    OnStarted();
+                    await OnStarted();
                     Log.Information("Ghostly launched.");
                 }
             }
         }
 
-        protected virtual void OnStarted()
+        protected virtual Task OnStarted()
         {
+            return Task.CompletedTask;
         }
 
         protected virtual void OnSuspended()

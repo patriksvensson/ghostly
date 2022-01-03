@@ -18,7 +18,19 @@ Teardown(ctx => {
         });
 });
 
+Task("Prereqs")
+    .WithCriteria(() => fullBuild, "Not running full build")
+    .Does(ctx =>
+{
+    if (!FileExists(File("./src/Ghostly.GitHub/GitHubSecrets.Generated.cs"))) {
+        Error("GitHub OAUTH credentials have not been configured.");
+        Information("See README.md for more information.");
+        throw new CakeException("Build aborted");
+    }
+});
+
 Task("Clean")
+    .IsDependentOn("Prereqs")
     .Does(ctx => 
 {
     CleanDirectory(artifacts);

@@ -8,6 +8,24 @@ namespace Ghostly.GitHub
     {
         public static GitHubSecrets Instance { get; } = new GitHubSecrets();
 
+        public bool IsValid()
+        {
+            string value = null;
+            GetClientId(ref value);
+            if (value == null)
+            {
+                return false;
+            }
+
+            GetClientSecret(ref value);
+            if (value == null)
+            {
+                return false;
+            }
+
+            return true;
+        }
+
         public string ClientId
         {
             get
