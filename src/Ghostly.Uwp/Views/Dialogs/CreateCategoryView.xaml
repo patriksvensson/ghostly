@@ -58,7 +58,7 @@
 
         <!-- "What is this?" -->
         <HyperlinkButton HorizontalAlignment="Right"
-                             NavigateUri="https://spectresystems.se/ghostly/docs/query"
+                             NavigateUri="https://ghostlyapp.net/queries"
                              Content="{strings:Localize Key=CreateCategory_WhatIsThis}" />
 
         <!-- "Show total count" -->
