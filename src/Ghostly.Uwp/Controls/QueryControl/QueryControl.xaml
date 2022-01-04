@@ -45,7 +45,7 @@
                            Text="{x:Bind Error, Mode=OneWay}"
                            TextDecorations="Underline"/>
                 <HyperlinkButton Margin="0,10,0,0" HorizontalAlignment="Left"
-                                 NavigateUri="https://spectresystems.se/ghostly/docs/query"
+                                 NavigateUri="https://ghostlyapp.net/queries"
                                  Content="{strings:Localize Key=Query_Error_NeedHelp}" />
             </StackPanel>
         </winui:TeachingTip>

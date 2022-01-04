@@ -40,7 +40,7 @@
                    Foreground="Red" TextWrapping="Wrap"
                    Visibility="{Binding ExpressionError.Value, Mode=OneWay, Converter={StaticResource VisibleWhenNotEmpty}}" />
         <HyperlinkButton HorizontalAlignment="Right"
-                         NavigateUri="https://spectresystems.se/ghostly/docs/query"
+                         NavigateUri="https://ghostlyapp.net/queries"
                          Content="{strings:Localize Key=CreateRule_WhatIsThis}" />
 
         <!-- Consequences -->
