@@ -39,6 +39,7 @@ namespace Ghostly.Uwp.Infrastructure
             CreateCulture("en-US");
             CreateCulture("en-GB");
             CreateCulture("sv-SE");
+            CreateCulture("zh-CN");
 
             // Got a preferred culture?
             var preferredCultureName = _settings.GetCurrentCulture();
