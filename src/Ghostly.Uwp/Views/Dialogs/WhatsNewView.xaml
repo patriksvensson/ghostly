@@ -23,7 +23,7 @@
             <TextBlock TextWrapping="WrapWholeWords" Text="{Binding Message}" />
             <HyperlinkButton Margin="0,10,0,0"
                              Content="{strings:Localize Key=WhatsNew_ViewReleaseNotes}"
-                             NavigateUri="https://spectresystems.se/ghostly/docs/release-notes" />
+                             NavigateUri="https://ghostlyapp.net/blog/release-notes" />
         </StackPanel>
     </ScrollViewer>
 </ContentDialog>

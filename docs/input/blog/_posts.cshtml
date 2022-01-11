@@ -28,6 +28,8 @@
         </div>
         <article>
             @Html.Raw(@post.GetString("Excerpt"))
+
+            <a href="@Context.GetLink(post)">Read more...</a>
         </article>
     </div>
 }
