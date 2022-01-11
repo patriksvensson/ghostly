@@ -1,0 +1,1200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Accounts_Account" xml:space="preserve">
+    <value>账号</value>
+    <comment>Account</comment>
+  </data>
+  <data name="Accounts_AuthorizationProblem" xml:space="preserve">
+    <value>授权此账户时出现问题。</value>
+    <comment>There was a problem authorizing this account.</comment>
+  </data>
+  <data name="Accounts_ExportProfile" xml:space="preserve">
+    <value>导出配置</value>
+    <comment>Export profile</comment>
+  </data>
+  <data name="Accounts_ImportProfile" xml:space="preserve">
+    <value>导入配置</value>
+    <comment>Import profile</comment>
+  </data>
+  <data name="Accounts_NoAccounts" xml:space="preserve">
+    <value>没有账号。</value>
+    <comment>There are no accounts.</comment>
+  </data>
+  <data name="Accounts_NoInternetConnection" xml:space="preserve">
+    <value>没有互联网连接。</value>
+    <comment>No Internet connection.</comment>
+  </data>
+  <data name="Accounts_PleaseSignInAgain" xml:space="preserve">
+    <value>请注销并重新登录。</value>
+    <comment>Please sign out and sign in again.</comment>
+  </data>
+  <data name="Accounts_ProfileManagementProhibited" xml:space="preserve">
+    <value>禁止管理配置文件</value>
+    <comment>Profile management prohibited</comment>
+  </data>
+  <data name="Accounts_Profiles" xml:space="preserve">
+    <value>配置</value>
+    <comment>Profiles</comment>
+  </data>
+  <data name="Accounts_PublicAndPrivateRepositories" xml:space="preserve">
+    <value>公共和私有仓库 </value>
+    <comment>Public and private repositories</comment>
+  </data>
+  <data name="Accounts_PublicAndPrivateRepositoriesMorePermissions" xml:space="preserve">
+    <value>公有或私有仓库 (需要更多权限)</value>
+    <comment>Public and private repositories (requires more permissions)</comment>
+  </data>
+  <data name="Accounts_PublicRepositories" xml:space="preserve">
+    <value>公有仓库</value>
+    <comment>Public repositories</comment>
+  </data>
+  <data name="Accounts_PublicRepositoriesOnly" xml:space="preserve">
+    <value>仅公有仓库</value>
+    <comment>Public repositories only</comment>
+  </data>
+  <data name="Accounts_Review" xml:space="preserve">
+    <value>审核账号权限</value>
+    <comment>Review account permissions</comment>
+  </data>
+  <data name="Accounts_SignInToGitHub" xml:space="preserve">
+    <value>登录至 GitHub...</value>
+    <comment>Sign in to GitHub...</comment>
+  </data>
+  <data name="Accounts_SignOut" xml:space="preserve">
+    <value>注销</value>
+    <comment>Sign out</comment>
+  </data>
+  <data name="Accounts_Title" xml:space="preserve">
+    <value>账户</value>
+    <comment>Accounts</comment>
+  </data>
+  <data name="Archive_Progress_Archiving" xml:space="preserve">
+    <value>正在归档提示...</value>
+    <comment>Archiving notifications...</comment>
+  </data>
+  <data name="Archive_Progress_MarkingAsRead" xml:space="preserve">
+    <value>标记提示为已读...</value>
+    <comment>Marking notifications as read...</comment>
+  </data>
+  <data name="ArchiveAll_Confirmation" xml:space="preserve">
+    <value>你确定归档所有通知到 '{0}' 吗?\n\n此操作无法撤销。</value>
+    <comment>Are you sure that you want to archive all notifications in '{0}'?\n\nThis action cannot be undone.</comment>
+  </data>
+  <data name="ArchiveAll_Ok" xml:space="preserve">
+    <value>归档</value>
+    <comment>Archive</comment>
+  </data>
+  <data name="ArchiveAll_Progress" xml:space="preserve">
+    <value>归档通知 {0}...</value>
+    <comment>Archiving notifications in {0}...</comment>
+  </data>
+  <data name="ArchiveAll_Title" xml:space="preserve">
+    <value>归档全部?</value>
+    <comment>Archive all?</comment>
+  </data>
+  <data name="CreateCategory_CategoryImported" xml:space="preserve">
+    <value>此分类是以前从'{0}'导入的.</value>
+    <comment>The category was previously imported from '{0}'.</comment>
+  </data>
+  <data name="CreateCategory_CategoryImported_Warning" xml:space="preserve">
+    <value>如果重新导入将丢失对分类的更改.</value>
+    <comment>Changes to this category will be lost if re-importing again.</comment>
+  </data>
+  <data name="CreateCategory_Expression" xml:space="preserve">
+    <value>表达式</value>
+    <comment>Expression</comment>
+  </data>
+  <data name="CreateCategory_IncludeMuted" xml:space="preserve">
+    <value>包含已静默</value>
+    <comment>Include muted</comment>
+  </data>
+  <data name="CreateCategory_Muted" xml:space="preserve">
+    <value>静默</value>
+    <comment>Mute</comment>
+  </data>
+  <data name="CreateCategory_Name" xml:space="preserve">
+    <value>名称</value>
+    <comment>Name</comment>
+  </data>
+  <data name="CreateCategory_ShowTotal" xml:space="preserve">
+    <value>显示总数</value>
+    <comment>Show total count</comment>
+  </data>
+  <data name="CreateCategory_ThisIsAFilter" xml:space="preserve">
+    <value>这是一个过滤器</value>
+    <comment>This is a filter</comment>
+  </data>
+  <data name="CreateCategory_Title_EditCategory" xml:space="preserve">
+    <value>编辑分类</value>
+    <comment>Edit category</comment>
+  </data>
+  <data name="CreateCategory_Title_EditFilter" xml:space="preserve">
+    <value>编辑过滤器</value>
+    <comment>Edit filter</comment>
+  </data>
+  <data name="CreateCategory_Title_NewCategory" xml:space="preserve">
+    <value>创建分类</value>
+    <comment>Create category</comment>
+  </data>
+  <data name="CreateCategory_Title_NewFilter" xml:space="preserve">
+    <value>创建过滤器</value>
+    <comment>Create filter</comment>
+  </data>
+  <data name="CreateCategory_Upgrade" xml:space="preserve">
+    <value>要创建更多，请升级到 Ghostly Pro.</value>
+    <comment>To create more, upgrade to Ghostly Pro.</comment>
+  </data>
+  <data name="CreateCategory_WhatIsThis" xml:space="preserve">
+    <value>这是什么?</value>
+    <comment>What is this?</comment>
+  </data>
+  <data name="CreateRule_Condition" xml:space="preserve">
+    <value>条件</value>
+    <comment>Condition</comment>
+  </data>
+  <data name="CreateRule_Condition_Placeholder" xml:space="preserve">
+    <value>表达式</value>
+    <comment>Expression</comment>
+  </data>
+  <data name="CreateRule_EditRule" xml:space="preserve">
+    <value>编辑规则</value>
+    <comment>Edit rule</comment>
+  </data>
+  <data name="CreateRule_MarkAsRead" xml:space="preserve">
+    <value>标记为已读</value>
+    <comment>Mark as read</comment>
+  </data>
+  <data name="CreateRule_MoveToCategory" xml:space="preserve">
+    <value>移动至分类</value>
+    <comment>Move to category</comment>
+  </data>
+  <data name="CreateRule_Mute" xml:space="preserve">
+    <value>静默</value>
+    <comment>Mute</comment>
+  </data>
+  <data name="CreateRule_Name" xml:space="preserve">
+    <value>名称</value>
+    <comment>Name</comment>
+  </data>
+  <data name="CreateRule_Name_Placeholder" xml:space="preserve">
+    <value>规则名称</value>
+    <comment>Name of the rule</comment>
+  </data>
+  <data name="CreateRule_NewRule" xml:space="preserve">
+    <value>新建规则</value>
+    <comment>New rule</comment>
+  </data>
+  <data name="CreateRule_RuleImported" xml:space="preserve">
+    <value>改规则是之前从 '{0}'导入的.</value>
+    <comment>The rule was previously imported from '{0}'.</comment>
+  </data>
+  <data name="CreateRule_RuleImported_Warning" xml:space="preserve">
+    <value>如果重新导入则丢失对此规则的更改.</value>
+    <comment>Changes to this rule will be lost if re-importing again.</comment>
+  </data>
+  <data name="CreateRule_Star" xml:space="preserve">
+    <value>关注</value>
+    <comment>Star</comment>
+  </data>
+  <data name="CreateRule_StopProcessingOtherRules" xml:space="preserve">
+    <value>停止处理其他规则</value>
+    <comment>Stop processing other rules</comment>
+  </data>
+  <data name="CreateRule_WhatIsThis" xml:space="preserve">
+    <value>这是什么?</value>
+    <comment>What is this?</comment>
+  </data>
+  <data name="DeleteCategory_CannotDelete_ChangeOrDeleteRule" xml:space="preserve">
+    <value>更改或者删除受影响的规则以删除此类别.</value>
+    <comment>Change or delete the affected rules to delete this category.</comment>
+  </data>
+  <data name="DeleteCategory_CannotDelete_Title" xml:space="preserve">
+    <value>无法删除分类</value>
+    <comment>Cannot delete category</comment>
+  </data>
+  <data name="DeleteCategory_CannotDelete_UsedInFollowingRules" xml:space="preserve">
+    <value>此分类'{0}'被下面的规则中使用:</value>
+    <comment>The category '{0}' is used in the following rules:</comment>
+  </data>
+  <data name="DeleteCategory_Category_Confirmation" xml:space="preserve">
+    <value>你确定要删除分类'{0}'吗?\n\n此操作不可撤销.</value>
+    <comment>Are you sure that you want to delete the category '{0}'?\n\nThis action cannot be undone.</comment>
+  </data>
+  <data name="DeleteCategory_Category_Title" xml:space="preserve">
+    <value>删除分类?</value>
+    <comment>Delete category?</comment>
+  </data>
+  <data name="DeleteCategory_Filter_Confirmation" xml:space="preserve">
+    <value>你确定要删除过滤器 '{0}'吗?\n\n此操作不可撤销.</value>
+    <comment>Are you sure that you want to delete the filter '{0}'?\n\nThis action cannot be undone.</comment>
+  </data>
+  <data name="DeleteCategory_Filter_Title" xml:space="preserve">
+    <value>删除分类？</value>
+    <comment>Delete filter?</comment>
+  </data>
+  <data name="DeleteRule_Confirmation" xml:space="preserve">
+    <value>你确定要删除规则'{0}'吗?\n\n此操作不可撤销.</value>
+    <comment>Are you sure that you want to delete the rule '{0}'?\n\nThis action cannot be undone.</comment>
+  </data>
+  <data name="DeleteRule_Ok" xml:space="preserve">
+    <value>删除</value>
+    <comment>Delete</comment>
+  </data>
+  <data name="DeleteRule_Title" xml:space="preserve">
+    <value>删除规则?</value>
+    <comment>Delete rule?</comment>
+  </data>
+  <data name="EmojiPicker_Clear" xml:space="preserve">
+    <value>清除</value>
+    <comment>Clear</comment>
+  </data>
+  <data name="ExportProfile_Error" xml:space="preserve">
+    <value>导出配置时发生错误.\n查看日志了解更多信息.</value>
+    <comment>An error occured while exporting profile.\nSee the log for more information.</comment>
+  </data>
+  <data name="ExportProfile_Progress" xml:space="preserve">
+    <value>正在导出配置文件 {0}…</value>
+    <comment>Exporting profile {0}…</comment>
+  </data>
+  <data name="General_Cancel" xml:space="preserve">
+    <value>取消</value>
+    <comment>Cancel</comment>
+  </data>
+  <data name="General_Close" xml:space="preserve">
+    <value>关闭</value>
+    <comment>Close</comment>
+  </data>
+  <data name="General_Create" xml:space="preserve">
+    <value>创建</value>
+    <comment>Create</comment>
+  </data>
+  <data name="General_Delete" xml:space="preserve">
+    <value>删除</value>
+    <comment>Delete</comment>
+  </data>
+  <data name="General_ErrorOccured" xml:space="preserve">
+    <value>发生了一错误</value>
+    <comment>An error occurred</comment>
+  </data>
+  <data name="General_Export" xml:space="preserve">
+    <value>导出</value>
+    <comment>Export</comment>
+  </data>
+  <data name="General_Import" xml:space="preserve">
+    <value>导入</value>
+    <comment>Import</comment>
+  </data>
+  <data name="General_Menu" xml:space="preserve">
+    <value>菜单</value>
+    <comment>Menu</comment>
+  </data>
+  <data name="General_Ok" xml:space="preserve">
+    <value>确定</value>
+    <comment>Ok</comment>
+  </data>
+  <data name="General_Save" xml:space="preserve">
+    <value>保存</value>
+    <comment>Save</comment>
+  </data>
+  <data name="GitHub_Broker_SignInUsingExternalBrowser" xml:space="preserve">
+    <value>使用外部浏览器登录</value>
+    <comment>Sign in using external browser</comment>
+  </data>
+  <data name="GitHub_FirstSynchronization" xml:space="preserve">
+    <value>Ghostly 第一次同步， 这需要一些时间. 😅</value>
+    <comment>Ghostly is synchronizing for the first time. This might take a little while. 😅</comment>
+  </data>
+  <data name="GitHub_Progress" xml:space="preserve">
+    <value>正在同步{0}/{1}GitHub的通知...</value>
+    <comment>Synchronizing {0} of {1} GitHub notifications...</comment>
+  </data>
+  <data name="GitHub_Progress_Unread" xml:space="preserve">
+    <value>正在同步未读条目...</value>
+    <comment>Synchronizing unread items...</comment>
+  </data>
+  <data name="GitHub_RateLimitExceeded" xml:space="preserve">
+    <value>我们超出了GitHub API 的速率限制 😢.\n我们无法继续同步直至 {0}.</value>
+    <comment>We've exceeded the GitHub API rate limit 😢.\nWe won't be able to synchronize until {0}.</comment>
+  </data>
+  <data name="GitHub_Toast_NewNotification_Title" xml:space="preserve">
+    <value>收到新的GitHub通知</value>
+    <comment>New GitHub notification</comment>
+  </data>
+  <data name="GitHub_Toast_NewNotifications_Body" xml:space="preserve">
+    <value>收到{0} 个新通知.</value>
+    <comment>{0} new notifications available.</comment>
+  </data>
+  <data name="GitHub_Toast_NewNotifications_Title" xml:space="preserve">
+    <value>新GitHub通知</value>
+    <comment>New GitHub notifications</comment>
+  </data>
+  <data name="ImportProfile_Progress" xml:space="preserve">
+    <value>正在导入配置文件 {0}…</value>
+    <comment>Importing profile {0}…</comment>
+  </data>
+  <data name="Main_Archive" xml:space="preserve">
+    <value>归档</value>
+    <comment>Archive</comment>
+  </data>
+  <data name="Main_Command_Archive" xml:space="preserve">
+    <value>归档</value>
+    <comment>Archive</comment>
+  </data>
+  <data name="Main_Command_MarkAsRead" xml:space="preserve">
+    <value>标记为已读</value>
+    <comment>Mark as read</comment>
+  </data>
+  <data name="Main_Command_Move" xml:space="preserve">
+    <value>移动</value>
+    <comment>Move</comment>
+  </data>
+  <data name="Main_MarkAsRead" xml:space="preserve">
+    <value>标记为已读</value>
+    <comment>Mark as read</comment>
+  </data>
+  <data name="Main_Move" xml:space="preserve">
+    <value>移动</value>
+    <comment>Move</comment>
+  </data>
+  <data name="Main_Mute" xml:space="preserve">
+    <value>静默</value>
+    <comment>Mute</comment>
+  </data>
+  <data name="Main_NoNotificationSelected" xml:space="preserve">
+    <value>没有选中通知</value>
+    <comment>No notification selected</comment>
+  </data>
+  <data name="Main_OpenInBrowser" xml:space="preserve">
+    <value>在浏览器中打开</value>
+    <comment>Open in browser</comment>
+  </data>
+  <data name="Main_SearchEverywhere" xml:space="preserve">
+    <value>在任何地方搜索</value>
+    <comment>Search everywhere</comment>
+  </data>
+  <data name="Main_SearchInCategory" xml:space="preserve">
+    <value>在{0}中搜索</value>
+    <comment>Search in {0}</comment>
+  </data>
+  <data name="Main_Share" xml:space="preserve">
+    <value>共享...</value>
+    <comment>Share...</comment>
+  </data>
+  <data name="Main_ShareGitHubLink" xml:space="preserve">
+    <value>共享连接至 GitHub 条目</value>
+    <comment>Share link to GitHub item</comment>
+  </data>
+  <data name="Main_Star" xml:space="preserve">
+    <value>关注</value>
+    <comment>Star</comment>
+  </data>
+  <data name="Main_Synchronize" xml:space="preserve">
+    <value>同步</value>
+    <comment>Synchronize</comment>
+  </data>
+  <data name="Main_Unmute" xml:space="preserve">
+    <value>取消静默</value>
+    <comment>Unmute</comment>
+  </data>
+  <data name="Main_Unstar" xml:space="preserve">
+    <value>取消关注</value>
+    <comment>Unstar</comment>
+  </data>
+  <data name="Main_UpdateItem" xml:space="preserve">
+    <value>更新条目</value>
+    <comment>Update item</comment>
+  </data>
+  <data name="MarkAllAsRead_Confirmation" xml:space="preserve">
+    <value>你确定要用 '{0}' 标记所有通知为已读吗?\n\n此操作无法撤销.</value>
+    <comment>Are you sure that you want to mark all notifications in '{0}' as read?\n\nThis action cannot be undone.</comment>
+  </data>
+  <data name="MarkAllAsRead_Ok" xml:space="preserve">
+    <value>全部标记为未已读</value>
+    <comment>Mark all as read</comment>
+  </data>
+  <data name="MarkAllAsRead_Progress" xml:space="preserve">
+    <value>正在用{0}标记所有通知为已读...</value>
+    <comment>Marking all notifications in {0} as read...</comment>
+  </data>
+  <data name="MarkAllAsRead_Title" xml:space="preserve">
+    <value>全部标记为已读?</value>
+    <comment>Mark all as read?</comment>
+  </data>
+  <data name="MarkAsRead_Progress" xml:space="preserve">
+    <value>标记 {0} 个通知为已读...</value>
+    <comment>Marking {0} notifications as read...</comment>
+  </data>
+  <data name="Move_Ok" xml:space="preserve">
+    <value>移动</value>
+    <comment>Move</comment>
+  </data>
+  <data name="Move_Progress" xml:space="preserve">
+    <value>移动{0} 通知至 {1}...</value>
+    <comment>Moving {0} notifications to {1}...</comment>
+  </data>
+  <data name="Move_Title_Plural" xml:space="preserve">
+    <value>移动通知</value>
+    <comment>Move notifications</comment>
+  </data>
+  <data name="Move_Title_Singular" xml:space="preserve">
+    <value>移动通知</value>
+    <comment>Move notification</comment>
+  </data>
+  <data name="NewProfile_Placeholder" xml:space="preserve">
+    <value>配置名称</value>
+    <comment>Profile name</comment>
+  </data>
+  <data name="NewProfile_Title" xml:space="preserve">
+    <value>创建新配置</value>
+    <comment>Create new profile</comment>
+  </data>
+  <data name="Query_Constant" xml:space="preserve">
+    <value>常量</value>
+    <comment>Constant</comment>
+  </data>
+  <data name="Query_Error_NeedHelp" xml:space="preserve">
+    <value>需要帮忙?</value>
+    <comment>Need help?</comment>
+  </data>
+  <data name="Query_Error_Subtitle" xml:space="preserve">
+    <value>此查询有些问题...</value>
+    <comment>Something is wrong with the query...</comment>
+  </data>
+  <data name="Query_Error_Title" xml:space="preserve">
+    <value>哦，麻烦大了!</value>
+    <comment>Oh no!</comment>
+  </data>
+  <data name="Query_Keyword" xml:space="preserve">
+    <value>关键词</value>
+    <comment>Keyword</comment>
+  </data>
+  <data name="Query_Operator" xml:space="preserve">
+    <value>操作符</value>
+    <comment>Operator</comment>
+  </data>
+  <data name="Query_Property" xml:space="preserve">
+    <value>属性</value>
+    <comment>Property</comment>
+  </data>
+  <data name="Query_Results_None" xml:space="preserve">
+    <value>没有任何结果</value>
+    <comment>No results found</comment>
+  </data>
+  <data name="Query_Results_Plural" xml:space="preserve">
+    <value>{0} 个结果</value>
+    <comment>{0} results</comment>
+  </data>
+  <data name="Query_Results_Singular" xml:space="preserve">
+    <value>{0} 个结果</value>
+    <comment>{0} result</comment>
+  </data>
+  <data name="Query_Type_Boolean" xml:space="preserve">
+    <value>逻辑</value>
+    <comment>Boolean</comment>
+  </data>
+  <data name="Query_Type_Integer" xml:space="preserve">
+    <value>整型</value>
+    <comment>Integer</comment>
+  </data>
+  <data name="Query_Type_String" xml:space="preserve">
+    <value>字符串</value>
+    <comment>String</comment>
+  </data>
+  <data name="Query_Type_Unknown" xml:space="preserve">
+    <value>位置类型</value>
+    <comment>Unknown type</comment>
+  </data>
+  <data name="Query_Type_Username" xml:space="preserve">
+    <value>用户名</value>
+    <comment>Username</comment>
+  </data>
+  <data name="RuleProcessor_Progress" xml:space="preserve">
+    <value>正在为分类'{0}'运行规则...</value>
+    <comment>Running rules for category '{0}'...</comment>
+  </data>
+  <data name="RuleProcessor_Progress_Single" xml:space="preserve">
+    <value>正在为分类 '{1}'运行规则 '{0}' ...</value>
+    <comment>Running rule '{0}' for category '{1}'...</comment>
+  </data>
+  <data name="Rules_AddRule" xml:space="preserve">
+    <value>新建规则...</value>
+    <comment>Add new rule...</comment>
+  </data>
+  <data name="Rules_Description_And" xml:space="preserve">
+    <value>和</value>
+    <comment>And</comment>
+  </data>
+  <data name="Rules_Description_Contains" xml:space="preserve">
+    <value>包含</value>
+    <comment>Contains</comment>
+  </data>
+  <data name="Rules_Description_DoNothing" xml:space="preserve">
+    <value>无事</value>
+    <comment>Do nothing</comment>
+  </data>
+  <data name="Rules_Description_False" xml:space="preserve">
+    <value>否</value>
+    <comment>False</comment>
+  </data>
+  <data name="Rules_Description_If" xml:space="preserve">
+    <value>如果</value>
+    <comment>If</comment>
+  </data>
+  <data name="Rules_Description_Is" xml:space="preserve">
+    <value>是</value>
+    <comment>Is</comment>
+  </data>
+  <data name="Rules_Description_IsGreaterThan" xml:space="preserve">
+    <value>大于</value>
+    <comment>Is greater than</comment>
+  </data>
+  <data name="Rules_Description_IsGreaterThanOrEqualTo" xml:space="preserve">
+    <value>大于或等于</value>
+    <comment>Is greater than or equal to</comment>
+  </data>
+  <data name="Rules_Description_IsLessThan" xml:space="preserve">
+    <value>小于</value>
+    <comment>Is less than</comment>
+  </data>
+  <data name="Rules_Description_IsLessThanOrEqualTo" xml:space="preserve">
+    <value>小于活等于</value>
+    <comment>Is less than or equal to</comment>
+  </data>
+  <data name="Rules_Description_IsNot" xml:space="preserve">
+    <value>不是</value>
+    <comment>Is not</comment>
+  </data>
+  <data name="Rules_Description_MarkItAsRead" xml:space="preserve">
+    <value>标记为已读</value>
+    <comment>Mark it as read</comment>
+  </data>
+  <data name="Rules_Description_MoveItTo" xml:space="preserve">
+    <value>移动至 '{0}'</value>
+    <comment>Move it to '{0}'</comment>
+  </data>
+  <data name="Rules_Description_MuteIt" xml:space="preserve">
+    <value>静默它</value>
+    <comment>Mute it</comment>
+  </data>
+  <data name="Rules_Description_Null" xml:space="preserve">
+    <value>空</value>
+    <comment>Null</comment>
+  </data>
+  <data name="Rules_Description_Or" xml:space="preserve">
+    <value>或</value>
+    <comment>Or</comment>
+  </data>
+  <data name="Rules_Description_StarIt" xml:space="preserve">
+    <value>关注它</value>
+    <comment>Star it</comment>
+  </data>
+  <data name="Rules_Description_StopsProcessing" xml:space="preserve">
+    <value>这里也停止处理其他规则.</value>
+    <comment>This also stops processing of other rules.</comment>
+  </data>
+  <data name="Rules_Description_Then" xml:space="preserve">
+    <value>然后</value>
+    <comment>Then</comment>
+  </data>
+  <data name="Rules_Description_True" xml:space="preserve">
+    <value>是</value>
+    <comment>True</comment>
+  </data>
+  <data name="Rules_MaximumReached" xml:space="preserve">
+    <value>达到了最大的规则书， 要创建更多规则， 请升级至Ghostly Pro.</value>
+    <comment>Maximum number of rules reached. To create more rules, upgrade to Ghostly Pro.</comment>
+  </data>
+  <data name="Rules_NoRules" xml:space="preserve">
+    <value>这里没有规则.</value>
+    <comment>There are no rules.</comment>
+  </data>
+  <data name="Rules_RunRule_Title" xml:space="preserve">
+    <value>运行 '{0}'</value>
+    <comment>Run '{0}'</comment>
+  </data>
+  <data name="Rules_RunRules" xml:space="preserve">
+    <value>运行规则...</value>
+    <comment>Run rules...</comment>
+  </data>
+  <data name="Rules_RunRules_Ok" xml:space="preserve">
+    <value>运行</value>
+    <comment>Run</comment>
+  </data>
+  <data name="Rules_RunRules_Title" xml:space="preserve">
+    <value>运行所有规则</value>
+    <comment>Run all rules</comment>
+  </data>
+  <data name="Rules_Title" xml:space="preserve">
+    <value>规则</value>
+    <comment>Rules</comment>
+  </data>
+  <data name="SelectProfile_CreateNewProfile" xml:space="preserve">
+    <value>创建配置</value>
+    <comment>Create new profile</comment>
+  </data>
+  <data name="SelectProfile_ErrorLoading" xml:space="preserve">
+    <value>加载账户配置遇到问题</value>
+    <comment>There was a problem loading account profiles</comment>
+  </data>
+  <data name="SelectProfile_Loading" xml:space="preserve">
+    <value>加载配置…</value>
+    <comment>Loading profiles…</comment>
+  </data>
+  <data name="SelectProfile_Title_Export" xml:space="preserve">
+    <value>导出Ghostly配置</value>
+    <comment>Export Ghostly profile</comment>
+  </data>
+  <data name="SelectProfile_Title_Import" xml:space="preserve">
+    <value>导入Ghostly配置</value>
+    <comment>Import Ghostly profile</comment>
+  </data>
+  <data name="Settings_About" xml:space="preserve">
+    <value>关于</value>
+    <comment>About</comment>
+  </data>
+  <data name="Settings_AggregateToasts" xml:space="preserve">
+    <value>将通知聚合到单个 Toast 中</value>
+    <comment>Aggregate notifications into a single toast</comment>
+  </data>
+  <data name="Settings_AllowSynchronizationOnMeteredConnections" xml:space="preserve">
+    <value>允许流量计费连接时同步数据</value>
+    <comment>Allow synchronization on metered connections</comment>
+  </data>
+  <data name="Settings_AllowTelemetry" xml:space="preserve">
+    <value>允许 Ghostly 发送关于错误和常规使用的遥测信息.</value>
+    <comment>Allow Ghostly to send telemetry about errors and general usage.</comment>
+  </data>
+  <data name="Settings_AllowTelemetry_Anonymous" xml:space="preserve">
+    <value>所有信息匿名并且不包含个人数据.</value>
+    <comment>All information is anonymous and does not contain any personal data.</comment>
+  </data>
+  <data name="Settings_AutomaticallyMarkAsRead" xml:space="preserve">
+    <value>自动标记阅读通知为已读</value>
+    <comment>Automatically mark read notifications as read</comment>
+  </data>
+  <data name="Settings_Avatars" xml:space="preserve">
+    <value>头像</value>
+    <comment>Avatars</comment>
+  </data>
+  <data name="Settings_BackgroundSynchronization" xml:space="preserve">
+    <value>后台同步</value>
+    <comment>Background Synchronization</comment>
+  </data>
+  <data name="Settings_BackgroundTasksNotAllowed" xml:space="preserve">
+    <value>不允许后台任务。</value>
+    <comment>Background tasks are not allowed.</comment>
+  </data>
+  <data name="Settings_Badge" xml:space="preserve">
+    <value>徽章</value>
+    <comment>Badge</comment>
+  </data>
+  <data name="Settings_ClickLibrary" xml:space="preserve">
+    <value>点击一个库查看许可证.</value>
+    <comment>Click on a library below to see its license agreement.</comment>
+  </data>
+  <data name="Settings_Comments" xml:space="preserve">
+    <value>评论</value>
+    <comment>Comments</comment>
+  </data>
+  <data name="Settings_CreatedBy" xml:space="preserve">
+    <value>创建人</value>
+    <comment>Created by</comment>
+  </data>
+  <data name="Settings_CurrentLanguage" xml:space="preserve">
+    <value>当前语言</value>
+    <comment>Current language</comment>
+  </data>
+  <data name="Settings_CurrentTheme" xml:space="preserve">
+    <value>当前主题</value>
+    <comment>Current theme</comment>
+  </data>
+  <data name="Settings_DisableAutomaticStartup" xml:space="preserve">
+    <value>禁止自动启动</value>
+    <comment>Disable automatic startup</comment>
+  </data>
+  <data name="Settings_EnableAutomaticStartup" xml:space="preserve">
+    <value>启用自动启动</value>
+    <comment>Enable automatic startup</comment>
+  </data>
+  <data name="Settings_EnableBackgroundSynchronization" xml:space="preserve">
+    <value>启用后台同步</value>
+    <comment>Enable background synchronization</comment>
+  </data>
+  <data name="Settings_FollowOnTwitter" xml:space="preserve">
+    <value>在Twitter关注Ghostly</value>
+    <comment>Follow Ghostly on Twitter</comment>
+  </data>
+  <data name="Settings_General" xml:space="preserve">
+    <value>常规</value>
+    <comment>General</comment>
+  </data>
+  <data name="Settings_Images" xml:space="preserve">
+    <value>图像</value>
+    <comment>Images</comment>
+  </data>
+  <data name="Settings_Language" xml:space="preserve">
+    <value>语言</value>
+    <comment>Language</comment>
+  </data>
+  <data name="Settings_Logging" xml:space="preserve">
+    <value>日志</value>
+    <comment>Logging</comment>
+  </data>
+  <data name="Settings_LogLevel" xml:space="preserve">
+    <value>日志等级</value>
+    <comment>Log level</comment>
+  </data>
+  <data name="Settings_MarkMutedAsRead" xml:space="preserve">
+    <value>标记已静默的为已读</value>
+    <comment>Mark muted as read</comment>
+  </data>
+  <data name="Settings_Metered" xml:space="preserve">
+    <value>按流量计费的连接</value>
+    <comment>Metered Connections</comment>
+  </data>
+  <data name="Settings_Notifications" xml:space="preserve">
+    <value>通知</value>
+    <comment>Notifications</comment>
+  </data>
+  <data name="Settings_NotSure" xml:space="preserve">
+    <value>不确定?</value>
+    <comment>Not sure?</comment>
+  </data>
+  <data name="Settings_Open_Source" xml:space="preserve">
+    <value>开源</value>
+    <comment>Open Source</comment>
+  </data>
+  <data name="Settings_OpenLogFolder" xml:space="preserve">
+    <value>打开日志目录...</value>
+    <comment>Open log folder...</comment>
+  </data>
+  <data name="Settings_Personalize" xml:space="preserve">
+    <value>个人化</value>
+    <comment>Personalize</comment>
+  </data>
+  <data name="Settings_PreferCachedAvatars" xml:space="preserve">
+    <value>在线时更喜欢质量更高的非缓存头像</value>
+    <comment>Prefer non-cached avatars with higher quality when online</comment>
+  </data>
+  <data name="Settings_PreferCachedAvatars_Explanation" xml:space="preserve">
+    <value>(这涉及按流量计费的连接设置)</value>
+    <comment>(This respects metered connection settings)</comment>
+  </data>
+  <data name="Settings_Privacy" xml:space="preserve">
+    <value>隐私</value>
+    <comment>Privacy</comment>
+  </data>
+  <data name="Settings_PrivacyStatement" xml:space="preserve">
+    <value>隐私声明</value>
+    <comment>Privacy statement</comment>
+  </data>
+  <data name="Settings_Reading" xml:space="preserve">
+    <value>读取中</value>
+    <comment>Reading</comment>
+  </data>
+  <data name="Settings_ReadThePrivacyStatement" xml:space="preserve">
+    <value>读取隐私政策声明</value>
+    <comment>Read the privacy statement</comment>
+  </data>
+  <data name="Settings_ReportIssue" xml:space="preserve">
+    <value>报告BUG或者建议功能</value>
+    <comment>Report a bug or suggest a feature</comment>
+  </data>
+  <data name="Settings_RestartRequired" xml:space="preserve">
+    <value>你需要重新启动Ghostly以生效更改.</value>
+    <comment>You need to restart Ghostly for the change to take effect.</comment>
+  </data>
+  <data name="Settings_ScrollToLastComment" xml:space="preserve">
+    <value>滚动到最新注释</value>
+    <comment>Scroll to last comment</comment>
+  </data>
+  <data name="Settings_ShowAvatars" xml:space="preserve">
+    <value>为用户显示头像</value>
+    <comment>Show avatar for users</comment>
+  </data>
+  <data name="Settings_ShowNumberOfUnreadNotifications" xml:space="preserve">
+    <value>显示未读通知的数量</value>
+    <comment>Show number of unread notifications</comment>
+  </data>
+  <data name="Settings_ShowToast" xml:space="preserve">
+    <value>显示未读通知的toast</value>
+    <comment>Show toast for new notifications</comment>
+  </data>
+  <data name="Settings_Startup" xml:space="preserve">
+    <value>随系统启动</value>
+    <comment>Start with Windows</comment>
+  </data>
+  <data name="Settings_StartupStateDisabled" xml:space="preserve">
+    <value>自动启动已禁止。</value>
+    <comment>Automatic startup is disabled.</comment>
+  </data>
+  <data name="Settings_StartupStateDisabledByPolicy" xml:space="preserve">
+    <value>自动启动被组策略禁止.</value>
+    <comment>Automatic startup is disabled by group policy.</comment>
+  </data>
+  <data name="Settings_StartupStateDisabledByUser" xml:space="preserve">
+    <value>自动启动被用户禁止. 你可以在任务管理器中启用它.</value>
+    <comment>Automatic startup is disabled by user. You can enable this in the Startup tab in Task Manager.</comment>
+  </data>
+  <data name="Settings_StartupStateEnabled" xml:space="preserve">
+    <value>自动启动已启用。 </value>
+    <comment>Automatic startup is enabled.</comment>
+  </data>
+  <data name="Settings_StartupStateEnabledByPolicy" xml:space="preserve">
+    <value>自动启动被组策略启用。 </value>
+    <comment>Automatic startup is enabled by group policy.</comment>
+  </data>
+  <data name="Settings_StartupStateError" xml:space="preserve">
+    <value>检索启动状态是出错。 </value>
+    <comment>An error occured while retrieving startup state.</comment>
+  </data>
+  <data name="Settings_Synchronization" xml:space="preserve">
+    <value>同步</value>
+    <comment>Synchronization</comment>
+  </data>
+  <data name="Settings_Synchronization_General" xml:space="preserve">
+    <value>常规</value>
+    <comment>General</comment>
+  </data>
+  <data name="Settings_SynchronizeAvatarsForOfflineUse" xml:space="preserve">
+    <value>为离线用户同步头像</value>
+    <comment>Synchronize avatars for offline use</comment>
+  </data>
+  <data name="Settings_SynchronizeUnreadState" xml:space="preserve">
+    <value>同步未阅读状态</value>
+    <comment>Synchronize unread state</comment>
+  </data>
+  <data name="Settings_Telemetry" xml:space="preserve">
+    <value>遥测</value>
+    <comment>Telemetry</comment>
+  </data>
+  <data name="Settings_Thanks" xml:space="preserve">
+    <value>鸣谢</value>
+    <comment>Special Thanks</comment>
+  </data>
+  <data name="Settings_Theme" xml:space="preserve">
+    <value>主题</value>
+    <comment>Theme</comment>
+  </data>
+  <data name="Settings_Toasts" xml:space="preserve">
+    <value>Toasts</value>
+    <comment>Toasts</comment>
+  </data>
+  <data name="Settings_VisitWebsite" xml:space="preserve">
+    <value>访问官网</value>
+    <comment>Visit the website</comment>
+  </data>
+  <data name="Shell_Accounts" xml:space="preserve">
+    <value>账号</value>
+    <comment>Accounts</comment>
+  </data>
+  <data name="Shell_Archive" xml:space="preserve">
+    <value>归档</value>
+    <comment>Archive</comment>
+  </data>
+  <data name="Shell_ArchiveAll" xml:space="preserve">
+    <value>全部归档...</value>
+    <comment>Archive all...</comment>
+  </data>
+  <data name="Shell_DeleteCategory" xml:space="preserve">
+    <value>删除分类...</value>
+    <comment>Delete category...</comment>
+  </data>
+  <data name="Shell_DeleteFilter" xml:space="preserve">
+    <value>删除过滤器...</value>
+    <comment>Delete filter...</comment>
+  </data>
+  <data name="Shell_EditCategory" xml:space="preserve">
+    <value>编辑分类...</value>
+    <comment>Edit category...</comment>
+  </data>
+  <data name="Shell_EditFilter" xml:space="preserve">
+    <value>编辑过滤器...</value>
+    <comment>Edit filter...</comment>
+  </data>
+  <data name="Shell_Inbox" xml:space="preserve">
+    <value>收件箱</value>
+    <comment>Inbox</comment>
+  </data>
+  <data name="Shell_MarkAllAsRead" xml:space="preserve">
+    <value>全部标记为已读...</value>
+    <comment>Mark all as read...</comment>
+  </data>
+  <data name="Shell_Muted" xml:space="preserve">
+    <value>已静默</value>
+    <comment>Muted</comment>
+  </data>
+  <data name="Shell_NewCategory" xml:space="preserve">
+    <value>新建分类...</value>
+    <comment>New category...</comment>
+  </data>
+  <data name="Shell_Rules" xml:space="preserve">
+    <value>规则</value>
+    <comment>Rules</comment>
+  </data>
+  <data name="Shell_Search" xml:space="preserve">
+    <value>搜索</value>
+    <comment>Search</comment>
+  </data>
+  <data name="Shell_Settings" xml:space="preserve">
+    <value>设置</value>
+    <comment>Settings</comment>
+  </data>
+  <data name="Shell_Starred" xml:space="preserve">
+    <value>已关注</value>
+    <comment>Starred</comment>
+  </data>
+  <data name="Synchronization_DisabledBecauseOfMeteredConnection" xml:space="preserve">
+    <value>⚠ 自从你连接到了流量计费连接自动同步已经禁止。 \n 如果要启用可以在Ghostly的设置中启用。 </value>
+    <comment>⚠ Synchronization is disabled since you're on a metered connection.\nYou can enable synchronization on a metered connection in Ghostly's settings.</comment>
+  </data>
+  <data name="Synchronization_Local_Status" xml:space="preserve">
+    <value>同步本地状态...</value>
+    <comment>Synchronizing local state...</comment>
+  </data>
+  <data name="Synchronization_Started" xml:space="preserve">
+    <value>同步已关注...</value>
+    <comment>Synchronization started...</comment>
+  </data>
+  <data name="Template_Action_Approved" xml:space="preserve">
+    <value>应用</value>
+    <comment>Approved</comment>
+  </data>
+  <data name="Template_Action_Commented" xml:space="preserve">
+    <value>评论</value>
+    <comment>Commented</comment>
+  </data>
+  <data name="Template_Action_Dismissed" xml:space="preserve">
+    <value>驳回</value>
+    <comment>Dismissed</comment>
+  </data>
+  <data name="Template_Action_MergedThis" xml:space="preserve">
+    <value>合并这些</value>
+    <comment>Merged this</comment>
+  </data>
+  <data name="Template_Action_Pending" xml:space="preserve">
+    <value>正在预览 (不是已提交)</value>
+    <comment>Is reviewing (not submitted)</comment>
+  </data>
+  <data name="Template_Action_RequestedChanges" xml:space="preserve">
+    <value>已请求变更</value>
+    <comment>Requested changes</comment>
+  </data>
+  <data name="Template_Action_Reviewed" xml:space="preserve">
+    <value>已审阅</value>
+    <comment>Reviewed</comment>
+  </data>
+  <data name="Template_Action_Unknown" xml:space="preserve">
+    <value>?</value>
+    <comment>?</comment>
+  </data>
+  <data name="Template_Authored" xml:space="preserve">
+    <value>已授权</value>
+    <comment>Authored</comment>
+  </data>
+  <data name="Template_DiscussionOpenInBrowser" xml:space="preserve">
+    <value>在浏览器中打开仓库的讨论</value>
+    <comment>Open discussions for repository in browser</comment>
+  </data>
+  <data name="Template_DiscussionUpdated" xml:space="preserve">
+    <value>已更新</value>
+    <comment>Updated</comment>
+  </data>
+  <data name="Template_NoDescriptionProvided" xml:space="preserve">
+    <value>没有提供描述。 </value>
+    <comment>No description provided.</comment>
+  </data>
+  <data name="Template_ReviewedAnd" xml:space="preserve">
+    <value>已审阅并</value>
+    <comment>Reviewed and</comment>
+  </data>
+  <data name="Template_SecurityVulnerabilityReported" xml:space="preserve">
+    <value>报告安全漏洞</value>
+    <comment>Security vulnerability reported</comment>
+  </data>
+  <data name="Template_Wrote" xml:space="preserve">
+    <value>写道</value>
+    <comment>Wrote</comment>
+  </data>
+  <data name="Time_DaysAgo" xml:space="preserve">
+    <value>{0} 天前</value>
+    <comment>{0} days ago</comment>
+  </data>
+  <data name="Time_HoursAgo" xml:space="preserve">
+    <value>{0} 小时前</value>
+    <comment>{0} hours ago</comment>
+  </data>
+  <data name="Time_MinutesAgo" xml:space="preserve">
+    <value>{0} 分钟前</value>
+    <comment>{0} minutes ago</comment>
+  </data>
+  <data name="Time_MonthsAgo" xml:space="preserve">
+    <value>{0} 月前</value>
+    <comment>{0} months ago</comment>
+  </data>
+  <data name="Time_OneDayAgo" xml:space="preserve">
+    <value>一天前</value>
+    <comment>A day ago</comment>
+  </data>
+  <data name="Time_OneHourAgo" xml:space="preserve">
+    <value>一小时前</value>
+    <comment>An hour ago</comment>
+  </data>
+  <data name="Time_OneMinuteAgo" xml:space="preserve">
+    <value>一分钟前</value>
+    <comment>A minute ago</comment>
+  </data>
+  <data name="Time_OneMonthAgo" xml:space="preserve">
+    <value>一月前</value>
+    <comment>A month ago</comment>
+  </data>
+  <data name="Time_OneSecondAgo" xml:space="preserve">
+    <value>一秒前</value>
+    <comment>A second ago</comment>
+  </data>
+  <data name="Time_OneYearAgo" xml:space="preserve">
+    <value>一年前</value>
+    <comment>A year ago</comment>
+  </data>
+  <data name="Time_SecondsAgo" xml:space="preserve">
+    <value>{0} 秒前</value>
+    <comment>{0} seconds ago</comment>
+  </data>
+  <data name="Time_YearsAgo" xml:space="preserve">
+    <value>{0} 年前</value>
+    <comment>{0} years ago</comment>
+  </data>
+  <data name="Time_Yesterday" xml:space="preserve">
+    <value>昨天</value>
+    <comment>Yesterday</comment>
+  </data>
+  <data name="WhatsNew_GhostlyWasUpdated" xml:space="preserve">
+    <value>Ghostly 已经更新到版本 {0}.</value>
+    <comment>Ghostly was updated to version {0}.</comment>
+  </data>
+  <data name="WhatsNew_Title" xml:space="preserve">
+    <value>新版本已安装！</value>
+    <comment>New version installed!</comment>
+  </data>
+  <data name="WhatsNew_ViewReleaseNotes" xml:space="preserve">
+    <value>查看发行注意事项</value>
+    <comment>View release notes</comment>
+  </data>
+</root>
