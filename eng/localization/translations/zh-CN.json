@@ -1,0 +1,1355 @@
+{
+  "Culture": "zh-CN",
+  "Entries": [
+    {
+      "Key": "Accounts_Account",
+      "Translation": "账号",
+      "Comment": "Account"
+    },
+    {
+      "Key": "Accounts_AuthorizationProblem",
+      "Translation": "授权此账户时出现问题。",
+      "Comment": "There was a problem authorizing this account."
+    },
+    {
+      "Key": "Accounts_ExportProfile",
+      "Translation": "导出配置",
+      "Comment": "Export profile"
+    },
+    {
+      "Key": "Accounts_ImportProfile",
+      "Translation": "导入配置",
+      "Comment": "Import profile"
+    },
+    {
+      "Key": "Accounts_NoAccounts",
+      "Translation": "没有账号。",
+      "Comment": "There are no accounts."
+    },
+    {
+      "Key": "Accounts_NoInternetConnection",
+      "Translation": "没有互联网连接。",
+      "Comment": "No Internet connection."
+    },
+    {
+      "Key": "Accounts_PleaseSignInAgain",
+      "Translation": "请注销并重新登录。",
+      "Comment": "Please sign out and sign in again."
+    },
+    {
+      "Key": "Accounts_ProfileManagementProhibited",
+      "Translation": "禁止管理配置文件",
+      "Comment": "Profile management prohibited"
+    },
+    {
+      "Key": "Accounts_Profiles",
+      "Translation": "配置",
+      "Comment": "Profiles"
+    },
+    {
+      "Key": "Accounts_PublicAndPrivateRepositories",
+      "Translation": "公共和私有仓库 ",
+      "Comment": "Public and private repositories"
+    },
+    {
+      "Key": "Accounts_PublicAndPrivateRepositoriesMorePermissions",
+      "Translation": "公有或私有仓库 (需要更多权限)",
+      "Comment": "Public and private repositories (requires more permissions)"
+    },
+    {
+      "Key": "Accounts_PublicRepositories",
+      "Translation": "公有仓库",
+      "Comment": "Public repositories"
+    },
+    {
+      "Key": "Accounts_PublicRepositoriesOnly",
+      "Translation": "仅公有仓库",
+      "Comment": "Public repositories only"
+    },
+    {
+      "Key": "Accounts_Review",
+      "Translation": "审核账号权限",
+      "Comment": "Review account permissions"
+    },
+    {
+      "Key": "Accounts_SignInToGitHub",
+      "Translation": "登录至 GitHub...",
+      "Comment": "Sign in to GitHub..."
+    },
+    {
+      "Key": "Accounts_SignOut",
+      "Translation": "注销",
+      "Comment": "Sign out"
+    },
+    {
+      "Key": "Accounts_Title",
+      "Translation": "账户",
+      "Comment": "Accounts"
+    },
+    {
+      "Key": "Archive_Progress_Archiving",
+      "Translation": "正在归档提示...",
+      "Comment": "Archiving notifications..."
+    },
+    {
+      "Key": "Archive_Progress_MarkingAsRead",
+      "Translation": "标记提示为已读...",
+      "Comment": "Marking notifications as read..."
+    },
+    {
+      "Key": "ArchiveAll_Confirmation",
+      "Translation": "你确定归档所有通知到 '{0}' 吗?\\n\\n此操作无法撤销。",
+      "Comment": "Are you sure that you want to archive all notifications in '{0}'?\\n\\nThis action cannot be undone."
+    },
+    {
+      "Key": "ArchiveAll_Ok",
+      "Translation": "归档",
+      "Comment": "Archive"
+    },
+    {
+      "Key": "ArchiveAll_Progress",
+      "Translation": "归档通知 {0}...",
+      "Comment": "Archiving notifications in {0}..."
+    },
+    {
+      "Key": "ArchiveAll_Title",
+      "Translation": "归档全部?",
+      "Comment": "Archive all?"
+    },
+    {
+      "Key": "CreateCategory_CategoryImported",
+      "Translation": "此分类是以前从'{0}'导入的.",
+      "Comment": "The category was previously imported from '{0}'."
+    },
+    {
+      "Key": "CreateCategory_CategoryImported_Warning",
+      "Translation": "如果重新导入将丢失对分类的更改.",
+      "Comment": "Changes to this category will be lost if re-importing again."
+    },
+    {
+      "Key": "CreateCategory_Expression",
+      "Translation": "表达式",
+      "Comment": "Expression"
+    },
+    {
+      "Key": "CreateCategory_IncludeMuted",
+      "Translation": "包含已静默",
+      "Comment": "Include muted"
+    },
+    {
+      "Key": "CreateCategory_Muted",
+      "Translation": "静默",
+      "Comment": "Mute"
+    },
+    {
+      "Key": "CreateCategory_Name",
+      "Translation": "名称",
+      "Comment": "Name"
+    },
+    {
+      "Key": "CreateCategory_ShowTotal",
+      "Translation": "显示总数",
+      "Comment": "Show total count"
+    },
+    {
+      "Key": "CreateCategory_ThisIsAFilter",
+      "Translation": "这是一个过滤器",
+      "Comment": "This is a filter"
+    },
+    {
+      "Key": "CreateCategory_Title_EditCategory",
+      "Translation": "编辑分类",
+      "Comment": "Edit category"
+    },
+    {
+      "Key": "CreateCategory_Title_EditFilter",
+      "Translation": "编辑过滤器",
+      "Comment": "Edit filter"
+    },
+    {
+      "Key": "CreateCategory_Title_NewCategory",
+      "Translation": "创建分类",
+      "Comment": "Create category"
+    },
+    {
+      "Key": "CreateCategory_Title_NewFilter",
+      "Translation": "创建过滤器",
+      "Comment": "Create filter"
+    },
+    {
+      "Key": "CreateCategory_Upgrade",
+      "Translation": "要创建更多，请升级到 Ghostly Pro.",
+      "Comment": "To create more, upgrade to Ghostly Pro."
+    },
+    {
+      "Key": "CreateCategory_WhatIsThis",
+      "Translation": "这是什么?",
+      "Comment": "What is this?"
+    },
+    {
+      "Key": "CreateRule_Condition",
+      "Translation": "条件",
+      "Comment": "Condition"
+    },
+    {
+      "Key": "CreateRule_Condition_Placeholder",
+      "Translation": "表达式",
+      "Comment": "Expression"
+    },
+    {
+      "Key": "CreateRule_EditRule",
+      "Translation": "编辑规则",
+      "Comment": "Edit rule"
+    },
+    {
+      "Key": "CreateRule_MarkAsRead",
+      "Translation": "标记为已读",
+      "Comment": "Mark as read"
+    },
+    {
+      "Key": "CreateRule_MoveToCategory",
+      "Translation": "移动至分类",
+      "Comment": "Move to category"
+    },
+    {
+      "Key": "CreateRule_Mute",
+      "Translation": "静默",
+      "Comment": "Mute"
+    },
+    {
+      "Key": "CreateRule_Name",
+      "Translation": "名称",
+      "Comment": "Name"
+    },
+    {
+      "Key": "CreateRule_Name_Placeholder",
+      "Translation": "规则名称",
+      "Comment": "Name of the rule"
+    },
+    {
+      "Key": "CreateRule_NewRule",
+      "Translation": "新建规则",
+      "Comment": "New rule"
+    },
+    {
+      "Key": "CreateRule_RuleImported",
+      "Translation": "改规则是之前从 '{0}'导入的.",
+      "Comment": "The rule was previously imported from '{0}'."
+    },
+    {
+      "Key": "CreateRule_RuleImported_Warning",
+      "Translation": "如果重新导入则丢失对此规则的更改.",
+      "Comment": "Changes to this rule will be lost if re-importing again."
+    },
+    {
+      "Key": "CreateRule_Star",
+      "Translation": "关注",
+      "Comment": "Star"
+    },
+    {
+      "Key": "CreateRule_StopProcessingOtherRules",
+      "Translation": "停止处理其他规则",
+      "Comment": "Stop processing other rules"
+    },
+    {
+      "Key": "CreateRule_WhatIsThis",
+      "Translation": "这是什么?",
+      "Comment": "What is this?"
+    },
+    {
+      "Key": "DeleteCategory_CannotDelete_ChangeOrDeleteRule",
+      "Translation": "更改或者删除受影响的规则以删除此类别.",
+      "Comment": "Change or delete the affected rules to delete this category."
+    },
+    {
+      "Key": "DeleteCategory_CannotDelete_Title",
+      "Translation": "无法删除分类",
+      "Comment": "Cannot delete category"
+    },
+    {
+      "Key": "DeleteCategory_CannotDelete_UsedInFollowingRules",
+      "Translation": "此分类'{0}'被下面的规则中使用:",
+      "Comment": "The category '{0}' is used in the following rules:"
+    },
+    {
+      "Key": "DeleteCategory_Category_Confirmation",
+      "Translation": "你确定要删除分类'{0}'吗?\\n\\n此操作不可撤销.",
+      "Comment": "Are you sure that you want to delete the category '{0}'?\\n\\nThis action cannot be undone."
+    },
+    {
+      "Key": "DeleteCategory_Category_Title",
+      "Translation": "删除分类?",
+      "Comment": "Delete category?"
+    },
+    {
+      "Key": "DeleteCategory_Filter_Confirmation",
+      "Translation": "你确定要删除过滤器 '{0}'吗?\\n\\n此操作不可撤销.",
+      "Comment": "Are you sure that you want to delete the filter '{0}'?\\n\\nThis action cannot be undone."
+    },
+    {
+      "Key": "DeleteCategory_Filter_Title",
+      "Translation": "删除分类？",
+      "Comment": "Delete filter?"
+    },
+    {
+      "Key": "DeleteRule_Confirmation",
+      "Translation": "你确定要删除规则'{0}'吗?\\n\\n此操作不可撤销.",
+      "Comment": "Are you sure that you want to delete the rule '{0}'?\\n\\nThis action cannot be undone."
+    },
+    {
+      "Key": "DeleteRule_Ok",
+      "Translation": "删除",
+      "Comment": "Delete"
+    },
+    {
+      "Key": "DeleteRule_Title",
+      "Translation": "删除规则?",
+      "Comment": "Delete rule?"
+    },
+    {
+      "Key": "EmojiPicker_Clear",
+      "Translation": "清除",
+      "Comment": "Clear"
+    },
+    {
+      "Key": "ExportProfile_Error",
+      "Translation": "导出配置时发生错误.\\n查看日志了解更多信息.",
+      "Comment": "An error occured while exporting profile.\\nSee the log for more information."
+    },
+    {
+      "Key": "ExportProfile_Progress",
+      "Translation": "正在导出配置文件 {0}…",
+      "Comment": "Exporting profile {0}…"
+    },
+    {
+      "Key": "General_Cancel",
+      "Translation": "取消",
+      "Comment": "Cancel"
+    },
+    {
+      "Key": "General_Close",
+      "Translation": "关闭",
+      "Comment": "Close"
+    },
+    {
+      "Key": "General_Create",
+      "Translation": "创建",
+      "Comment": "Create"
+    },
+    {
+      "Key": "General_Delete",
+      "Translation": "删除",
+      "Comment": "Delete"
+    },
+    {
+      "Key": "General_ErrorOccured",
+      "Translation": "发生了一错误",
+      "Comment": "An error occurred"
+    },
+    {
+      "Key": "General_Export",
+      "Translation": "导出",
+      "Comment": "Export"
+    },
+    {
+      "Key": "General_Import",
+      "Translation": "导入",
+      "Comment": "Import"
+    },
+    {
+      "Key": "General_Menu",
+      "Translation": "菜单",
+      "Comment": "Menu"
+    },
+    {
+      "Key": "General_Ok",
+      "Translation": "确定",
+      "Comment": "Ok"
+    },
+    {
+      "Key": "General_Save",
+      "Translation": "保存",
+      "Comment": "Save"
+    },
+    {
+      "Key": "GitHub_Broker_SignInUsingExternalBrowser",
+      "Translation": "使用外部浏览器登录",
+      "Comment": "Sign in using external browser"
+    },
+    {
+      "Key": "GitHub_FirstSynchronization",
+      "Translation": "Ghostly 第一次同步， 这需要一些时间. 😅",
+      "Comment": "Ghostly is synchronizing for the first time. This might take a little while. 😅"
+    },
+    {
+      "Key": "GitHub_Progress",
+      "Translation": "正在同步{0}/{1}GitHub的通知...",
+      "Comment": "Synchronizing {0} of {1} GitHub notifications..."
+    },
+    {
+      "Key": "GitHub_Progress_Unread",
+      "Translation": "正在同步未读条目...",
+      "Comment": "Synchronizing unread items..."
+    },
+    {
+      "Key": "GitHub_RateLimitExceeded",
+      "Translation": "我们超出了GitHub API 的速率限制 😢.\\n我们无法继续同步直至 {0}.",
+      "Comment": "We've exceeded the GitHub API rate limit 😢.\\nWe won't be able to synchronize until {0}."
+    },
+    {
+      "Key": "GitHub_Toast_NewNotification_Title",
+      "Translation": "收到新的GitHub通知",
+      "Comment": "New GitHub notification"
+    },
+    {
+      "Key": "GitHub_Toast_NewNotifications_Body",
+      "Translation": "收到{0} 个新通知.",
+      "Comment": "{0} new notifications available."
+    },
+    {
+      "Key": "GitHub_Toast_NewNotifications_Title",
+      "Translation": "新GitHub通知",
+      "Comment": "New GitHub notifications"
+    },
+    {
+      "Key": "ImportProfile_Progress",
+      "Translation": "正在导入配置文件 {0}…",
+      "Comment": "Importing profile {0}…"
+    },
+    {
+      "Key": "Main_Archive",
+      "Translation": "归档",
+      "Comment": "Archive"
+    },
+    {
+      "Key": "Main_Command_Archive",
+      "Translation": "归档",
+      "Comment": "Archive"
+    },
+    {
+      "Key": "Main_Command_MarkAsRead",
+      "Translation": "标记为已读",
+      "Comment": "Mark as read"
+    },
+    {
+      "Key": "Main_Command_Move",
+      "Translation": "移动",
+      "Comment": "Move"
+    },
+    {
+      "Key": "Main_MarkAsRead",
+      "Translation": "标记为已读",
+      "Comment": "Mark as read"
+    },
+    {
+      "Key": "Main_Move",
+      "Translation": "移动",
+      "Comment": "Move"
+    },
+    {
+      "Key": "Main_Mute",
+      "Translation": "静默",
+      "Comment": "Mute"
+    },
+    {
+      "Key": "Main_NoNotificationSelected",
+      "Translation": "没有选中通知",
+      "Comment": "No notification selected"
+    },
+    {
+      "Key": "Main_OpenInBrowser",
+      "Translation": "在浏览器中打开",
+      "Comment": "Open in browser"
+    },
+    {
+      "Key": "Main_SearchEverywhere",
+      "Translation": "在任何地方搜索",
+      "Comment": "Search everywhere"
+    },
+    {
+      "Key": "Main_SearchInCategory",
+      "Translation": "在{0}中搜索",
+      "Comment": "Search in {0}"
+    },
+    {
+      "Key": "Main_Share",
+      "Translation": "共享...",
+      "Comment": "Share..."
+    },
+    {
+      "Key": "Main_ShareGitHubLink",
+      "Translation": "共享连接至 GitHub 条目",
+      "Comment": "Share link to GitHub item"
+    },
+    {
+      "Key": "Main_Star",
+      "Translation": "关注",
+      "Comment": "Star"
+    },
+    {
+      "Key": "Main_Synchronize",
+      "Translation": "同步",
+      "Comment": "Synchronize"
+    },
+    {
+      "Key": "Main_Unmute",
+      "Translation": "取消静默",
+      "Comment": "Unmute"
+    },
+    {
+      "Key": "Main_Unstar",
+      "Translation": "取消关注",
+      "Comment": "Unstar"
+    },
+    {
+      "Key": "Main_UpdateItem",
+      "Translation": "更新条目",
+      "Comment": "Update item"
+    },
+    {
+      "Key": "MarkAllAsRead_Confirmation",
+      "Translation": "你确定要用 '{0}' 标记所有通知为已读吗?\\n\\n此操作无法撤销.",
+      "Comment": "Are you sure that you want to mark all notifications in '{0}' as read?\\n\\nThis action cannot be undone."
+    },
+    {
+      "Key": "MarkAllAsRead_Ok",
+      "Translation": "全部标记为未已读",
+      "Comment": "Mark all as read"
+    },
+    {
+      "Key": "MarkAllAsRead_Progress",
+      "Translation": "正在用{0}标记所有通知为已读...",
+      "Comment": "Marking all notifications in {0} as read..."
+    },
+    {
+      "Key": "MarkAllAsRead_Title",
+      "Translation": "全部标记为已读?",
+      "Comment": "Mark all as read?"
+    },
+    {
+      "Key": "MarkAsRead_Progress",
+      "Translation": "标记 {0} 个通知为已读...",
+      "Comment": "Marking {0} notifications as read..."
+    },
+    {
+      "Key": "Move_Ok",
+      "Translation": "移动",
+      "Comment": "Move"
+    },
+    {
+      "Key": "Move_Progress",
+      "Translation": "移动{0} 通知至 {1}...",
+      "Comment": "Moving {0} notifications to {1}..."
+    },
+    {
+      "Key": "Move_Title_Plural",
+      "Translation": "移动通知",
+      "Comment": "Move notifications"
+    },
+    {
+      "Key": "Move_Title_Singular",
+      "Translation": "移动通知",
+      "Comment": "Move notification"
+    },
+    {
+      "Key": "NewProfile_Placeholder",
+      "Translation": "配置名称",
+      "Comment": "Profile name"
+    },
+    {
+      "Key": "NewProfile_Title",
+      "Translation": "创建新配置",
+      "Comment": "Create new profile"
+    },
+    {
+      "Key": "Query_Constant",
+      "Translation": "常量",
+      "Comment": "Constant"
+    },
+    {
+      "Key": "Query_Error_NeedHelp",
+      "Translation": "需要帮忙?",
+      "Comment": "Need help?"
+    },
+    {
+      "Key": "Query_Error_Subtitle",
+      "Translation": "此查询有些问题...",
+      "Comment": "Something is wrong with the query..."
+    },
+    {
+      "Key": "Query_Error_Title",
+      "Translation": "哦，麻烦大了!",
+      "Comment": "Oh no!"
+    },
+    {
+      "Key": "Query_Keyword",
+      "Translation": "关键词",
+      "Comment": "Keyword"
+    },
+    {
+      "Key": "Query_Operator",
+      "Translation": "操作符",
+      "Comment": "Operator"
+    },
+    {
+      "Key": "Query_Property",
+      "Translation": "属性",
+      "Comment": "Property"
+    },
+    {
+      "Key": "Query_Results_None",
+      "Translation": "没有任何结果",
+      "Comment": "No results found"
+    },
+    {
+      "Key": "Query_Results_Plural",
+      "Translation": "{0} 个结果",
+      "Comment": "{0} results"
+    },
+    {
+      "Key": "Query_Results_Singular",
+      "Translation": "{0} 个结果",
+      "Comment": "{0} result"
+    },
+    {
+      "Key": "Query_Type_Boolean",
+      "Translation": "逻辑",
+      "Comment": "Boolean"
+    },
+    {
+      "Key": "Query_Type_Integer",
+      "Translation": "整型",
+      "Comment": "Integer"
+    },
+    {
+      "Key": "Query_Type_String",
+      "Translation": "字符串",
+      "Comment": "String"
+    },
+    {
+      "Key": "Query_Type_Unknown",
+      "Translation": "位置类型",
+      "Comment": "Unknown type"
+    },
+    {
+      "Key": "Query_Type_Username",
+      "Translation": "用户名",
+      "Comment": "Username"
+    },
+    {
+      "Key": "RuleProcessor_Progress",
+      "Translation": "正在为分类'{0}'运行规则...",
+      "Comment": "Running rules for category '{0}'..."
+    },
+    {
+      "Key": "RuleProcessor_Progress_Single",
+      "Translation": "正在为分类 '{1}'运行规则 '{0}' ...",
+      "Comment": "Running rule '{0}' for category '{1}'..."
+    },
+    {
+      "Key": "Rules_AddRule",
+      "Translation": "新建规则...",
+      "Comment": "Add new rule..."
+    },
+    {
+      "Key": "Rules_Description_And",
+      "Translation": "和",
+      "Comment": "And"
+    },
+    {
+      "Key": "Rules_Description_Contains",
+      "Translation": "包含",
+      "Comment": "Contains"
+    },
+    {
+      "Key": "Rules_Description_DoNothing",
+      "Translation": "无事",
+      "Comment": "Do nothing"
+    },
+    {
+      "Key": "Rules_Description_False",
+      "Translation": "否",
+      "Comment": "False"
+    },
+    {
+      "Key": "Rules_Description_If",
+      "Translation": "如果",
+      "Comment": "If"
+    },
+    {
+      "Key": "Rules_Description_Is",
+      "Translation": "是",
+      "Comment": "Is"
+    },
+    {
+      "Key": "Rules_Description_IsGreaterThan",
+      "Translation": "大于",
+      "Comment": "Is greater than"
+    },
+    {
+      "Key": "Rules_Description_IsGreaterThanOrEqualTo",
+      "Translation": "大于或等于",
+      "Comment": "Is greater than or equal to"
+    },
+    {
+      "Key": "Rules_Description_IsLessThan",
+      "Translation": "小于",
+      "Comment": "Is less than"
+    },
+    {
+      "Key": "Rules_Description_IsLessThanOrEqualTo",
+      "Translation": "小于活等于",
+      "Comment": "Is less than or equal to"
+    },
+    {
+      "Key": "Rules_Description_IsNot",
+      "Translation": "不是",
+      "Comment": "Is not"
+    },
+    {
+      "Key": "Rules_Description_MarkItAsRead",
+      "Translation": "标记为已读",
+      "Comment": "Mark it as read"
+    },
+    {
+      "Key": "Rules_Description_MoveItTo",
+      "Translation": "移动至 '{0}'",
+      "Comment": "Move it to '{0}'"
+    },
+    {
+      "Key": "Rules_Description_MuteIt",
+      "Translation": "静默它",
+      "Comment": "Mute it"
+    },
+    {
+      "Key": "Rules_Description_Null",
+      "Translation": "空",
+      "Comment": "Null"
+    },
+    {
+      "Key": "Rules_Description_Or",
+      "Translation": "或",
+      "Comment": "Or"
+    },
+    {
+      "Key": "Rules_Description_StarIt",
+      "Translation": "关注它",
+      "Comment": "Star it"
+    },
+    {
+      "Key": "Rules_Description_StopsProcessing",
+      "Translation": "这里也停止处理其他规则.",
+      "Comment": "This also stops processing of other rules."
+    },
+    {
+      "Key": "Rules_Description_Then",
+      "Translation": "然后",
+      "Comment": "Then"
+    },
+    {
+      "Key": "Rules_Description_True",
+      "Translation": "是",
+      "Comment": "True"
+    },
+    {
+      "Key": "Rules_MaximumReached",
+      "Translation": "达到了最大的规则书， 要创建更多规则， 请升级至Ghostly Pro.",
+      "Comment": "Maximum number of rules reached. To create more rules, upgrade to Ghostly Pro."
+    },
+    {
+      "Key": "Rules_NoRules",
+      "Translation": "这里没有规则.",
+      "Comment": "There are no rules."
+    },
+    {
+      "Key": "Rules_RunRule_Title",
+      "Translation": "运行 '{0}'",
+      "Comment": "Run '{0}'"
+    },
+    {
+      "Key": "Rules_RunRules",
+      "Translation": "运行规则...",
+      "Comment": "Run rules..."
+    },
+    {
+      "Key": "Rules_RunRules_Ok",
+      "Translation": "运行",
+      "Comment": "Run"
+    },
+    {
+      "Key": "Rules_RunRules_Title",
+      "Translation": "运行所有规则",
+      "Comment": "Run all rules"
+    },
+    {
+      "Key": "Rules_Title",
+      "Translation": "规则",
+      "Comment": "Rules"
+    },
+    {
+      "Key": "SelectProfile_CreateNewProfile",
+      "Translation": "创建配置",
+      "Comment": "Create new profile"
+    },
+    {
+      "Key": "SelectProfile_ErrorLoading",
+      "Translation": "加载账户配置遇到问题",
+      "Comment": "There was a problem loading account profiles"
+    },
+    {
+      "Key": "SelectProfile_Loading",
+      "Translation": "加载配置…",
+      "Comment": "Loading profiles…"
+    },
+    {
+      "Key": "SelectProfile_Title_Export",
+      "Translation": "导出Ghostly配置",
+      "Comment": "Export Ghostly profile"
+    },
+    {
+      "Key": "SelectProfile_Title_Import",
+      "Translation": "导入Ghostly配置",
+      "Comment": "Import Ghostly profile"
+    },
+    {
+      "Key": "Settings_About",
+      "Translation": "关于",
+      "Comment": "About"
+    },
+    {
+      "Key": "Settings_AggregateToasts",
+      "Translation": "将通知聚合到单个 Toast 中",
+      "Comment": "Aggregate notifications into a single toast"
+    },
+    {
+      "Key": "Settings_AllowSynchronizationOnMeteredConnections",
+      "Translation": "允许流量计费连接时同步数据",
+      "Comment": "Allow synchronization on metered connections"
+    },
+    {
+      "Key": "Settings_AllowTelemetry",
+      "Translation": "允许 Ghostly 发送关于错误和常规使用的遥测信息.",
+      "Comment": "Allow Ghostly to send telemetry about errors and general usage."
+    },
+    {
+      "Key": "Settings_AllowTelemetry_Anonymous",
+      "Translation": "所有信息匿名并且不包含个人数据.",
+      "Comment": "All information is anonymous and does not contain any personal data."
+    },
+    {
+      "Key": "Settings_AutomaticallyMarkAsRead",
+      "Translation": "自动标记阅读通知为已读",
+      "Comment": "Automatically mark read notifications as read"
+    },
+    {
+      "Key": "Settings_Avatars",
+      "Translation": "头像",
+      "Comment": "Avatars"
+    },
+    {
+      "Key": "Settings_BackgroundSynchronization",
+      "Translation": "后台同步",
+      "Comment": "Background Synchronization"
+    },
+    {
+      "Key": "Settings_BackgroundTasksNotAllowed",
+      "Translation": "不允许后台任务。",
+      "Comment": "Background tasks are not allowed."
+    },
+    {
+      "Key": "Settings_Badge",
+      "Translation": "徽章",
+      "Comment": "Badge"
+    },
+    {
+      "Key": "Settings_ClickLibrary",
+      "Translation": "点击一个库查看许可证.",
+      "Comment": "Click on a library below to see its license agreement."
+    },
+    {
+      "Key": "Settings_Comments",
+      "Translation": "评论",
+      "Comment": "Comments"
+    },
+    {
+      "Key": "Settings_CreatedBy",
+      "Translation": "创建人",
+      "Comment": "Created by"
+    },
+    {
+      "Key": "Settings_CurrentLanguage",
+      "Translation": "当前语言",
+      "Comment": "Current language"
+    },
+    {
+      "Key": "Settings_CurrentTheme",
+      "Translation": "当前主题",
+      "Comment": "Current theme"
+    },
+    {
+      "Key": "Settings_DisableAutomaticStartup",
+      "Translation": "禁止自动启动",
+      "Comment": "Disable automatic startup"
+    },
+    {
+      "Key": "Settings_EnableAutomaticStartup",
+      "Translation": "启用自动启动",
+      "Comment": "Enable automatic startup"
+    },
+    {
+      "Key": "Settings_EnableBackgroundSynchronization",
+      "Translation": "启用后台同步",
+      "Comment": "Enable background synchronization"
+    },
+    {
+      "Key": "Settings_FollowOnTwitter",
+      "Translation": "在Twitter关注Ghostly",
+      "Comment": "Follow Ghostly on Twitter"
+    },
+    {
+      "Key": "Settings_General",
+      "Translation": "常规",
+      "Comment": "General"
+    },
+    {
+      "Key": "Settings_Images",
+      "Translation": "图像",
+      "Comment": "Images"
+    },
+    {
+      "Key": "Settings_Language",
+      "Translation": "语言",
+      "Comment": "Language"
+    },
+    {
+      "Key": "Settings_Logging",
+      "Translation": "日志",
+      "Comment": "Logging"
+    },
+    {
+      "Key": "Settings_LogLevel",
+      "Translation": "日志等级",
+      "Comment": "Log level"
+    },
+    {
+      "Key": "Settings_MarkMutedAsRead",
+      "Translation": "标记已静默的为已读",
+      "Comment": "Mark muted as read"
+    },
+    {
+      "Key": "Settings_Metered",
+      "Translation": "按流量计费的连接",
+      "Comment": "Metered Connections"
+    },
+    {
+      "Key": "Settings_Notifications",
+      "Translation": "通知",
+      "Comment": "Notifications"
+    },
+    {
+      "Key": "Settings_NotSure",
+      "Translation": "不确定?",
+      "Comment": "Not sure?"
+    },
+    {
+      "Key": "Settings_Open_Source",
+      "Translation": "开源",
+      "Comment": "Open Source"
+    },
+    {
+      "Key": "Settings_OpenLogFolder",
+      "Translation": "打开日志目录...",
+      "Comment": "Open log folder..."
+    },
+    {
+      "Key": "Settings_Personalize",
+      "Translation": "个人化",
+      "Comment": "Personalize"
+    },
+    {
+      "Key": "Settings_PreferCachedAvatars",
+      "Translation": "在线时更喜欢质量更高的非缓存头像",
+      "Comment": "Prefer non-cached avatars with higher quality when online"
+    },
+    {
+      "Key": "Settings_PreferCachedAvatars_Explanation",
+      "Translation": "(这涉及按流量计费的连接设置)",
+      "Comment": "(This respects metered connection settings)"
+    },
+    {
+      "Key": "Settings_Privacy",
+      "Translation": "隐私",
+      "Comment": "Privacy"
+    },
+    {
+      "Key": "Settings_PrivacyStatement",
+      "Translation": "隐私声明",
+      "Comment": "Privacy statement"
+    },
+    {
+      "Key": "Settings_Reading",
+      "Translation": "读取中",
+      "Comment": "Reading"
+    },
+    {
+      "Key": "Settings_ReadThePrivacyStatement",
+      "Translation": "读取隐私政策声明",
+      "Comment": "Read the privacy statement"
+    },
+    {
+      "Key": "Settings_ReportIssue",
+      "Translation": "报告BUG或者建议功能",
+      "Comment": "Report a bug or suggest a feature"
+    },
+    {
+      "Key": "Settings_RestartRequired",
+      "Translation": "你需要重新启动Ghostly以生效更改.",
+      "Comment": "You need to restart Ghostly for the change to take effect."
+    },
+    {
+      "Key": "Settings_ScrollToLastComment",
+      "Translation": "滚动到最新注释",
+      "Comment": "Scroll to last comment"
+    },
+    {
+      "Key": "Settings_ShowAvatars",
+      "Translation": "为用户显示头像",
+      "Comment": "Show avatar for users"
+    },
+    {
+      "Key": "Settings_ShowNumberOfUnreadNotifications",
+      "Translation": "显示未读通知的数量",
+      "Comment": "Show number of unread notifications"
+    },
+    {
+      "Key": "Settings_ShowToast",
+      "Translation": "显示未读通知的toast",
+      "Comment": "Show toast for new notifications"
+    },
+    {
+      "Key": "Settings_Startup",
+      "Translation": "随系统启动",
+      "Comment": "Start with Windows"
+    },
+    {
+      "Key": "Settings_StartupStateDisabled",
+      "Translation": "自动启动已禁止。",
+      "Comment": "Automatic startup is disabled."
+    },
+    {
+      "Key": "Settings_StartupStateDisabledByPolicy",
+      "Translation": "自动启动被组策略禁止.",
+      "Comment": "Automatic startup is disabled by group policy."
+    },
+    {
+      "Key": "Settings_StartupStateDisabledByUser",
+      "Translation": "自动启动被用户禁止. 你可以在任务管理器中启用它.",
+      "Comment": "Automatic startup is disabled by user. You can enable this in the Startup tab in Task Manager."
+    },
+    {
+      "Key": "Settings_StartupStateEnabled",
+      "Translation": "自动启动已启用。 ",
+      "Comment": "Automatic startup is enabled."
+    },
+    {
+      "Key": "Settings_StartupStateEnabledByPolicy",
+      "Translation": "自动启动被组策略启用。 ",
+      "Comment": "Automatic startup is enabled by group policy."
+    },
+    {
+      "Key": "Settings_StartupStateError",
+      "Translation": "检索启动状态是出错。 ",
+      "Comment": "An error occured while retrieving startup state."
+    },
+    {
+      "Key": "Settings_Synchronization",
+      "Translation": "同步",
+      "Comment": "Synchronization"
+    },
+    {
+      "Key": "Settings_Synchronization_General",
+      "Translation": "常规",
+      "Comment": "General"
+    },
+    {
+      "Key": "Settings_SynchronizeAvatarsForOfflineUse",
+      "Translation": "为离线用户同步头像",
+      "Comment": "Synchronize avatars for offline use"
+    },
+    {
+      "Key": "Settings_SynchronizeUnreadState",
+      "Translation": "同步未阅读状态",
+      "Comment": "Synchronize unread state"
+    },
+    {
+      "Key": "Settings_Telemetry",
+      "Translation": "遥测",
+      "Comment": "Telemetry"
+    },
+    {
+      "Key": "Settings_Thanks",
+      "Translation": "鸣谢",
+      "Comment": "Special Thanks"
+    },
+    {
+      "Key": "Settings_Theme",
+      "Translation": "主题",
+      "Comment": "Theme"
+    },
+    {
+      "Key": "Settings_Toasts",
+      "Translation": "Toasts",
+      "Comment": "Toasts"
+    },
+    {
+      "Key": "Settings_VisitWebsite",
+      "Translation": "访问官网",
+      "Comment": "Visit the website"
+    },
+    {
+      "Key": "Shell_Accounts",
+      "Translation": "账号",
+      "Comment": "Accounts"
+    },
+    {
+      "Key": "Shell_Archive",
+      "Translation": "归档",
+      "Comment": "Archive"
+    },
+    {
+      "Key": "Shell_ArchiveAll",
+      "Translation": "全部归档...",
+      "Comment": "Archive all..."
+    },
+    {
+      "Key": "Shell_DeleteCategory",
+      "Translation": "删除分类...",
+      "Comment": "Delete category..."
+    },
+    {
+      "Key": "Shell_DeleteFilter",
+      "Translation": "删除过滤器...",
+      "Comment": "Delete filter..."
+    },
+    {
+      "Key": "Shell_EditCategory",
+      "Translation": "编辑分类...",
+      "Comment": "Edit category..."
+    },
+    {
+      "Key": "Shell_EditFilter",
+      "Translation": "编辑过滤器...",
+      "Comment": "Edit filter..."
+    },
+    {
+      "Key": "Shell_Inbox",
+      "Translation": "收件箱",
+      "Comment": "Inbox"
+    },
+    {
+      "Key": "Shell_MarkAllAsRead",
+      "Translation": "全部标记为已读...",
+      "Comment": "Mark all as read..."
+    },
+    {
+      "Key": "Shell_Muted",
+      "Translation": "已静默",
+      "Comment": "Muted"
+    },
+    {
+      "Key": "Shell_NewCategory",
+      "Translation": "新建分类...",
+      "Comment": "New category..."
+    },
+    {
+      "Key": "Shell_Rules",
+      "Translation": "规则",
+      "Comment": "Rules"
+    },
+    {
+      "Key": "Shell_Search",
+      "Translation": "搜索",
+      "Comment": "Search"
+    },
+    {
+      "Key": "Shell_Settings",
+      "Translation": "设置",
+      "Comment": "Settings"
+    },
+    {
+      "Key": "Shell_Starred",
+      "Translation": "已关注",
+      "Comment": "Starred"
+    },
+    {
+      "Key": "Synchronization_DisabledBecauseOfMeteredConnection",
+      "Translation": "⚠ 自从你连接到了流量计费连接自动同步已经禁止。 \\n 如果要启用可以在Ghostly的设置中启用。 ",
+      "Comment": "⚠ Synchronization is disabled since you're on a metered connection.\\nYou can enable synchronization on a metered connection in Ghostly's settings."
+    },
+    {
+      "Key": "Synchronization_Local_Status",
+      "Translation": "同步本地状态...",
+      "Comment": "Synchronizing local state..."
+    },
+    {
+      "Key": "Synchronization_Started",
+      "Translation": "同步已关注...",
+      "Comment": "Synchronization started..."
+    },
+    {
+      "Key": "Template_Action_Approved",
+      "Translation": "应用",
+      "Comment": "Approved"
+    },
+    {
+      "Key": "Template_Action_Commented",
+      "Translation": "评论",
+      "Comment": "Commented"
+    },
+    {
+      "Key": "Template_Action_Dismissed",
+      "Translation": "驳回",
+      "Comment": "Dismissed"
+    },
+    {
+      "Key": "Template_Action_MergedThis",
+      "Translation": "合并这些",
+      "Comment": "Merged this"
+    },
+    {
+      "Key": "Template_Action_Pending",
+      "Translation": "正在预览 (不是已提交)",
+      "Comment": "Is reviewing (not submitted)"
+    },
+    {
+      "Key": "Template_Action_RequestedChanges",
+      "Translation": "已请求变更",
+      "Comment": "Requested changes"
+    },
+    {
+      "Key": "Template_Action_Reviewed",
+      "Translation": "已审阅",
+      "Comment": "Reviewed"
+    },
+    {
+      "Key": "Template_Action_Unknown",
+      "Translation": "?",
+      "Comment": "?"
+    },
+    {
+      "Key": "Template_Authored",
+      "Translation": "已授权",
+      "Comment": "Authored"
+    },
+    {
+      "Key": "Template_DiscussionOpenInBrowser",
+      "Translation": "在浏览器中打开仓库的讨论",
+      "Comment": "Open discussions for repository in browser"
+    },
+    {
+      "Key": "Template_DiscussionUpdated",
+      "Translation": "已更新",
+      "Comment": "Updated"
+    },
+    {
+      "Key": "Template_NoDescriptionProvided",
+      "Translation": "没有提供描述。 ",
+      "Comment": "No description provided."
+    },
+    {
+      "Key": "Template_ReviewedAnd",
+      "Translation": "已审阅并",
+      "Comment": "Reviewed and"
+    },
+    {
+      "Key": "Template_SecurityVulnerabilityReported",
+      "Translation": "报告安全漏洞",
+      "Comment": "Security vulnerability reported"
+    },
+    {
+      "Key": "Template_Wrote",
+      "Translation": "写道",
+      "Comment": "Wrote"
+    },
+    {
+      "Key": "Time_DaysAgo",
+      "Translation": "{0} 天前",
+      "Comment": "{0} days ago"
+    },
+    {
+      "Key": "Time_HoursAgo",
+      "Translation": "{0} 小时前",
+      "Comment": "{0} hours ago"
+    },
+    {
+      "Key": "Time_MinutesAgo",
+      "Translation": "{0} 分钟前",
+      "Comment": "{0} minutes ago"
+    },
+    {
+      "Key": "Time_MonthsAgo",
+      "Translation": "{0} 月前",
+      "Comment": "{0} months ago"
+    },
+    {
+      "Key": "Time_OneDayAgo",
+      "Translation": "一天前",
+      "Comment": "A day ago"
+    },
+    {
+      "Key": "Time_OneHourAgo",
+      "Translation": "一小时前",
+      "Comment": "An hour ago"
+    },
+    {
+      "Key": "Time_OneMinuteAgo",
+      "Translation": "一分钟前",
+      "Comment": "A minute ago"
+    },
+    {
+      "Key": "Time_OneMonthAgo",
+      "Translation": "一月前",
+      "Comment": "A month ago"
+    },
+    {
+      "Key": "Time_OneSecondAgo",
+      "Translation": "一秒前",
+      "Comment": "A second ago"
+    },
+    {
+      "Key": "Time_OneYearAgo",
+      "Translation": "一年前",
+      "Comment": "A year ago"
+    },
+    {
+      "Key": "Time_SecondsAgo",
+      "Translation": "{0} 秒前",
+      "Comment": "{0} seconds ago"
+    },
+    {
+      "Key": "Time_YearsAgo",
+      "Translation": "{0} 年前",
+      "Comment": "{0} years ago"
+    },
+    {
+      "Key": "Time_Yesterday",
+      "Translation": "昨天",
+      "Comment": "Yesterday"
+    },
+    {
+      "Key": "WhatsNew_GhostlyWasUpdated",
+      "Translation": "Ghostly 已经更新到版本 {0}.",
+      "Comment": "Ghostly was updated to version {0}."
+    },
+    {
+      "Key": "WhatsNew_Title",
+      "Translation": "新版本已安装!",
+      "Comment": "New version installed!"
+    },
+    {
+      "Key": "WhatsNew_ViewReleaseNotes",
+      "Translation": "查看发行注意事项",
+      "Comment": "View release notes"
+    }
+  ]
+}
