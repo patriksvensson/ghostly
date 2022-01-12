@@ -95,7 +95,7 @@
     <comment>Profiles</comment>
   </data>
   <data name="Accounts_PublicAndPrivateRepositories" xml:space="preserve">
-    <value>公共和私有仓库 </value>
+    <value>公共和私有仓库</value>
     <comment>Public and private repositories</comment>
   </data>
   <data name="Accounts_PublicAndPrivateRepositoriesMorePermissions" xml:space="preserve">
@@ -135,7 +135,7 @@
     <comment>Marking notifications as read...</comment>
   </data>
   <data name="ArchiveAll_Confirmation" xml:space="preserve">
-    <value>你确定归档所有通知到 '{0}' 吗?\n\n此操作无法撤销。</value>
+    <value>你确定归档所有通知到 '{0}' 吗？\n\n此操作无法撤销。</value>
     <comment>Are you sure that you want to archive all notifications in '{0}'?\n\nThis action cannot be undone.</comment>
   </data>
   <data name="ArchiveAll_Ok" xml:space="preserve">
@@ -147,15 +147,15 @@
     <comment>Archiving notifications in {0}...</comment>
   </data>
   <data name="ArchiveAll_Title" xml:space="preserve">
-    <value>归档全部?</value>
+    <value>归档全部？</value>
     <comment>Archive all?</comment>
   </data>
   <data name="CreateCategory_CategoryImported" xml:space="preserve">
-    <value>此分类是以前从'{0}'导入的.</value>
+    <value>此分类是以前从 '{0}' 导入的。</value>
     <comment>The category was previously imported from '{0}'.</comment>
   </data>
   <data name="CreateCategory_CategoryImported_Warning" xml:space="preserve">
-    <value>如果重新导入将丢失对分类的更改.</value>
+    <value>如果重新导入将丢失对分类的更改。</value>
     <comment>Changes to this category will be lost if re-importing again.</comment>
   </data>
   <data name="CreateCategory_Expression" xml:space="preserve">
@@ -203,7 +203,7 @@
     <comment>To create more, upgrade to Ghostly Pro.</comment>
   </data>
   <data name="CreateCategory_WhatIsThis" xml:space="preserve">
-    <value>这是什么?</value>
+    <value>这是什么？</value>
     <comment>What is this?</comment>
   </data>
   <data name="CreateRule_Condition" xml:space="preserve">
@@ -243,11 +243,11 @@
     <comment>New rule</comment>
   </data>
   <data name="CreateRule_RuleImported" xml:space="preserve">
-    <value>改规则是之前从 '{0}'导入的.</value>
+    <value>该规则是之前从 '{0}' 导入的。</value>
     <comment>The rule was previously imported from '{0}'.</comment>
   </data>
   <data name="CreateRule_RuleImported_Warning" xml:space="preserve">
-    <value>如果重新导入则丢失对此规则的更改.</value>
+    <value>如果重新导入则丢失对此规则的更改。</value>
     <comment>Changes to this rule will be lost if re-importing again.</comment>
   </data>
   <data name="CreateRule_Star" xml:space="preserve">
@@ -259,11 +259,11 @@
     <comment>Stop processing other rules</comment>
   </data>
   <data name="CreateRule_WhatIsThis" xml:space="preserve">
-    <value>这是什么?</value>
+    <value>这是什么？</value>
     <comment>What is this?</comment>
   </data>
   <data name="DeleteCategory_CannotDelete_ChangeOrDeleteRule" xml:space="preserve">
-    <value>更改或者删除受影响的规则以删除此类别.</value>
+    <value>更改或者删除受影响的规则以删除此类别。</value>
     <comment>Change or delete the affected rules to delete this category.</comment>
   </data>
   <data name="DeleteCategory_CannotDelete_Title" xml:space="preserve">
@@ -271,19 +271,19 @@
     <comment>Cannot delete category</comment>
   </data>
   <data name="DeleteCategory_CannotDelete_UsedInFollowingRules" xml:space="preserve">
-    <value>此分类'{0}'被下面的规则中使用:</value>
+    <value>此分类 '{0}' 被下面的规则中使用:</value>
     <comment>The category '{0}' is used in the following rules:</comment>
   </data>
   <data name="DeleteCategory_Category_Confirmation" xml:space="preserve">
-    <value>你确定要删除分类'{0}'吗?\n\n此操作不可撤销.</value>
+    <value>你确定要删除分类 '{0}' 吗？\n\n此操作不可撤销。</value>
     <comment>Are you sure that you want to delete the category '{0}'?\n\nThis action cannot be undone.</comment>
   </data>
   <data name="DeleteCategory_Category_Title" xml:space="preserve">
-    <value>删除分类?</value>
+    <value>删除分类？</value>
     <comment>Delete category?</comment>
   </data>
   <data name="DeleteCategory_Filter_Confirmation" xml:space="preserve">
-    <value>你确定要删除过滤器 '{0}'吗?\n\n此操作不可撤销.</value>
+    <value>你确定要删除过滤器 '{0}' 吗？\n\n此操作不可撤销。</value>
     <comment>Are you sure that you want to delete the filter '{0}'?\n\nThis action cannot be undone.</comment>
   </data>
   <data name="DeleteCategory_Filter_Title" xml:space="preserve">
@@ -291,7 +291,7 @@
     <comment>Delete filter?</comment>
   </data>
   <data name="DeleteRule_Confirmation" xml:space="preserve">
-    <value>你确定要删除规则'{0}'吗?\n\n此操作不可撤销.</value>
+    <value>你确定要删除规则 '{0}' 吗？\n\n此操作不可撤销。</value>
     <comment>Are you sure that you want to delete the rule '{0}'?\n\nThis action cannot be undone.</comment>
   </data>
   <data name="DeleteRule_Ok" xml:space="preserve">
@@ -299,7 +299,7 @@
     <comment>Delete</comment>
   </data>
   <data name="DeleteRule_Title" xml:space="preserve">
-    <value>删除规则?</value>
+    <value>删除规则？</value>
     <comment>Delete rule?</comment>
   </data>
   <data name="EmojiPicker_Clear" xml:space="preserve">
@@ -307,7 +307,7 @@
     <comment>Clear</comment>
   </data>
   <data name="ExportProfile_Error" xml:space="preserve">
-    <value>导出配置时发生错误.\n查看日志了解更多信息.</value>
+    <value>导出配置时发生错误。\n查看日志了解更多信息。</value>
     <comment>An error occured while exporting profile.\nSee the log for more information.</comment>
   </data>
   <data name="ExportProfile_Progress" xml:space="preserve">
@@ -359,11 +359,11 @@
     <comment>Sign in using external browser</comment>
   </data>
   <data name="GitHub_FirstSynchronization" xml:space="preserve">
-    <value>Ghostly 第一次同步， 这需要一些时间. 😅</value>
+    <value>Ghostly 第一次同步，这需要一些时间。😅</value>
     <comment>Ghostly is synchronizing for the first time. This might take a little while. 😅</comment>
   </data>
   <data name="GitHub_Progress" xml:space="preserve">
-    <value>正在同步{0}/{1}GitHub的通知...</value>
+    <value>正在同步 {0} / {1} GitHub 的通知...</value>
     <comment>Synchronizing {0} of {1} GitHub notifications...</comment>
   </data>
   <data name="GitHub_Progress_Unread" xml:space="preserve">
@@ -371,19 +371,19 @@
     <comment>Synchronizing unread items...</comment>
   </data>
   <data name="GitHub_RateLimitExceeded" xml:space="preserve">
-    <value>我们超出了GitHub API 的速率限制 😢.\n我们无法继续同步直至 {0}.</value>
+    <value>我们超出了 GitHub API 的速率限制😢。\n我们无法继续同步直至 {0}。</value>
     <comment>We've exceeded the GitHub API rate limit 😢.\nWe won't be able to synchronize until {0}.</comment>
   </data>
   <data name="GitHub_Toast_NewNotification_Title" xml:space="preserve">
-    <value>收到新的GitHub通知</value>
+    <value>收到新的 GitHub 通知</value>
     <comment>New GitHub notification</comment>
   </data>
   <data name="GitHub_Toast_NewNotifications_Body" xml:space="preserve">
-    <value>收到{0} 个新通知.</value>
+    <value>收到 {0} 个新通知。</value>
     <comment>{0} new notifications available.</comment>
   </data>
   <data name="GitHub_Toast_NewNotifications_Title" xml:space="preserve">
-    <value>新GitHub通知</value>
+    <value>新 GitHub 通知</value>
     <comment>New GitHub notifications</comment>
   </data>
   <data name="ImportProfile_Progress" xml:space="preserve">
@@ -431,7 +431,7 @@
     <comment>Search everywhere</comment>
   </data>
   <data name="Main_SearchInCategory" xml:space="preserve">
-    <value>在{0}中搜索</value>
+    <value>在 {0} 中搜索</value>
     <comment>Search in {0}</comment>
   </data>
   <data name="Main_Share" xml:space="preserve">
@@ -463,7 +463,7 @@
     <comment>Update item</comment>
   </data>
   <data name="MarkAllAsRead_Confirmation" xml:space="preserve">
-    <value>你确定要用 '{0}' 标记所有通知为已读吗?\n\n此操作无法撤销.</value>
+    <value>你确定要用 '{0}' 标记所有通知为已读吗？\n\n此操作无法撤销。</value>
     <comment>Are you sure that you want to mark all notifications in '{0}' as read?\n\nThis action cannot be undone.</comment>
   </data>
   <data name="MarkAllAsRead_Ok" xml:space="preserve">
@@ -471,11 +471,11 @@
     <comment>Mark all as read</comment>
   </data>
   <data name="MarkAllAsRead_Progress" xml:space="preserve">
-    <value>正在用{0}标记所有通知为已读...</value>
+    <value>正在用 {0} 标记所有通知为已读...</value>
     <comment>Marking all notifications in {0} as read...</comment>
   </data>
   <data name="MarkAllAsRead_Title" xml:space="preserve">
-    <value>全部标记为已读?</value>
+    <value>全部标记为已读？</value>
     <comment>Mark all as read?</comment>
   </data>
   <data name="MarkAsRead_Progress" xml:space="preserve">
@@ -487,7 +487,7 @@
     <comment>Move</comment>
   </data>
   <data name="Move_Progress" xml:space="preserve">
-    <value>移动{0} 通知至 {1}...</value>
+    <value>移动 {0} 通知至 {1}...</value>
     <comment>Moving {0} notifications to {1}...</comment>
   </data>
   <data name="Move_Title_Plural" xml:space="preserve">
@@ -511,7 +511,7 @@
     <comment>Constant</comment>
   </data>
   <data name="Query_Error_NeedHelp" xml:space="preserve">
-    <value>需要帮忙?</value>
+    <value>需要帮忙？</value>
     <comment>Need help?</comment>
   </data>
   <data name="Query_Error_Subtitle" xml:space="preserve">
@@ -519,7 +519,7 @@
     <comment>Something is wrong with the query...</comment>
   </data>
   <data name="Query_Error_Title" xml:space="preserve">
-    <value>哦，麻烦大了!</value>
+    <value>哦，麻烦大了！</value>
     <comment>Oh no!</comment>
   </data>
   <data name="Query_Keyword" xml:space="preserve">
@@ -567,11 +567,11 @@
     <comment>Username</comment>
   </data>
   <data name="RuleProcessor_Progress" xml:space="preserve">
-    <value>正在为分类'{0}'运行规则...</value>
+    <value>正在为分类 '{0}' 运行规则...</value>
     <comment>Running rules for category '{0}'...</comment>
   </data>
   <data name="RuleProcessor_Progress_Single" xml:space="preserve">
-    <value>正在为分类 '{1}'运行规则 '{0}' ...</value>
+    <value>正在为分类 '{1}' 运行规则 '{0}'...</value>
     <comment>Running rule '{0}' for category '{1}'...</comment>
   </data>
   <data name="Rules_AddRule" xml:space="preserve">
@@ -647,7 +647,7 @@
     <comment>Star it</comment>
   </data>
   <data name="Rules_Description_StopsProcessing" xml:space="preserve">
-    <value>这里也停止处理其他规则.</value>
+    <value>这里也停止处理其他规则。</value>
     <comment>This also stops processing of other rules.</comment>
   </data>
   <data name="Rules_Description_Then" xml:space="preserve">
@@ -659,11 +659,11 @@
     <comment>True</comment>
   </data>
   <data name="Rules_MaximumReached" xml:space="preserve">
-    <value>达到了最大的规则书， 要创建更多规则， 请升级至Ghostly Pro.</value>
+    <value>达到了最大的规则书，要创建更多规则，请升级至 Ghostly Pro.</value>
     <comment>Maximum number of rules reached. To create more rules, upgrade to Ghostly Pro.</comment>
   </data>
   <data name="Rules_NoRules" xml:space="preserve">
-    <value>这里没有规则.</value>
+    <value>这里没有规则。</value>
     <comment>There are no rules.</comment>
   </data>
   <data name="Rules_RunRule_Title" xml:space="preserve">
@@ -699,11 +699,11 @@
     <comment>Loading profiles…</comment>
   </data>
   <data name="SelectProfile_Title_Export" xml:space="preserve">
-    <value>导出Ghostly配置</value>
+    <value>导出 Ghostly 配置</value>
     <comment>Export Ghostly profile</comment>
   </data>
   <data name="SelectProfile_Title_Import" xml:space="preserve">
-    <value>导入Ghostly配置</value>
+    <value>导入 Ghostly 配置</value>
     <comment>Import Ghostly profile</comment>
   </data>
   <data name="Settings_About" xml:space="preserve">
@@ -719,11 +719,11 @@
     <comment>Allow synchronization on metered connections</comment>
   </data>
   <data name="Settings_AllowTelemetry" xml:space="preserve">
-    <value>允许 Ghostly 发送关于错误和常规使用的遥测信息.</value>
+    <value>允许 Ghostly 发送关于错误和常规使用的遥测信息。</value>
     <comment>Allow Ghostly to send telemetry about errors and general usage.</comment>
   </data>
   <data name="Settings_AllowTelemetry_Anonymous" xml:space="preserve">
-    <value>所有信息匿名并且不包含个人数据.</value>
+    <value>所有信息匿名并且不包含个人数据。</value>
     <comment>All information is anonymous and does not contain any personal data.</comment>
   </data>
   <data name="Settings_AutomaticallyMarkAsRead" xml:space="preserve">
@@ -747,7 +747,7 @@
     <comment>Badge</comment>
   </data>
   <data name="Settings_ClickLibrary" xml:space="preserve">
-    <value>点击一个库查看许可证.</value>
+    <value>点击一个库查看许可证。</value>
     <comment>Click on a library below to see its license agreement.</comment>
   </data>
   <data name="Settings_Comments" xml:space="preserve">
@@ -779,7 +779,7 @@
     <comment>Enable background synchronization</comment>
   </data>
   <data name="Settings_FollowOnTwitter" xml:space="preserve">
-    <value>在Twitter关注Ghostly</value>
+    <value>在 Twitter 关注 Ghostly</value>
     <comment>Follow Ghostly on Twitter</comment>
   </data>
   <data name="Settings_General" xml:space="preserve">
@@ -815,7 +815,7 @@
     <comment>Notifications</comment>
   </data>
   <data name="Settings_NotSure" xml:space="preserve">
-    <value>不确定?</value>
+    <value>不确定？</value>
     <comment>Not sure?</comment>
   </data>
   <data name="Settings_Open_Source" xml:space="preserve">
@@ -855,11 +855,11 @@
     <comment>Read the privacy statement</comment>
   </data>
   <data name="Settings_ReportIssue" xml:space="preserve">
-    <value>报告BUG或者建议功能</value>
+    <value>报告 Bug 或者建议功能</value>
     <comment>Report a bug or suggest a feature</comment>
   </data>
   <data name="Settings_RestartRequired" xml:space="preserve">
-    <value>你需要重新启动Ghostly以生效更改.</value>
+    <value>你需要重新启动 Ghostly 以生效更改。</value>
     <comment>You need to restart Ghostly for the change to take effect.</comment>
   </data>
   <data name="Settings_ScrollToLastComment" xml:space="preserve">
@@ -875,7 +875,7 @@
     <comment>Show number of unread notifications</comment>
   </data>
   <data name="Settings_ShowToast" xml:space="preserve">
-    <value>显示未读通知的toast</value>
+    <value>显示未读通知的 Toast</value>
     <comment>Show toast for new notifications</comment>
   </data>
   <data name="Settings_Startup" xml:space="preserve">
@@ -887,23 +887,23 @@
     <comment>Automatic startup is disabled.</comment>
   </data>
   <data name="Settings_StartupStateDisabledByPolicy" xml:space="preserve">
-    <value>自动启动被组策略禁止.</value>
+    <value>自动启动被组策略禁止。</value>
     <comment>Automatic startup is disabled by group policy.</comment>
   </data>
   <data name="Settings_StartupStateDisabledByUser" xml:space="preserve">
-    <value>自动启动被用户禁止. 你可以在任务管理器中启用它.</value>
+    <value>自动启动被用户禁止。你可以在任务管理器中启用它。</value>
     <comment>Automatic startup is disabled by user. You can enable this in the Startup tab in Task Manager.</comment>
   </data>
   <data name="Settings_StartupStateEnabled" xml:space="preserve">
-    <value>自动启动已启用。 </value>
+    <value>自动启动已启用。</value>
     <comment>Automatic startup is enabled.</comment>
   </data>
   <data name="Settings_StartupStateEnabledByPolicy" xml:space="preserve">
-    <value>自动启动被组策略启用。 </value>
+    <value>自动启动被组策略启用。</value>
     <comment>Automatic startup is enabled by group policy.</comment>
   </data>
   <data name="Settings_StartupStateError" xml:space="preserve">
-    <value>检索启动状态是出错。 </value>
+    <value>检索启动状态时出错。</value>
     <comment>An error occured while retrieving startup state.</comment>
   </data>
   <data name="Settings_Synchronization" xml:space="preserve">
@@ -1003,7 +1003,7 @@
     <comment>Starred</comment>
   </data>
   <data name="Synchronization_DisabledBecauseOfMeteredConnection" xml:space="preserve">
-    <value>⚠ 自从你连接到了流量计费连接自动同步已经禁止。 \n 如果要启用可以在Ghostly的设置中启用。 </value>
+    <value>⚠ 自从你连接到了流量计费连接自动同步已经禁止。\n如果要启用可以在 Ghostly 的设置中启用。</value>
     <comment>⚠ Synchronization is disabled since you're on a metered connection.\nYou can enable synchronization on a metered connection in Ghostly's settings.</comment>
   </data>
   <data name="Synchronization_Local_Status" xml:space="preserve">
@@ -1059,7 +1059,7 @@
     <comment>Updated</comment>
   </data>
   <data name="Template_NoDescriptionProvided" xml:space="preserve">
-    <value>没有提供描述。 </value>
+    <value>没有提供描述。</value>
     <comment>No description provided.</comment>
   </data>
   <data name="Template_ReviewedAnd" xml:space="preserve">
@@ -1131,7 +1131,7 @@
     <comment>Ghostly was updated to version {0}.</comment>
   </data>
   <data name="WhatsNew_Title" xml:space="preserve">
-    <value>新版本已安装!</value>
+    <value>新版本已安装！</value>
     <comment>New version installed!</comment>
   </data>
   <data name="WhatsNew_ViewReleaseNotes" xml:space="preserve">

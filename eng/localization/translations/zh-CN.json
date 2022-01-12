@@ -48,7 +48,7 @@
     },
     {
       "Key": "Accounts_PublicAndPrivateRepositories",
-      "Translation": "公共和私有仓库 ",
+      "Translation": "公共和私有仓库",
       "Comment": "Public and private repositories"
     },
     {
@@ -98,7 +98,7 @@
     },
     {
       "Key": "ArchiveAll_Confirmation",
-      "Translation": "你确定归档所有通知到 '{0}' 吗?\\n\\n此操作无法撤销。",
+      "Translation": "你确定归档所有通知到 '{0}' 吗？\\n\\n此操作无法撤销。",
       "Comment": "Are you sure that you want to archive all notifications in '{0}'?\\n\\nThis action cannot be undone."
     },
     {
@@ -113,17 +113,17 @@
     },
     {
       "Key": "ArchiveAll_Title",
-      "Translation": "归档全部?",
+      "Translation": "归档全部？",
       "Comment": "Archive all?"
     },
     {
       "Key": "CreateCategory_CategoryImported",
-      "Translation": "此分类是以前从'{0}'导入的.",
+      "Translation": "此分类是以前从 '{0}' 导入的。",
       "Comment": "The category was previously imported from '{0}'."
     },
     {
       "Key": "CreateCategory_CategoryImported_Warning",
-      "Translation": "如果重新导入将丢失对分类的更改.",
+      "Translation": "如果重新导入将丢失对分类的更改。",
       "Comment": "Changes to this category will be lost if re-importing again."
     },
     {
@@ -183,7 +183,7 @@
     },
     {
       "Key": "CreateCategory_WhatIsThis",
-      "Translation": "这是什么?",
+      "Translation": "这是什么？",
       "Comment": "What is this?"
     },
     {
@@ -233,12 +233,12 @@
     },
     {
       "Key": "CreateRule_RuleImported",
-      "Translation": "改规则是之前从 '{0}'导入的.",
+      "Translation": "该规则是之前从 '{0}' 导入的。",
       "Comment": "The rule was previously imported from '{0}'."
     },
     {
       "Key": "CreateRule_RuleImported_Warning",
-      "Translation": "如果重新导入则丢失对此规则的更改.",
+      "Translation": "如果重新导入则丢失对此规则的更改。",
       "Comment": "Changes to this rule will be lost if re-importing again."
     },
     {
@@ -253,12 +253,12 @@
     },
     {
       "Key": "CreateRule_WhatIsThis",
-      "Translation": "这是什么?",
+      "Translation": "这是什么？",
       "Comment": "What is this?"
     },
     {
       "Key": "DeleteCategory_CannotDelete_ChangeOrDeleteRule",
-      "Translation": "更改或者删除受影响的规则以删除此类别.",
+      "Translation": "更改或者删除受影响的规则以删除此类别。",
       "Comment": "Change or delete the affected rules to delete this category."
     },
     {
@@ -268,22 +268,22 @@
     },
     {
       "Key": "DeleteCategory_CannotDelete_UsedInFollowingRules",
-      "Translation": "此分类'{0}'被下面的规则中使用:",
+      "Translation": "此分类 '{0}' 被下面的规则中使用:",
       "Comment": "The category '{0}' is used in the following rules:"
     },
     {
       "Key": "DeleteCategory_Category_Confirmation",
-      "Translation": "你确定要删除分类'{0}'吗?\\n\\n此操作不可撤销.",
+      "Translation": "你确定要删除分类 '{0}' 吗？\\n\\n此操作不可撤销。",
       "Comment": "Are you sure that you want to delete the category '{0}'?\\n\\nThis action cannot be undone."
     },
     {
       "Key": "DeleteCategory_Category_Title",
-      "Translation": "删除分类?",
+      "Translation": "删除分类？",
       "Comment": "Delete category?"
     },
     {
       "Key": "DeleteCategory_Filter_Confirmation",
-      "Translation": "你确定要删除过滤器 '{0}'吗?\\n\\n此操作不可撤销.",
+      "Translation": "你确定要删除过滤器 '{0}' 吗？\\n\\n此操作不可撤销。",
       "Comment": "Are you sure that you want to delete the filter '{0}'?\\n\\nThis action cannot be undone."
     },
     {
@@ -293,7 +293,7 @@
     },
     {
       "Key": "DeleteRule_Confirmation",
-      "Translation": "你确定要删除规则'{0}'吗?\\n\\n此操作不可撤销.",
+      "Translation": "你确定要删除规则 '{0}' 吗？\\n\\n此操作不可撤销。",
       "Comment": "Are you sure that you want to delete the rule '{0}'?\\n\\nThis action cannot be undone."
     },
     {
@@ -303,7 +303,7 @@
     },
     {
       "Key": "DeleteRule_Title",
-      "Translation": "删除规则?",
+      "Translation": "删除规则？",
       "Comment": "Delete rule?"
     },
     {
@@ -313,7 +313,7 @@
     },
     {
       "Key": "ExportProfile_Error",
-      "Translation": "导出配置时发生错误.\\n查看日志了解更多信息.",
+      "Translation": "导出配置时发生错误。\\n查看日志了解更多信息。",
       "Comment": "An error occured while exporting profile.\\nSee the log for more information."
     },
     {
@@ -378,12 +378,12 @@
     },
     {
       "Key": "GitHub_FirstSynchronization",
-      "Translation": "Ghostly 第一次同步， 这需要一些时间. 😅",
+      "Translation": "Ghostly 第一次同步，这需要一些时间。😅",
       "Comment": "Ghostly is synchronizing for the first time. This might take a little while. 😅"
     },
     {
       "Key": "GitHub_Progress",
-      "Translation": "正在同步{0}/{1}GitHub的通知...",
+      "Translation": "正在同步 {0} / {1} GitHub 的通知...",
       "Comment": "Synchronizing {0} of {1} GitHub notifications..."
     },
     {
@@ -393,22 +393,22 @@
     },
     {
       "Key": "GitHub_RateLimitExceeded",
-      "Translation": "我们超出了GitHub API 的速率限制 😢.\\n我们无法继续同步直至 {0}.",
+      "Translation": "我们超出了 GitHub API 的速率限制😢。\\n我们无法继续同步直至 {0}。",
       "Comment": "We've exceeded the GitHub API rate limit 😢.\\nWe won't be able to synchronize until {0}."
     },
     {
       "Key": "GitHub_Toast_NewNotification_Title",
-      "Translation": "收到新的GitHub通知",
+      "Translation": "收到新的 GitHub 通知",
       "Comment": "New GitHub notification"
     },
     {
       "Key": "GitHub_Toast_NewNotifications_Body",
-      "Translation": "收到{0} 个新通知.",
+      "Translation": "收到 {0} 个新通知。",
       "Comment": "{0} new notifications available."
     },
     {
       "Key": "GitHub_Toast_NewNotifications_Title",
-      "Translation": "新GitHub通知",
+      "Translation": "新 GitHub 通知",
       "Comment": "New GitHub notifications"
     },
     {
@@ -468,7 +468,7 @@
     },
     {
       "Key": "Main_SearchInCategory",
-      "Translation": "在{0}中搜索",
+      "Translation": "在 {0} 中搜索",
       "Comment": "Search in {0}"
     },
     {
@@ -508,7 +508,7 @@
     },
     {
       "Key": "MarkAllAsRead_Confirmation",
-      "Translation": "你确定要用 '{0}' 标记所有通知为已读吗?\\n\\n此操作无法撤销.",
+      "Translation": "你确定要用 '{0}' 标记所有通知为已读吗？\\n\\n此操作无法撤销。",
       "Comment": "Are you sure that you want to mark all notifications in '{0}' as read?\\n\\nThis action cannot be undone."
     },
     {
@@ -518,12 +518,12 @@
     },
     {
       "Key": "MarkAllAsRead_Progress",
-      "Translation": "正在用{0}标记所有通知为已读...",
+      "Translation": "正在用 {0} 标记所有通知为已读...",
       "Comment": "Marking all notifications in {0} as read..."
     },
     {
       "Key": "MarkAllAsRead_Title",
-      "Translation": "全部标记为已读?",
+      "Translation": "全部标记为已读？",
       "Comment": "Mark all as read?"
     },
     {
@@ -538,7 +538,7 @@
     },
     {
       "Key": "Move_Progress",
-      "Translation": "移动{0} 通知至 {1}...",
+      "Translation": "移动 {0} 通知至 {1}...",
       "Comment": "Moving {0} notifications to {1}..."
     },
     {
@@ -568,7 +568,7 @@
     },
     {
       "Key": "Query_Error_NeedHelp",
-      "Translation": "需要帮忙?",
+      "Translation": "需要帮忙？",
       "Comment": "Need help?"
     },
     {
@@ -578,7 +578,7 @@
     },
     {
       "Key": "Query_Error_Title",
-      "Translation": "哦，麻烦大了!",
+      "Translation": "哦，麻烦大了！",
       "Comment": "Oh no!"
     },
     {
@@ -638,12 +638,12 @@
     },
     {
       "Key": "RuleProcessor_Progress",
-      "Translation": "正在为分类'{0}'运行规则...",
+      "Translation": "正在为分类 '{0}' 运行规则...",
       "Comment": "Running rules for category '{0}'..."
     },
     {
       "Key": "RuleProcessor_Progress_Single",
-      "Translation": "正在为分类 '{1}'运行规则 '{0}' ...",
+      "Translation": "正在为分类 '{1}' 运行规则 '{0}'...",
       "Comment": "Running rule '{0}' for category '{1}'..."
     },
     {
@@ -738,7 +738,7 @@
     },
     {
       "Key": "Rules_Description_StopsProcessing",
-      "Translation": "这里也停止处理其他规则.",
+      "Translation": "这里也停止处理其他规则。",
       "Comment": "This also stops processing of other rules."
     },
     {
@@ -753,12 +753,12 @@
     },
     {
       "Key": "Rules_MaximumReached",
-      "Translation": "达到了最大的规则书， 要创建更多规则， 请升级至Ghostly Pro.",
+      "Translation": "达到了最大的规则书，要创建更多规则，请升级至 Ghostly Pro.",
       "Comment": "Maximum number of rules reached. To create more rules, upgrade to Ghostly Pro."
     },
     {
       "Key": "Rules_NoRules",
-      "Translation": "这里没有规则.",
+      "Translation": "这里没有规则。",
       "Comment": "There are no rules."
     },
     {
@@ -803,12 +803,12 @@
     },
     {
       "Key": "SelectProfile_Title_Export",
-      "Translation": "导出Ghostly配置",
+      "Translation": "导出 Ghostly 配置",
       "Comment": "Export Ghostly profile"
     },
     {
       "Key": "SelectProfile_Title_Import",
-      "Translation": "导入Ghostly配置",
+      "Translation": "导入 Ghostly 配置",
       "Comment": "Import Ghostly profile"
     },
     {
@@ -828,12 +828,12 @@
     },
     {
       "Key": "Settings_AllowTelemetry",
-      "Translation": "允许 Ghostly 发送关于错误和常规使用的遥测信息.",
+      "Translation": "允许 Ghostly 发送关于错误和常规使用的遥测信息。",
       "Comment": "Allow Ghostly to send telemetry about errors and general usage."
     },
     {
       "Key": "Settings_AllowTelemetry_Anonymous",
-      "Translation": "所有信息匿名并且不包含个人数据.",
+      "Translation": "所有信息匿名并且不包含个人数据。",
       "Comment": "All information is anonymous and does not contain any personal data."
     },
     {
@@ -863,7 +863,7 @@
     },
     {
       "Key": "Settings_ClickLibrary",
-      "Translation": "点击一个库查看许可证.",
+      "Translation": "点击一个库查看许可证。",
       "Comment": "Click on a library below to see its license agreement."
     },
     {
@@ -903,7 +903,7 @@
     },
     {
       "Key": "Settings_FollowOnTwitter",
-      "Translation": "在Twitter关注Ghostly",
+      "Translation": "在 Twitter 关注 Ghostly",
       "Comment": "Follow Ghostly on Twitter"
     },
     {
@@ -948,7 +948,7 @@
     },
     {
       "Key": "Settings_NotSure",
-      "Translation": "不确定?",
+      "Translation": "不确定？",
       "Comment": "Not sure?"
     },
     {
@@ -998,12 +998,12 @@
     },
     {
       "Key": "Settings_ReportIssue",
-      "Translation": "报告BUG或者建议功能",
+      "Translation": "报告 Bug 或者建议功能",
       "Comment": "Report a bug or suggest a feature"
     },
     {
       "Key": "Settings_RestartRequired",
-      "Translation": "你需要重新启动Ghostly以生效更改.",
+      "Translation": "你需要重新启动 Ghostly 以生效更改。",
       "Comment": "You need to restart Ghostly for the change to take effect."
     },
     {
@@ -1023,7 +1023,7 @@
     },
     {
       "Key": "Settings_ShowToast",
-      "Translation": "显示未读通知的toast",
+      "Translation": "显示未读通知的 Toast",
       "Comment": "Show toast for new notifications"
     },
     {
@@ -1038,27 +1038,27 @@
     },
     {
       "Key": "Settings_StartupStateDisabledByPolicy",
-      "Translation": "自动启动被组策略禁止.",
+      "Translation": "自动启动被组策略禁止。",
       "Comment": "Automatic startup is disabled by group policy."
     },
     {
       "Key": "Settings_StartupStateDisabledByUser",
-      "Translation": "自动启动被用户禁止. 你可以在任务管理器中启用它.",
+      "Translation": "自动启动被用户禁止。你可以在任务管理器中启用它。",
       "Comment": "Automatic startup is disabled by user. You can enable this in the Startup tab in Task Manager."
     },
     {
       "Key": "Settings_StartupStateEnabled",
-      "Translation": "自动启动已启用。 ",
+      "Translation": "自动启动已启用。",
       "Comment": "Automatic startup is enabled."
     },
     {
       "Key": "Settings_StartupStateEnabledByPolicy",
-      "Translation": "自动启动被组策略启用。 ",
+      "Translation": "自动启动被组策略启用。",
       "Comment": "Automatic startup is enabled by group policy."
     },
     {
       "Key": "Settings_StartupStateError",
-      "Translation": "检索启动状态是出错。 ",
+      "Translation": "检索启动状态时出错。",
       "Comment": "An error occured while retrieving startup state."
     },
     {
@@ -1183,7 +1183,7 @@
     },
     {
       "Key": "Synchronization_DisabledBecauseOfMeteredConnection",
-      "Translation": "⚠ 自从你连接到了流量计费连接自动同步已经禁止。 \\n 如果要启用可以在Ghostly的设置中启用。 ",
+      "Translation": "⚠ 自从你连接到了流量计费连接自动同步已经禁止。\\n如果要启用可以在 Ghostly 的设置中启用。",
       "Comment": "⚠ Synchronization is disabled since you're on a metered connection.\\nYou can enable synchronization on a metered connection in Ghostly's settings."
     },
     {
@@ -1253,7 +1253,7 @@
     },
     {
       "Key": "Template_NoDescriptionProvided",
-      "Translation": "没有提供描述。 ",
+      "Translation": "没有提供描述。",
       "Comment": "No description provided."
     },
     {
@@ -1343,7 +1343,7 @@
     },
     {
       "Key": "WhatsNew_Title",
-      "Translation": "新版本已安装!",
+      "Translation": "新版本已安装！",
       "Comment": "New version installed!"
     },
     {
